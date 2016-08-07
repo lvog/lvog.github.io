@@ -195,7 +195,7 @@ h1 {
 
 @media only screen and (max-width : 768px) {
 .mountain_clouds {
-	padding: 220px 10px 0;
+	padding: 0 10px;
 }
 .mountain_clouds h1 {
 	font: 48px/52px "Exo2Thin";
