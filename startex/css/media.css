@@ -1,0 +1,412 @@
+/*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1400px) {
+.description .text {
+	padding: 190px 90px 0;
+}
+.responsive .words {
+	padding: 45px 160px 0 45px;
+}
+.browser .info {
+	padding: 0 310px;
+}
+.sign_form .container {
+	padding: 100px 30px 38px;
+}
+.sign_form .thirty_days {
+	padding: 0 140px 0 0;
+}
+.thirty_days .free_trial {
+	padding: 0;
+}
+}
+@media only screen and (max-width : 1366px) {
+.sign_form .thirty_days {
+	padding: 0 120px 0 0;
+}
+}
+
+@media only screen and (max-width : 1280px) {
+.sign_form .thirty_days {
+	padding: 0 80px 0 0;
+}
+}
+
+@media only screen and (max-width : 1200px) {
+h1 {
+	font: 36px/42px "Exo2Medium";
+}
+.description .text {
+	padding: 190px 40px 0;
+}
+.features {
+	padding: 138px 90px;
+}
+.features h1 {
+	margin: 0 0 80px;
+}
+.responsive .laptop {
+	padding: 0 0 0 30px;
+}
+.responsive .words {
+	padding: 45px 90px 0 50px;
+}
+.clients .container {
+	padding: 110px 110px 0;
+}
+.browser .info {
+	padding: 0 210px;
+}
+.sign_form .container {
+	padding: 100px 20px 38px;
+}
+.sign_form .thirty_days {
+	padding: 0 110px 0 0;
+}
+.sign_form input {
+	padding: 15px 10px;
+	margin: 0 20px 0 0;
+}
+.sign_form button {
+	padding: 15px 70px;
+}
+#footer .container {
+	padding: 82px 90px 0 60px;
+}
+}
+@media only screen and (max-width : 1152px) {
+.sign_form .thirty_days {
+	padding: 0 88px 0 0;
+}
+}
+@media only screen and (max-width : 1080px) {
+.sign_form .thirty_days {
+	padding: 0 50px 0 0;
+}
+@media only screen and (max-width : 1040px) {
+.sign_form .thirty_days {
+	padding: 0 30px 0 0;
+}
+@media only screen and (max-width : 1024px) {
+.sign_form .thirty_days {
+	padding: 0 25px 0 0;
+}
+}
+
+@media only screen and (max-width : 992px) {
+	h1 {
+	font: 30px/36px "Exo2Medium";
+}
+.mountain_clouds h1 {
+	font: 60px/62px "Exo2Thin";
+	margin: 0 0 46px;
+}
+.description .photo {
+	display: none;
+}
+.description .text {
+	width: 100%;
+	padding: 120px 50px;
+}
+.text h1 {
+	margin: 0 0 25px;
+}
+.awesone_features .container {
+	background: #F6F5F3;
+}
+.features {
+	padding: 138px 40px;
+}
+.items {
+	padding: 0 20px;
+}
+.responsive .laptop {
+	padding: 30px 0 0;
+}
+.responsive .words {
+	padding: 45px 40px 0 20px;
+}
+.clients .container {
+	padding: 110px 20px 0;
+}
+.author {
+	margin: 0 0 30px;
+}
+.browser .info {
+	padding: 0 100px;
+}
+.browser .window {
+	padding: 0 40px;
+}
+.thirty_days .free_trial {
+	float: none;
+	margin: 0 auto;
+}
+.sign_form input, 
+.sign_form button {
+	margin: 0 auto 15px;
+	display: block;
+}
+.sign_form input {
+	padding: 15px 10px;
+}
+.sign_form button {
+	padding: 15px 77px;
+}
+#footer .container {
+	padding: 82px 80px 0;
+}
+#footer .contacts {
+	float: left;
+	width: 50%;
+}
+#footer .small_size {
+	float: right;
+	width: 50%;
+}
+#footer .support,
+#footer .about_us,
+#footer .newsletter {
+	float: none;
+	width: 100%;
+}
+#footer h2 {
+	font: 18px/20px "Exo2Medium";
+	margin: 0 0 10px;
+}
+#footer a {
+	color: #000;
+}
+#footer .support ul,
+#footer .about_us ul {
+	display: none;
+}
+.newsletter input {
+	height: 48px;
+	padding: 0 0 0 12px;
+}
+.newsletter button {
+	height: 49px;
+	width: 50px;
+}
+.newsletter form {
+	margin: 0 0 15px;
+}
+}
+
+@media only screen and (max-width : 768px) {
+.mountain_clouds {
+	padding: 220px 10px 0;
+}
+.mountain_clouds h1 {
+	font: 48px/52px "Exo2Thin";
+	margin: 0 0 40px;
+}
+.awesone_features {
+	height: 100%;
+}
+.features {
+	text-align: center;
+	padding: 50px 20px 30px;
+}
+.features h1 {
+	margin: 0 0 40px;
+}
+.items {
+	float: none;
+	width: 100%;
+	margin: 0 0 30px;
+}
+.item h2 {
+	margin: 5px 0 0;
+}
+.picture {
+	height: 50px;
+	width: 50px;
+}
+.responsive .container {
+	background: #ff8a8a;
+	background: -moz-linear-gradient(45deg, #ff8a8a 0%, #ff8a8a 15%, #ffffff 15%, #ffffff 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, #ff8a8a), color-stop(15%, #ff8a8a), color-stop(15%, #ffffff), color-stop(100%, #ffffff));
+	background: -webkit-linear-gradient(45deg, #ff8a8a 0%, #ff8a8a 15%, #ffffff 15%, #ffffff 100%);
+	background: -o-linear-gradient(45deg, #ff8a8a 0%, #ff8a8a 15%, #ffffff 15%, #ffffff 100%);
+	background: -ms-linear-gradient(45deg, #ff8a8a 0%, #ff8a8a 15%, #ffffff 15%, #ffffff 100%);
+	background: linear-gradient(45deg, #ff8a8a 0%, #ff8a8a 15%, #ffffff 15%, #ffffff 100%);
+	padding: 30px 0;
+}
+.responsive .laptop,
+.responsive .words {
+	float: none;
+	width: 100%;
+}
+.responsive .laptop {
+	padding: 0 95px;
+	margin: 0 0 25px;
+}
+.responsive .words {
+	padding: 0 20px;
+}
+.clients .container {
+	padding: 80px 20px 0;
+}
+.author {
+	float: none;
+	width: 60%;
+	text-align: center;
+	padding: 0;
+	margin: 0 auto 30px;
+}
+.author:nth-child(2),
+.author:nth-child(3) {
+	display: none;
+}
+.see_more {
+	display: inline-block;
+}
+.browser .info {
+	padding: 0 70px;
+}
+#footer {
+	height: 100%;
+}
+#footer .container {
+	background: #fff;
+	padding: 50px 80px 0;
+}
+#footer .contacts,
+#footer .small_size {
+	float: none;
+	width: 100%;
+	margin: 0 0 20px;
+}
+#footer .about_us,
+.newsletter form{
+	margin: 0 0 20px;
+}
+#footer .social li:first-child {
+	margin: 0;
+}
+}
+
+@media only screen and (max-width : 480px) {
+.description .text,
+.features,
+.responsive .container, 
+.clients .container,
+.browser .container,
+.sign_form .container,
+#footer .container {
+	padding: 60px 20px;
+}
+.mountain_clouds h1 {
+	font: 40px/44px "Exo2Thin";
+	margin: 0 0 40px;
+}
+.items {
+	padding: 0;
+}
+.responsive .laptop {
+	padding: 0 40px;
+	margin: 0 0 25px;
+}
+.clients .author {
+	width: 100%;
+}
+.browser .info,
+.browser .window {
+	padding: 0;
+}
+.browser .container {
+	padding: 60px 20px 0;
+}
+.browser .info {
+	margin: 0 0 50px;
+}
+.newsletter input {
+	padding: 0 0 0 5px;
+}
+}
+
+@media only screen and (max-width : 320px) {
+	h1 {
+	font: 26px/30px "Exo2Medium";
+}
+.mountain_clouds, 
+.description .text,
+.features,
+.responsive .container, 
+.clients .container,
+.browser .container,
+.sign_form .container,
+#footer .container {
+	padding: 50px 15px;
+}
+.responsive .laptop, 
+.responsive .words,
+.browser .info,
+.browser .window {
+	padding: 0;
+}
+#header {
+	height: 480px;
+}
+.mountain_clouds h1 {
+	font: 34px/36px "Exo2Thin";
+	margin: 0 0 40px;
+}
+.clients .container {
+	padding: 50px 15px 0;
+}
+.browser .container {
+	padding-bottom: 0;
+}
+.browser .info {
+	margin: 0 0 50px;
+}
+.sign_form input {
+	padding: 15px 5px;
+}
+.sign_form button {
+	padding: 15px 71px;
+}
+.newsletter input {
+	width: 160px;
+}
+br {
+	display: none;
+}
+}
+
+@media only screen and (max-width : 240px) {
+.mountain_clouds, 
+.description .text,
+.features,
+.responsive .container, 
+.clients .container,
+.browser .container,
+.sign_form .container,
+#footer .container {
+	padding: 40px 15px;
+}
+#header {
+	height: 320px;
+}
+.mountain_clouds h1 {
+	font: 28px/32px "Exo2Thin";
+	margin: 0 0 20px;
+}
+.mountain_clouds .circle {
+	width: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	margin: 0 auto 20px;
+}
+.browser .container {
+	padding-bottom: 0;
+}
+.sign_form button {
+	padding: 15px 70px;
+}
+.newsletter input {
+	width: 160px;
+}
+}

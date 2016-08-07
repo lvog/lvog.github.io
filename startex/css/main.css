@@ -1,0 +1,391 @@
+body {
+	font-family: "Exo2Regular";
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+h1 {
+	font: 42px/48px "Exo2Medium";
+	margin: 0;
+}
+h2 {
+	font: 22px/24px "Exo2Medium";
+}
+p {
+	color: #767779;
+}
+span {
+	text-transform: uppercase;
+	color: #ff6d6d;
+}
+.mountain_clouds .circle:hover,
+.mountain_clouds .try:hover,
+.see_more:hover, 
+form button:hover {
+	color: #ff6d6d;
+	background: #fff;
+}
+.wrapper {
+	margin: 0 auto;
+}
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#header {
+	width: 100%;
+	height: 815px;
+}
+#header .container {
+	height: 100%;
+	background: url(../img/clouds-mountain.png);
+	background-size: cover;
+}
+.mountain_clouds {
+	text-align: center;
+	padding: 220px 0 0;
+}
+.mountain_clouds h1 {
+	font: 66px/68px "Exo2Thin";
+	margin: 0 0 52px;
+}
+.mountain_clouds .circle {
+	display: block;
+	width: 60px;
+	font-size: 22px;
+	line-height: 60px;
+	padding: 0 0 0 4px;
+	margin: 0 auto 40px;
+	color: #fff;
+	background: #8286a4;
+	border-radius: 100%;
+}
+.mountain_clouds .try {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 16px 62px;
+	color: #fff;
+	background: #ff6d6d;
+	border-radius: 5px;
+}
+.mountain_clouds p {
+	font-size: 15px;
+}
+.description .text {
+	float: left;
+	width: 58.333333333%;
+	padding: 190px 145px 0;
+}
+.text span {
+	display: inline-block;
+	margin: 0 0 5px;
+}
+.text h1 {
+	margin: 0 0 40px;
+}
+.text p {
+	line-height: 28px;
+}
+.description .photo {
+	float: right;
+	width: 41.6666666667%;
+	height: 725px;
+	background:	#ededed; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #ededed 0%, #ececec 54.6%, #f99595 54.6%, #fb8686 54.6%, #fb8686 100%, #ede5e5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #ededed 0%, #ececec 54.6%, #f99595 54.6%, #fb8686 54.6%, #fb8686 100%, #ede5e5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #ededed 0%, #ececec 54.6%, #f99595 54.6%, #fb8686 54.6%, #fb8686 100%, #ede5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ede5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.awesone_features {
+	width: 100%;
+	height: 675px;
+}
+.awesone_features .container {
+	height: 100%;
+	background: url(../img/pen-earphones-cup.png);
+	background-size: cover;
+}
+.features {
+	text-align: center;
+	padding: 138px 135px;
+}
+.features h1 {
+	margin: 0 0 90px;
+}
+.list {
+	width: 100%;
+}
+.items {
+	float: left;
+	width: 33.333333333%;
+	padding: 0 30px;
+}
+.picture {
+	display: inline-block;
+	height: 65px;
+	width: 65px;
+}
+.responsive {
+	height: 550px;
+}
+.responsive .container {
+	height: 100%;
+	background: #ff8a8a;
+	background: -moz-linear-gradient(45deg, #ff8a8a 0%, #ff8a8a 31.8%, #ffffff 31.8%, #ffffff 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, #ff8a8a), color-stop(31.8%, #ff8a8a), color-stop(31.8%, #ffffff), color-stop(100%, #ffffff));
+	background: -webkit-linear-gradient(45deg, #ff8a8a 0%, #ff8a8a 31.8%, #ffffff 31.8%, #ffffff 100%);
+	background: -o-linear-gradient(45deg, #ff8a8a 0%, #ff8a8a 31.8%, #ffffff 31.8%, #ffffff 100%);
+	background: -ms-linear-gradient(45deg, #ff8a8a 0%, #ff8a8a 31.8%, #ffffff 31.8%, #ffffff 100%);
+	background: linear-gradient(45deg, #ff8a8a 0%, #ff8a8a 31.8%, #ffffff 31.8%, #ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8a8a', endColorstr='#ffffff', GradientType=1 );
+	padding: 100px 0 0;
+}
+.laptop, .words {
+	width: 50%;
+}
+.laptop {
+	float: left;
+	padding: 0 0 0 70px;
+}
+.words {
+	float: right;
+	padding: 45px 160px 0 55px;
+}
+.clients {
+	height: 650px;
+}
+.clients .container {
+	height: 100%;
+	text-align: center;
+	padding: 110px 175px 0;
+	background: url(../img/client-fon.png);
+}
+.portrait {
+	margin: 0 0 25px;
+}
+.author {
+	float: left;
+	width:  33.333333333%;
+	text-align: center;
+	padding: 0 15px;
+	margin: 0 0 55px;
+}
+.author p {
+	font: 22px/24px "Exo2Medium";
+	color: #fff;
+	margin: 0 0 15px;
+}
+.author p:last-child {
+	font: inherit;
+	font-style: italic;
+	color: #767779;
+}
+.author span {
+	display: block;
+	text-transform: none;
+	margin: 0 0 35px;
+}
+.see_more {
+	display: none;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 12px 35px;
+	margin: 0 0 40px;
+	text-transform: uppercase;
+	color: #fff;
+	background: #ff6d6d;
+	border: none;
+	border-radius: 2px;
+}
+#logo {
+	clear: both;
+	text-align: center;
+}
+#logo img {
+	max-width: 130px;
+	margin: 0 auto 10px;
+}
+.owl-prev,
+.owl-next {
+	display: inline-block;
+	padding: 2px 4px;
+	margin: 0 5px 10px;
+	border-radius: 5px;
+	background: #d6d6d6;
+}
+.owl-prev:hover,
+.owl-next:hover {
+	background: #869791;
+}
+.browser .container {
+	height: 100%;
+	text-align: center;
+	padding: 105px 0 0;
+	background: #f6f5f3;
+}
+.info {
+	padding: 0 400px;
+	margin: 0 0 100px;
+}
+.info h1 {
+	margin: 0 0 30px;
+}
+.window	{
+	text-align: center;
+}
+.sign_form .container {
+	height: 100%;
+	text-align: center;
+	padding: 100px 100px 38px;
+	background: #323969;
+}
+.sign_form span {
+	display: inline-block;
+	margin: 0 0 8px;
+}
+.sign_form h1 {
+	margin: 0 0 40px;
+	color: #fff;
+}
+.sign_form .thirty_days {
+	float: right;
+	width: 100%;
+	padding: 0 60px 0 0;
+}
+.thirty_days .free_trial {
+	float: right;
+	width: -moz-max-content;
+	width: -webkit-max-content;
+	padding: 0 30px;
+}
+.thirty_days .free_trial p{
+	display: inline-block;
+	color: #f6f5f3;
+}
+.sign_form p,
+.sign_form a {
+	color: #a8aabc;
+}
+.sign_form form {
+	clear: both;
+	margin: 0 0 50px;
+}
+.sign_form input {
+	padding: 16px 26px;
+	margin: 0 30px 0 0;
+	color: #f6f5f3;
+	background: #464c77;
+	border: 2px solid #999cb4;
+	border-radius: 2px;
+}
+.sign_form button {
+	text-transform: uppercase;
+	padding: 15px 95px;
+	color: #f6f5f3;
+	background: #ff6d6d;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 2px 3px #262b50;
+}
+#footer {
+	height: 332px;
+}
+#footer .container {
+	height: 100%;
+	padding: 82px 190px 0 150px;
+	background: #fff;
+	background: -moz-linear-gradient(45deg, #ffffff 0%, #ffffff 79%, #ff8a8a 79%, #ff8a8a 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, #ffffff), color-stop(79%, #ffffff), color-stop(79%, #ff8a8a), color-stop(100%, #ff8a8a));
+	background: -webkit-linear-gradient(45deg, #ffffff 0%, #ffffff 79%, #ff8a8a 79%, #ff8a8a 100%);
+	background: -o-linear-gradient(45deg, #ffffff 0%, #ffffff 79%, #ff8a8a 79%, #ff8a8a 100%);
+	background: -ms-linear-gradient(45deg, #ffffff 0%, #ffffff 79%, #ff8a8a 79%, #ff8a8a 100%);
+	background: linear-gradient(45deg, #ffffff 0%, #ffffff 79%, #ff8a8a 79%, #ff8a8a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ff8a8a', GradientType=1 );
+}
+#footer .contacts,
+#footer .support,
+#footer .about_us,
+#footer .newsletter {
+	float: left;
+}
+#footer .contacts,
+#footer .newsletter {
+	width: 33.333333333%;
+}
+#footer .support,
+#footer .about_us {
+	width: 16.66666667%;
+}
+.contacts .office p {
+	line-height: 26px;
+	margin: 0;
+}
+#footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#footer li {
+	margin: 0 0 15px;
+}
+#footer a {
+	text-decoration: none;
+	color: #717171;
+}
+.newsletter form {
+	margin: 0 0 20px;
+}
+.newsletter input {
+	height: 52px;
+	padding: 0 0 0 26px;
+	background: #f6f6f6;
+	border: 2px solid #b8b8bf;
+	border-radius: 2px;
+}
+.newsletter button {
+	height: 52px;
+	width: 54px;
+	font-size: 20px;
+	margin: 0 0 0 -6px;
+	color: #fff;
+	background: #ff6d6d;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 2px 3px #c3c3c3;
+}
+.newsletter li {
+	display: inline-block;
+}
+#footer .social li {
+	margin: 0 0 0 30px;
+}
+#footer .social a {
+	font-size: 20px;
+	color: #cbcbcb;
+}
+#footer .social a:hover {
+	color: #FF6D6D;
+}
+#footer #top {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	font-size: 15px;
+	padding: 12px 14px;
+	color: #fff;
+	background: #ff6d6d;
+	border: none;
+	border-radius: 5px;
+}
