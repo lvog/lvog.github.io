@@ -1,0 +1,128 @@
+/*==========  Desktop First Method  ==========*/
+
+@media only screen and (max-width : 1700px) {
+/*---Contact---*/
+.map-location {top:31%; left:33.6%;}
+}
+
+@media only screen and (max-width : 1400px) {
+/*---Contact---*/
+.map-location {top:29%;}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+/*---Header---*/
+.slide-info h1 {font-size:34px;	line-height:36px;	margin:0 0 15px;}
+.slide-info p {font-size:inherit;	line-height:inherit; margin:0 0 20px;}
+.slide-info a {font-size:14px; padding:12px 40px;}
+
+/*---Services---*/
+#services h2 {font-size:18px; margin:0 0 5px;}
+#services p {font-size:14px; line-height:18px;}
+.service-icon {font-size:35px; line-height:70px; background:url(../img/rounded_corners-md.png) center center no-repeat;}
+
+/*---Call-action---*/
+#call-action h2 {font-size:18px; line-height:20px; color:#fff;}
+#call-action a {padding:12px 45px;}
+
+/*---Contact---*/
+.contact-icon {width:50px; font-size:25px; line-height:50px;}
+.contact-info {font-size:14px; line-height:16px; top:31%; left:25%;}
+.contact-block:first-child .contact-box .contact-info {top:3%;}
+.map-location {top:30.5%;	font-size:30px;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+/*---Global---*/
+#about .container,#services .container,#gallery .container {padding:50px 10px;}
+
+/*---Header---*/
+.slide-info {max-width:480px;}
+.slide-info h1 {font-size:28px; line-height:30px; margin:0 0 10px;}
+.slide-info p {margin:0 0 15px;}
+.slide-info a {font-size:14px; padding:8px 40px;}
+
+/*---Services---*/
+.service-icon {margin-bottom:15px;}
+.service-info {text-align:center;}
+.service-block {margin-bottom:34px;}
+.services-box {margin-bottom:0;}
+
+/*---Gallery---*/
+.link-box .link-icon {width:50px; height:50px; font-size:25px; line-height:52px;}
+.category h3 {font-size:16px; line-height:18px; margin:10px 0 2px;}
+.category span {font-size:14px; margin-bottom:2px;}
+
+/*---Contact---*/
+#contact .container {text-align:center;}
+#contact h1 {margin:0 0 15px;}
+#contact .container .contact-box {max-width:240px; text-align:left;	margin: 0 auto 10px;}
+.contact-info {top:31%; left:25%;}
+.contact-block:first-child .contact-box .contact-info {top:15%;}
+.map {display:none;}
+
+/*---Footer---*/
+#footer {color:#fff; background:#424242;}
+.copy span {color:#fff;}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+/*---Global---*/
+body {font-size:14px; line-height:18px;}
+#about .container,#services .container,#gallery .container {padding:50px 20px;}
+#services .container,#gallery .container {max-width:320px;}
+
+/*---Header---*/
+.main-menu-button {display:block;}
+#nav {position:relative;}
+#nav ul {display:none; position:absolute;	top:50px;	right:0; background:#fff;}
+#nav ul li {display:block; margin:11px 0;	padding:0 40px;}
+.slide,.owl-prev,.owl-next {display:none;}
+.hidden-box {display:block;}
+
+/*---Services---*/
+#services .container {max-width:320px;}
+
+/*---Call-action---*/
+#call-action .container {text-align:center;}
+#call-action .text {margin-bottom:15px;}
+#call-action h2 {margin:0 0 10px;}
+
+/*---Gallery---*/
+.gallery-box {margin-bottom:0;}
+#gallery .unit {margin:0 0 20px;}
+
+/*---Footer---*/
+#footer .container {padding:20px;}
+.social {text-align:right;}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+/*---Global---*/	
+h1 {font-size:28px; line-height:30px;}
+
+/*---Go-top---*/
+.go-top {right:20px; bottom:50px;}
+
+/*---About---*/
+#about .container p {text-align:left;}
+
+/*---Footer---*/
+#footer .container {padding:20px 10px;}
+.copy span {display:none;}
+.social ul {margin:0 -2px;}
+.social ul li {margin:0 0 0 10px;}
+.social ul li:first-child {margin:0;}
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px) {
+/*---Header---*/
+#nav ul {display:block !important;}
+}
