@@ -410,7 +410,8 @@ img {
       justify-content: center;
       overflow: auto;
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      z-index: 2; }
   #portfolio .search_icon {
     font-size: 40px;
     color: #fb6470; }
