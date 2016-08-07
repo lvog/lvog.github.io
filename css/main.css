@@ -401,23 +401,20 @@ img {
     width: 100%;
     transform: rotateX(90deg);
     transition: all 0.4s ease-out 0s; }
-  #portfolio .tt {
-    display: table;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    text-decoration: none; }
-    #portfolio .tt .tr {
-      display: table-row; }
-      #portfolio .tt .tr .tc {
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle; }
+    #portfolio .overlay a {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: auto;
+      color: #fff;
+      text-decoration: none; }
   #portfolio .search_icon {
     font-size: 40px;
     color: #fb6470; }
   #portfolio .project_category {
-    display: block;
     font-size: 20px;
     margin-top: 20px; }
 
