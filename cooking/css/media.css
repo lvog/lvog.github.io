@@ -1,0 +1,314 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+@media only screen and (max-width : 1056px) {
+.container {
+	padding: 0 10px;
+}
+.social {
+	margin-left: 20px;
+}
+.ban-header {
+	margin: 0 0 0 30px;
+}
+#main_menu {
+	position: relative;
+	background: #35213a;
+}
+#main_menu ul {
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;
+	background: #35213a;
+	z-index: 1;
+}
+#main_menu ul li {
+	display: block;
+	width: 100%;
+}
+#main_menu a {
+	width: 100%;
+	font-size: 14px;
+	text-align: left;
+	padding: 18px 40px;
+	border: none;
+}
+
+.menu_button {
+	float: right;
+	display: block;
+}
+.hot_cooking .recipe_item,
+.video .video_item,
+.other_recipes .recipe_item {
+	
+	margin: 0 0 0 10px;
+}
+.dr_container {
+	padding: 40px;
+}
+.day_recipe .img_box,
+.day_recipe .dr_text,
+.popular_item .popular_text {
+	display: block;
+}
+.day_recipe .img_box {
+	margin: 0 0 20px;
+}
+.day_recipe .img_box img {
+	width: 100%;
+}
+.day_recipe .dr_text,
+.popular_item .popular_text {
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.popular_item {
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+}
+.popular_item .img_box {
+	margin: 0 0 10px;
+}
+.sign_up input[type="submit"] {
+	padding: 10px 2px;
+}
+.app_button {
+	margin: 35px 20px;
+}
+.widget {
+	margin: 0 0 0 10px;
+}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+h2 {
+	font-size: 24px;
+}
+.ban-header {
+	display: none;
+}
+#footer .container {
+	padding: 0;
+}
+.menu {
+	position: relative;
+	width: 100%;
+	min-height: 50px;
+	background: #35213a;
+	padding: 0;
+}
+.menu ul {
+	display: none;
+	width: 100%;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	background: #35213a;
+	z-index: 1;
+}
+.menu ul li {
+	display: block;
+	width: 100%;
+	padding: 0;
+	border: none;
+}
+.menu a {
+	width: 100%;
+	font-family: "ArialBold", sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 18px 40px;
+	text-align: left;
+	color: #fff;
+}
+.menu a:hover {
+	color: #fff;
+	background: #9e7ec1;
+	text-decoration: none;
+}
+.second_button {
+	display: block;
+}
+.ipad {
+	display: none;
+}
+.app_text {
+	margin: 0 0 0 19px;
+	padding: 25px 0;
+}
+.app_button {
+	margin: 35px 19px 35px 0;
+}
+.top_footer .social {
+	float: none;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+.copy {
+	text-align: center;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+h3 {
+	font-size: 14px;
+}
+.top_header .social {
+	float: right;
+}
+.search {
+	float: none;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.search input[type="search"] {
+	width: 90%;
+	padding: 10px;
+}
+.search button {
+	top: 48px;
+	right: 3%;
+}
+.info,
+.widget {
+	width: 100%;
+}
+.popular_item {
+	display: block;
+	text-align: left;
+	padding: 10px;
+}
+.popular .img_box,
+.popular .popular_text {
+	display: inline-block;
+	vertical-align: top;
+}
+.popular .img_box {
+	margin: 0;
+}
+.popular .popular_text {
+	max-width: 300px;
+	padding: 3px 5px;	
+}
+.widget_banners img {
+	width: 100%;
+}
+.app_store {
+	padding: 10px 20px;
+	text-align: center;
+}
+.app_text,
+.app_button {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+.app_text {
+	display: block;
+	max-width: 100%;
+	text-align: center;
+	margin: 0 0 10px;
+}
+.app_button {
+	display: inline-block;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.logo,
+.social,
+.search {
+	float: none;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.banner_text h1 {
+	font-size: 30px;
+}
+.hot_cooking,
+.video,
+.other_recipes {
+	text-align: center;
+}
+.hot_cooking .recipe_item,
+.video .video_item,
+.other_recipes .recipe_item,
+.hot_cooking .recipe_item:first-child,
+.video .video_item:first-child,
+.other_recipes .recipe_item:first-child {
+	width: 100%;
+	margin: 0 0 25px;
+}
+.hot_cooking .img_box,
+.video .img_box,
+.other_recipes .img_box {
+	margin: 0 0 10px;
+}
+.dr_container {
+	padding: 20px;
+}
+.search button {
+	right: 2%;
+}
+.popular {
+	text-align: center;
+}
+.popular_item {
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 993px) {
+.menu ul {
+		display: block !important;
+}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1057px) {
+	#main_menu ul {
+		display: block !important;
+	}
+}
