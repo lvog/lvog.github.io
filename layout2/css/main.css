@@ -24,7 +24,7 @@ span {font-size:16px; line-height:20px; color:#bdbdbd;}
 /*---Header---*/
 .sticky-menu {width:100%; position:fixed; top:0; background:#fff; clear:both; z-index:999;}
 .logo {float:left; text-align:left;}
-.main-menu-button {display:none; float:right; font-size:30px; line-height:70px; padding:2px; color:#616161; background:transparent; border:none;}
+.main-menu-button {display:none; float:right; font-size:30px; line-height:70px; padding:2px; margin: 0 10px 0 0; color:#616161; background:transparent; border:none;}
 .sticky-menu .logo,#nav ul {margin:14px 0;} 
 #nav ul {float:right; text-align:right;}
 #nav ul li {margin:11px 0 11px 17px;}
