@@ -78,8 +78,8 @@ body {font-size:14px; line-height:18px;}
 /*---Header---*/
 .main-menu-button {display:block;}
 #nav {position:relative;}
-#nav ul {display:none; position:absolute;	top:50px;	right:0; background:#fff;}
-#nav ul li {display:block; margin:11px 0;	padding:0 40px;}
+#nav ul {display:none; max-width:240px; position:absolute;	top:50px;	right:0; background:#fff;}
+#nav ul li {display:block; margin:11px 0;	padding:10px 40px;}
 .slide,.owl-prev,.owl-next {display:none;}
 .hidden-box {display:block;}
 
