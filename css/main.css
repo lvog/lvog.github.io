@@ -134,6 +134,8 @@ img {
 
 .icon {
   display: block;
+  width: 35px;
+  height: 30px;
   position: fixed;
   top: 40px;
   right: 100px;
@@ -400,7 +402,8 @@ img {
     height: 100%;
     width: 100%;
     transform: rotateX(90deg);
-    transition: all 0.4s ease-out 0s; }
+    transition: all 0.4s ease-out 0s;
+    z-index: 2; }
     #portfolio .overlay a {
       height: 100%;
       width: 100%;
@@ -410,8 +413,7 @@ img {
       justify-content: center;
       overflow: auto;
       color: #fff;
-      text-decoration: none;
-      z-index: 2; }
+      text-decoration: none; }
   #portfolio .search_icon {
     font-size: 40px;
     color: #fb6470; }
