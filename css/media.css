@@ -23,7 +23,7 @@
     top: 20px;
     right: 25px; }
 
-  #about h2 {
+  #about h3 {
     display: block;
     margin: 0 0 15px; }
   #about .container {
@@ -106,7 +106,7 @@
     padding: 60px 20px 100px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  h1, #skills .container h1, #message .container h1 {
+  h2, #skills .container h2, #message .container h2 {
     font-size: 28px;
     line-height: 30px; }
 
