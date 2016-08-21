@@ -3,13 +3,18 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 }
+
 @media only screen and (max-width : 1056px) {
+
+/*---Global Settings---*/
 .container {
 	padding: 0 10px;
 }
 .social {
 	margin-left: 20px;
 }
+
+/*--Header--*/
 .ban-header {
 	margin: 0 0 0 30px;
 }
@@ -38,17 +43,15 @@
 	padding: 18px 40px;
 	border: none;
 }
-
 .menu_button {
 	float: right;
 	display: block;
 }
-.hot_cooking .recipe_item,
-.video .video_item,
-.other_recipes .recipe_item {
-	
-	margin: 0 0 0 10px;
-}
+
+/*--Main_content--*/
+
+/*-Info-*/
+
 .dr_container {
 	padding: 40px;
 }
@@ -69,36 +72,61 @@
 	padding: 0;
 	margin: 0;
 }
+.app_button {
+	margin: 35px 20px;
+}
+
+/*-Widget-*/
+.widget {
+	margin: 0 0 0 10px;
+}
+.sign_up input[type="submit"] {
+	padding: 10px 2px;
+}
 .popular_item {
-	display: inline-block;
 	text-align: center;
 	padding: 10px;
 }
 .popular_item .img_box {
 	margin: 0 0 10px;
 }
-.sign_up input[type="submit"] {
-	padding: 10px 2px;
-}
-.app_button {
-	margin: 35px 20px;
-}
-.widget {
-	margin: 0 0 0 10px;
-}
-
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
+/*---Global Settings---*/
 h2 {
 	font-size: 24px;
 }
+/*--Header--*/
 .ban-header {
 	display: none;
 }
+
+/*--Main_content--*/
+
+/*-Info-*/
+.ipad {
+	display: none;
+}
+.app_text {
+	margin: 0 0 0 19px;
+	padding: 25px 0;
+}
+.app_button {
+	margin: 35px 19px 35px 0;
+}
+
+/*--Footer--*/
 #footer .container {
 	padding: 0;
+}
+.top_footer .social {
+	float: none;
+	width: 100%;
+	text-align: center;
+	margin: 0;
 }
 .menu {
 	position: relative;
@@ -140,22 +168,6 @@ h2 {
 .second_button {
 	display: block;
 }
-.ipad {
-	display: none;
-}
-.app_text {
-	margin: 0 0 0 19px;
-	padding: 25px 0;
-}
-.app_button {
-	margin: 35px 19px 35px 0;
-}
-.top_footer .social {
-	float: none;
-	width: 100%;
-	text-align: center;
-	margin: 0;
-}
 .copy {
 	text-align: center;
 }
@@ -163,14 +175,19 @@ h2 {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+/*---Global Settings---*/
 h3 {
 	font-size: 14px;
 }
+
+/*--Header--*/
 .top_header .social {
 	float: right;
 }
+
 .search {
-	float: none;
+	clear: both;
 	display: block;
 	width: 100%;
 	text-align: center;
@@ -180,13 +197,37 @@ h3 {
 	padding: 10px;
 }
 .search button {
-	top: 48px;
 	right: 3%;
 }
+
+/*--Main_content--*/
 .info,
 .widget {
 	width: 100%;
 }
+
+/*-Info-*/
+.app_store {
+	padding: 10px 20px;
+	text-align: center;
+}
+.app_text,
+.app_button {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+.app_text {
+	display: block;
+	max-width: 100%;
+	text-align: center;
+	margin: 0 0 10px;
+}
+.app_button {
+	display: inline-block;
+}
+
+/*-Widget-*/
 .popular_item {
 	display: block;
 	text-align: left;
@@ -207,29 +248,12 @@ h3 {
 .widget_banners img {
 	width: 100%;
 }
-.app_store {
-	padding: 10px 20px;
-	text-align: center;
-}
-.app_text,
-.app_button {
-	float: none;
-	margin: 0;
-	padding: 0;
-}
-.app_text {
-	display: block;
-	max-width: 100%;
-	text-align: center;
-	margin: 0 0 10px;
-}
-.app_button {
-	display: inline-block;
-}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+/*--Header--*/	
 .logo,
 .social,
 .search {
@@ -238,12 +262,20 @@ h3 {
 	width: 100%;
 	text-align: center;
 }
+.search button {
+	right: 2%;
+}
 .banner_text h1 {
 	font-size: 30px;
 }
+
+/*--Main_content--*/
+
+/*-Info-*/
 .hot_cooking,
 .video,
-.other_recipes {
+.other_recipes,
+.day_recipe {
 	text-align: center;
 }
 .hot_cooking .recipe_item,
@@ -251,7 +283,14 @@ h3 {
 .other_recipes .recipe_item,
 .hot_cooking .recipe_item:first-child,
 .video .video_item:first-child,
-.other_recipes .recipe_item:first-child {
+.other_recipes .recipe_item:first-child,
+.hot_cooking .recipe_item:nth-child(2),
+.video .video_item:nth-child(2),
+.other_recipes .recipe_item:nth-child(2),
+.hot_cooking .recipe_item:last-child,
+.video .video_item:last-child,
+.other_recipes .recipe_item:last-child {
+	float: none;
 	width: 100%;
 	margin: 0 0 25px;
 }
@@ -263,15 +302,17 @@ h3 {
 .dr_container {
 	padding: 20px;
 }
-.search button {
-	right: 2%;
+.day_recipe .dr_text {
+	text-align: left;
 }
+
+/*-Widget-*/
 .popular {
 	text-align: center;
 }
 .popular_item {
 	display: inline-block;
-	text-align: center;
+	text-align: left;
 	padding: 10px;
 }
 }

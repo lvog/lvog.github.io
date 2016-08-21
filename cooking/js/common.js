@@ -20,6 +20,7 @@ $(document).ready(function(){
     $('body,html').animate({scrollTop: top}, 1200);
   });
 
+
 // Footer menu
   $('.second_button').click(function() {
     $('.menu ul').slideToggle(250);

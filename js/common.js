@@ -60,6 +60,7 @@ $('.owl-carousel').owlCarousel({
     margin:20,
     stagePadding:10,
     mouseDrag:false,
+    nav:true,
     navText: [
       "<i class='fa fa-chevron-left' aria-hidden='true'></i>",
       "<i class='fa fa-chevron-right' aria-hidden='true'></i>"
@@ -67,24 +68,16 @@ $('.owl-carousel').owlCarousel({
 		responsiveClass:true,
 		responsive:{
 					240: {
-						items:1,
-						nav:true,
-						loop:true
+						items:1
 					},
 					480:{
-						items:2,
-						nav:true,
-						loop:true
+						items:2
 					},
 					768:{
-						items:3,
-						nav:true,
-						loop:true
+						items:3
 					},
 					1200: {
-						items:4,
-						nav:false,
-						loop:false
+						items:4
 					}
 				}
 })

@@ -1,3 +1,4 @@
+/*---Global Reset---*/
 body,h1,h2,h3,p,li {
 	margin: 0;
 }
@@ -21,6 +22,8 @@ a {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+/*---Global Settings---*/
 body {
 	font-family: "ArialRegular", sans-serif;
 	font-size: 13px;
@@ -58,26 +61,33 @@ p {
 	margin: 0 auto;
 }
 #header,
-#main_menu,
 .banner {
 	width: 100%;
 }
 .menu_button, 
 .second_button {
 	display: none;
-	line-height: 50px;
-	font-size: 30px;
-	padding: 0 2px;
-	margin: 0 10px 0 0;
-	color: #fff;
-	background: transparent;
+	width: 32px;
+	height: 32px;
+	background: url(../img/menu-icon.png) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	
+	margin: 10px 10px 0 0;
 	border: none;	
 }
 .second_button {
-	margin: 0 0 0 20px;
+	margin: 10px 0 0 20px;
+}
+#header a:hover,
+.main_content a:hover,
+#footer a:hover {
+	text-decoration: none;
 }
 
-/*---Header---*/
+/*---Main Page---*/
+
+/*--Header--*/
 .top_header {
 	padding: 10px 0;
 	overflow: hidden;
@@ -173,6 +183,7 @@ p {
 #main_menu ul {
 	display: table;
 	width: 100%;
+	position: relative;
 }
 #main_menu ul li {
 	display: table-cell;
@@ -201,11 +212,11 @@ p {
 	border-color: #9e7ec1;
 }
 
-/*---Main---*/
+/*--Main_content--*/
 .main_content {
 	overflow: hidden;
 }
-/*--Banner--*/
+/*-Banner-*/
 .banner {
 	background: url(../img/banner.png) center center no-repeat;
 	-webkit-background-size: cover;
@@ -227,7 +238,7 @@ p {
 	color: #fff;
 }
 
-/*--Info--*/
+/*-Info-*/
 .info {
 	float: left;
 	width: 66.89453125%;/*685px/1024px*/
@@ -258,18 +269,36 @@ p {
 	bottom: 0;
 	background: #edeef0;
 }
+.hot_cooking .recipes::after,
+.video .video_clips::after,
+.other_recipes .recipes::after {
+	content: '';
+	display: block;
+	clear: both;
+}
 .hot_cooking .recipe_item,
 .video .video_item,
 .other_recipes .recipe_item {
-	width: 31%;
+	width: 31.5%;
 	display: inline-block;
-	margin: 0 0 0 10px;
+	margin: 0;
 	vertical-align: top;
 }
 .hot_cooking .recipe_item:first-child,
 .video .video_item:first-child,
 .other_recipes .recipe_item:first-child {
-	margin: 0;
+	float: left;	
+}
+.hot_cooking .recipe_item:nth-child(2),
+.video .video_item:nth-child(2),
+.other_recipes .recipe_item:nth-child(2) {
+	margin: 0 2.7%;	
+}
+.hot_cooking .recipe_item:last-child,
+.video .video_item:last-child,
+.other_recipes .recipe_item:last-child {
+	float: right;
+	
 }
 .recipe_item a,
 .video_item h3 > a {
@@ -370,7 +399,7 @@ p {
 	border-radius: 5px;
 }
 
-/*--Widget--*/
+/*-Widget-*/
 .widget {
 	float: right;
 	width: 29.19%;
@@ -454,7 +483,7 @@ p {
 	margin: 0;
 }
 
-/*---Footer---*/
+/*--Footer--*/
 #footer .container {
 	position: relative;
 }
