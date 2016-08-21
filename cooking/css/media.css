@@ -312,17 +312,14 @@ h3 {
 }
 .popular_item {
 	display: inline-block;
-	text-align: left;
+	text-align: center;
 	padding: 10px;
 }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-/*-Widget-*/
-.popular {
-	text-align: center;
-}
+
 }
 
 
