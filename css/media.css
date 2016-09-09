@@ -55,12 +55,6 @@
     background: url(../img/workplace-mobile.png) center center no-repeat fixed;
     background-size: cover; }
 
-  #main_nav ul {
-    font-size: 20px;
-    line-height: 22px; }
-    #main_nav ul .points {
-      margin: 0 0 25px; }
-
   #about .container {
     padding: 30px 40px 60px; }
 
@@ -107,6 +101,12 @@
 
   #portfolio .container {
     padding: 60px 20px 100px; } }
+@media only screen and (max-width: 500px) {
+  #main_nav ul {
+    font-size: 20px;
+    line-height: 22px; }
+    #main_nav ul .points {
+      margin: 0 0 25px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   h2, #skills .container h2, #message .container h2 {
