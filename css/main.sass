@@ -413,7 +413,7 @@ textarea
 		.first_block
 			padding: 0 0 0 50px
 
-			.level:first-child
+			.level:first-child,.level:nth-child(2) 
 
 				.line
 					@include gradient_eighty
@@ -421,7 +421,7 @@ textarea
 				.circle
 					right: 34%
 
-			.level:nth-child(2)
+			.level:nth-child(3),.level:last-child
 
 				.line
 					@include gradient_seventy
@@ -429,27 +429,27 @@ textarea
 				.circle
 					right: 42%
 
-			.level:last-child
-
-				.line
-					@include gradient_sixty
-
-				.circle
-					right: 50%
-
 		.second_block
 			@extend .first_block
 
-			.level:first-child, .level:nth-child(2)
+			.level:first-child
 
 				.line
-					@include gradient_forty
+					@include gradient_seventy
+
+				.circle
+					right: 42%
+
+			.level:nth-child(2), .level:nth-child(3)			
 				
+				.line
+					@include gradient_forty
+
 				.circle
 					right: 66%
 
-			.level:last-child			
-				
+			.level:last-child
+
 				.line
 					@include gradient_sixty
 				
