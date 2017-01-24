@@ -96,6 +96,17 @@
     width: 100%;
     margin: 0 0 30px; }
 
+  #team,
+  #services,
+  #contacts {
+    padding: 40px 0; }
+    #team h2,
+    #services h2,
+    #contacts h2 {
+      font-size: 34px;
+      line-height: 36px;
+      margin-bottom: 40px; }
+
   #contacts .contact-item #form textarea.form-item {
     margin: 0 0 30px; } }
 /* Extra Small Devices, Phones */
@@ -112,14 +123,21 @@
       height: 30px;
       width: 30px;
       top: 40%; }
-  .slider .slider-info h1 {
-    font-size: 26px;
-    line-height: 28px;
-    margin-bottom: 20px; }
-  .slider .slider-info p {
-    display: none; }
-  .slider .slider-info .slider-button {
-    padding: 5px 20px; } }
+  .slider .slider-info {
+    padding: 0 30px; }
+    .slider .slider-info h1 {
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 10px; }
+    .slider .slider-info p {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 15px; }
+    .slider .slider-info .slider-button {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 5px 20px;
+      border: 1px solid #fff; } }
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ========== */
 /* Custom, iPhone Retina */
