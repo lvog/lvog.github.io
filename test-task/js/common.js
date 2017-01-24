@@ -1,5 +1,6 @@
 $(document).ready(function(){
   
+// Main menu
   $('.main-menu-button').click(function() {
     $('#nav ul').slideToggle(250);
   });
@@ -19,15 +20,7 @@ $(document).ready(function(){
     $('body,html').animate({scrollTop: top}, 1200);
   });
 
-
-  $(".service-button").mouseover(function() {
-   $(this).parent().addClass("hover");
-  });
-  $(".service-button").mouseout(function() {
-   $(this).parent().removeClass("hover");
-  });
-  
-
+// Slider
   $(".owl-carousel").owlCarousel({
     loop:true,
     responsiveClass:true,
@@ -36,3 +29,22 @@ $(document).ready(function(){
     navText:false,
   });
 });
+
+// Hover service item
+  $(".service-button").mouseover(function() {
+   $(this).parent().addClass("hover");
+  });
+  $(".service-button").mouseout(function() {
+   $(this).parent().removeClass("hover");
+  });
+
+// Check message
+  function validateMessage(input) {
+     if (input.value.length <= 2) {
+      input.setCustomValidity("Cообщение должно быть больше чем 2 символа");   
+     }
+     else {
+      input.setCustomValidity("");
+     }
+}
+  

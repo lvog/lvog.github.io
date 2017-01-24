@@ -1,31 +1,31 @@
-$item-margin: 2.564102564102564% // 30px/1170px
+@import "fonts.sass"
 
-$team-item-width: 23.07692307692308% // 270px/1170px
-
-$service-item-width: 31.62393162393162% // 370px/1170px
-
+$item_margin: 2.564102564102564% // 30px/1170px
+$team_item_width: 23.07692307692308% // 270px/1170px
+$service_item_width: 31.62393162393162% // 370px/1170px
 $contact-item-width: 48.71794871794872% // 585px/1170px
-
 $form-item-width: 47.43589743589744% // 277.5px/585px
-
 $form-item-margin: 5.128205128205128% // 30px/585px
 
+$main_font_family: "OpenSansRegular", sans-serif
+$nav_color: #484c55
+$hover_color: #49cbcd
+$ico_opacity: 0.7
 
-
-
-$main-color: #484c55
-$hover-color: #49cbcd
-$main-font-family: "OpenSansRegular", sans-serif
-
-@mixin menu-links
+@mixin nav_font_size
 	font-size: 15px
 	line-height: 18px
 
-@mixin transition
+@mixin haslayout
+	content: " "
+	display: block
+	clear: both
+
+@mixin hover_transition
 	transition: all 0.20s ease
 
 body
-	font-family: $main-font-family
+	font-family: $main_font_family
 	font-size: 14px
 	line-height: 16px
 	min-width: 320px
@@ -33,17 +33,17 @@ body
 *
 	box-sizing: border-box
 
-body,h1,h2,h3,p,ul,li
+body, h1, h2, h3, p, ul, li
 	margin: 0
 
-h1,h2,h3
+h1, h2, h3
 	font-weight: normal
 
-ul,li
+ul, li
 	padding: 0 
 	list-style: none
 
-a,a:hover
+a, a:hover
 	text-decoration: none
 
 img
@@ -59,9 +59,7 @@ img
 #header
 	
 	&:after
-		content: " "
-		display: block
-		clear: both
+		@include haslayout
 	
 	.logo
 		float: left
@@ -89,16 +87,16 @@ img
 
 			a
 				display: block
-				@include menu-links
-				color: $main-color
+				@include nav_font_size
+				color: $nav_color
 				padding: 40px 25px
 				border-bottom: 3px solid #fff
 
 				&:hover
-					color: $hover-color
-					@include transition
+					color: $hover_color
+					@include hover_transition
 					background: #f8f9fb
-					border-bottom: 3px solid #49cbcd
+					border-bottom: 3px solid $hover_color
 
 .slider
 
@@ -115,8 +113,8 @@ img
 			top: 45%
 
 			&:hover
-				opacity: 0.7
-				@include transition
+				opacity: $ico_opacity
+				@include hover_transition
 
 		.owl-prev
 			background: url(../img/left-arrow.png)
@@ -145,13 +143,14 @@ img
 
 	.slider-info
 		text-align: center
+		color: #fff
+
+		h1, p
+			text-shadow: 0 1px 1px #80a89a
 
 		h1
 			font-size: 64px
 			line-height: 66px
-			font-weight: normal
-			color: #fff
-			text-shadow: 0 1px 1px #80a89a
 			margin-bottom: 30px
 
 		p
@@ -159,8 +158,6 @@ img
 			font-size: 23px
 			line-height: 37px
 			margin: 0 auto
-			color: #fff
-			text-shadow: 0 1px 1px #80a89a
 			margin-bottom: 50px
 
 		.slider-button
@@ -174,18 +171,16 @@ img
 
 			&:hover
 				background: #fff
-				color: $hover-color
+				color: $hover_color
 				cursor: pointer
-				@include transition
+				@include hover_transition
 
 #team
 	text-align: center
 	padding: 110px 0
 
 	&:after
-		content: " "
-		display: block
-		clear: both
+		@include haslayout
 
 	h2
 		font-size: 42px
@@ -195,8 +190,8 @@ img
 
 	.team-item
 		float: left
-		width: $team-item-width
-		margin-right: $item-margin
+		width: $team_item_width
+		margin-right: $item_margin
 
 		&:last-child
 			margin: 0 
@@ -241,23 +236,20 @@ img
 	padding: 100px 0
 	background: #f1f1f1
  		
-
 	&:after
-		content: " "
-		display: block
-		clear: both
+		@include haslayout
 
 	.service-item.hover
 
 		.h3
-			@include transition
-			background: #49cbcd
+			@include hover_transition
+			background: $hover_color
 			
 	.service-item
 		float: left
-		width: $service-item-width
+		width: $service_item_width
 		text-align: center
-		margin-right: $item-margin
+		margin-right: $item_margin
 		background: #f8f9fb
 	
 		&:last-child
@@ -298,11 +290,10 @@ img
 			border-radius: 5px
 
 			&:hover
-				@include transition
+				@include hover_transition
 				color: #fff
-				background: #49cbcd
+				background: $hover_color
 				cursor: pointer
-
 
 #contacts
 	padding: 100px 0
@@ -310,9 +301,7 @@ img
 	background-size: cover
 
 	&:after
-		content: " "
-		display: block
-		clear: both
+		@include haslayout
 
 	h2
 		font-size: 42px
@@ -323,8 +312,8 @@ img
 
 	.contact-item
 		float: left
-		width: $contact-item-width
-		margin-right: $item-margin
+		width: $contact_item_width
+		margin-right: $item_margin
 
 		&:last-child
 			margin: 0
@@ -352,8 +341,8 @@ img
 					margin: 0
 
 				&:hover
-					opacity: 0.7
-					@include transition
+					opacity: $ico_opacity
+					@include hover_transition
 
 		.contact-info
 			color: #bface2
@@ -371,11 +360,11 @@ img
 
 			.form-item
 				float: left
-				width: $form-item-width
+				width: $form_item_width
 				font-size: 16px
 				line-height: 18px
 				padding: 15px 20px
-				margin-right: $form-item-margin
+				margin-right: $form_item_margin
 				border: none 
 				border-radius: 5px
 
@@ -393,15 +382,16 @@ img
 				float: right
 				font-size: 22px
 				line-height: 24px
-				text-align: right
 				color: #fff
 				padding: 14px 60px
-				background: #49cbcd
+				background: $hover_color
 				border: none
 				border-radius: 5px
 
 				&:hover
-					color: #49cbcd
+					color: $hover_color
 					background: #fff
-					@include transition
+					@include hover_transition
 					cursor: pointer
+
+@import "media.sass"

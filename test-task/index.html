@@ -5,10 +5,8 @@
 	<title>Test-Small</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
@@ -217,7 +215,7 @@
 					<form id="form" action="#">
 						<input id="name" class="form-item" type="text" placeholder="Name" required>
 						<input id="email" class="form-item" type="email" placeholder="Email" required>
-						<textarea name="text" id="message" class="form-item" rows="8" placeholder="Message" required></textarea>
+						<textarea name="text" id="message" class="form-item" rows="8" placeholder="Message" oninput="validateMessage(this)" required></textarea>
 						<button class="form-button">Send</button>
 					</form>
 				</div>
