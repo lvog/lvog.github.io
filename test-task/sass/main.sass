@@ -1,0 +1,407 @@
+$item-margin: 2.564102564102564% // 30px/1170px
+
+$team-item-width: 23.07692307692308% // 270px/1170px
+
+$service-item-width: 31.62393162393162% // 370px/1170px
+
+$contact-item-width: 48.71794871794872% // 585px/1170px
+
+$form-item-width: 47.43589743589744% // 277.5px/585px
+
+$form-item-margin: 5.128205128205128% // 30px/585px
+
+
+
+
+$main-color: #484c55
+$hover-color: #49cbcd
+$main-font-family: "OpenSansRegular", sans-serif
+
+@mixin menu-links
+	font-size: 15px
+	line-height: 18px
+
+@mixin transition
+	transition: all 0.20s ease
+
+body
+	font-family: $main-font-family
+	font-size: 14px
+	line-height: 16px
+	min-width: 320px
+
+*
+	box-sizing: border-box
+
+body,h1,h2,h3,p,ul,li
+	margin: 0
+
+h1,h2,h3
+	font-weight: normal
+
+ul,li
+	padding: 0 
+	list-style: none
+
+a,a:hover
+	text-decoration: none
+
+img
+	max-width: 100%
+	height: auto
+	vertical-align: top
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0 15px
+
+#header
+	
+	&:after
+		content: " "
+		display: block
+		clear: both
+	
+	.logo
+		float: left
+		padding: 32px 0
+	
+#nav
+
+	.main-menu-button
+		display: none
+		font-size: 30px
+		line-height: 32px
+		padding: 2px
+		position: absolute
+		top: 20px
+		right: 30px
+		background: transparent
+		border: none
+		cursor: pointer
+		
+	ul
+		text-align: right
+
+		li
+			display: inline-block
+
+			a
+				display: block
+				@include menu-links
+				color: $main-color
+				padding: 40px 25px
+				border-bottom: 3px solid #fff
+
+				&:hover
+					color: $hover-color
+					@include transition
+					background: #f8f9fb
+					border-bottom: 3px solid #49cbcd
+
+.slider
+
+	.owl-stage-outer
+		width: 100%
+
+	.owl-nav
+		display: block
+
+		.owl-prev, .owl-next
+			height: 51px
+			width: 51px
+			position: absolute
+			top: 45%
+
+			&:hover
+				opacity: 0.7
+				@include transition
+
+		.owl-prev
+			background: url(../img/left-arrow.png)
+			background-size: cover
+			left: 0.4%
+
+		.owl-next
+			background: url(../img/right-arrow.png)
+			background-size: cover
+			right: 0.4%	
+	
+	.slider-item
+		position: relative
+
+	.flex-box
+		height: 100%
+		width: 100%
+		display: flex 
+		align-items: center 
+		justify-content: center 
+		overflow: auto
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 2 
+
+	.slider-info
+		text-align: center
+
+		h1
+			font-size: 64px
+			line-height: 66px
+			font-weight: normal
+			color: #fff
+			text-shadow: 0 1px 1px #80a89a
+			margin-bottom: 30px
+
+		p
+			max-width: 380px
+			font-size: 23px
+			line-height: 37px
+			margin: 0 auto
+			color: #fff
+			text-shadow: 0 1px 1px #80a89a
+			margin-bottom: 50px
+
+		.slider-button
+			font-size: 26px
+			line-height: 28px
+			color: #fff
+			padding: 15px 40px
+			background: transparent
+			border: 3px solid #fff
+			border-radius: 5px
+
+			&:hover
+				background: #fff
+				color: $hover-color
+				cursor: pointer
+				@include transition
+
+#team
+	text-align: center
+	padding: 110px 0
+
+	&:after
+		content: " "
+		display: block
+		clear: both
+
+	h2
+		font-size: 42px
+		line-height: 44px
+		margin-bottom: 130px
+
+
+	.team-item
+		float: left
+		width: $team-item-width
+		margin-right: $item-margin
+
+		&:last-child
+			margin: 0 
+
+		.photo
+			max-width: 201px
+			margin: 0 auto 70px
+			position: relative
+			cursor: pointer
+
+			&:hover
+
+				.overlay
+					position: absolute
+					top: 41%
+					left: 40.5%
+					transform: rotateX(0deg)
+
+		.overlay
+			height: 41px
+			width: 42px
+			position: absolute
+			top: 41%
+			left: 40.5%
+			transform: rotateX(90deg)
+			transition: all 0.40s ease-out 0s
+
+		h3
+			font-size: 24px
+			line-height: 26px
+
+		.position
+			display: block
+			margin-bottom: 30px
+
+		p
+			max-width: 250px
+			line-height: 26px
+			margin: 0 auto
+
+#services
+	padding: 100px 0
+	background: #f1f1f1
+ 		
+
+	&:after
+		content: " "
+		display: block
+		clear: both
+
+	.service-item.hover
+
+		.h3
+			@include transition
+			background: #49cbcd
+			
+	.service-item
+		float: left
+		width: $service-item-width
+		text-align: center
+		margin-right: $item-margin
+		background: #f8f9fb
+	
+		&:last-child
+			margin: 0
+
+		.h3
+			font-size: 26px
+			line-height: 28px
+			color: #fff
+			padding: 25px 0
+			background: #485460
+
+		.price
+			font-size: 20px
+			line-height: 22px
+			color: #485460
+			padding: 25px 0
+
+		.features
+			background: #fff
+
+			li
+				color: #8c9299
+				padding: 15px 0
+				border-bottom: 1px solid #ecf0f1
+
+				&:first-child
+					border-top: 1px solid #ecf0f1
+
+		.service-button
+			font-size: 17px
+			line-height: 19px
+			color: #fff
+			padding: 10px 50px
+			margin: 30px 0
+			background: #788492
+			border: none
+			border-radius: 5px
+
+			&:hover
+				@include transition
+				color: #fff
+				background: #49cbcd
+				cursor: pointer
+
+
+#contacts
+	padding: 100px 0
+	background: url(../img/bg.png)
+	background-size: cover
+
+	&:after
+		content: " "
+		display: block
+		clear: both
+
+	h2
+		font-size: 42px
+		line-height: 44px
+		color: #fff
+		text-align: center
+		margin-bottom: 110px
+
+	.contact-item
+		float: left
+		width: $contact-item-width
+		margin-right: $item-margin
+
+		&:last-child
+			margin: 0
+
+		h3
+			font-size: 24px
+			line-height: 26px
+			color: #fff
+			margin-bottom: 15px
+
+		p
+			max-width: 430px
+			line-height: 21px
+			color: #acacac
+			margin-bottom: 40px
+
+		.social
+			margin-bottom: 22px
+
+			li
+				display: inline-block
+				margin-right: 15px
+				
+				&:last-child
+					margin: 0
+
+				&:hover
+					opacity: 0.7
+					@include transition
+
+		.contact-info
+			color: #bface2
+			
+			li
+				margin-bottom: 10px
+
+				&:last-child
+					margin: 0
+
+			a
+				color: #bface2
+
+		#form
+
+			.form-item
+				float: left
+				width: $form-item-width
+				font-size: 16px
+				line-height: 18px
+				padding: 15px 20px
+				margin-right: $form-item-margin
+				border: none 
+				border-radius: 5px
+
+				&:nth-child(2)
+					margin-right: 0
+
+			textarea.form-item
+				display: block
+				width: 100%
+				font-family: inherit
+				margin: 20px 0
+				resize: none
+
+			.form-button
+				float: right
+				font-size: 22px
+				line-height: 24px
+				text-align: right
+				color: #fff
+				padding: 14px 60px
+				background: #49cbcd
+				border: none
+				border-radius: 5px
+
+				&:hover
+					color: #49cbcd
+					background: #fff
+					@include transition
+					cursor: pointer

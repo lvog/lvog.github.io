@@ -1,0 +1,129 @@
+/*==========  Desktop First Method  ========== */
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .slider .owl-nav {
+    display: block; }
+    .slider .owl-nav .owl-prev, .slider .owl-nav .owl-next {
+      height: 35px;
+      width: 35px;
+      top: 45%; }
+  .slider .slider-info h1 {
+    font-size: 46px;
+    line-height: 48px;
+    margin-bottom: 15px; }
+  .slider .slider-info p {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 30px; }
+  .slider .slider-info .slider-button {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 12px 40px; }
+
+  #team,
+  #services,
+  #contacts {
+    padding: 50px 0; }
+
+  #team h2 {
+    margin-bottom: 65px; }
+  #team .team-item .photo {
+    margin-bottom: 35px; }
+  #team .team-item .overlay {
+    height: 36px;
+    width: 37px; }
+  #team .team-item h3 {
+    font-size: 20px;
+    line-height: 24px; }
+
+  #contacts .contact-item #form .form-button {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 12px 50px; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 30px; }
+
+  #header .logo {
+    padding: 20px 0; }
+
+  #nav .main-menu-button {
+    display: block; }
+  #nav ul {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #fff;
+    z-index: 3; }
+    #nav ul li {
+      display: block;
+      text-align: center;
+      margin: 12px 0;
+      padding: 0 100px; }
+      #nav ul li a {
+        padding: 5px 10px;
+        border-bottom: 2px solid #fff; }
+        #nav ul li a:hover {
+          background: transparent;
+          border-bottom: 2px solid #49cbcd; }
+
+  .slider .slider-info h1 {
+    font-size: 40px;
+    line-height: 42px;
+    margin-bottom: 10px; }
+  .slider .slider-info p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px; }
+  .slider .slider-info .slider-button {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 30px; }
+
+  #team .team-item .overlay {
+    height: 41px;
+    width: 42px; }
+
+  #team .team-item,
+  #services .service-item,
+  #contacts .contact-item,
+  #contacts .contact-item #form .form-item {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 30px; }
+
+  #contacts .contact-item #form textarea.form-item {
+    margin: 0 0 30px; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0 15px; }
+
+  #nav .main-menu-button {
+    right: 15px; }
+
+  .slider .owl-nav {
+    display: block; }
+    .slider .owl-nav .owl-prev, .slider .owl-nav .owl-next {
+      height: 30px;
+      width: 30px;
+      top: 40%; }
+  .slider .slider-info h1 {
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 20px; }
+  .slider .slider-info p {
+    display: none; }
+  .slider .slider-info .slider-button {
+    padding: 5px 20px; } }
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ========== */
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
