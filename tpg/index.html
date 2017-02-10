@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>TPG</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style type="text/css">
+    @font-face {
+      font-family: 'LibreFranklin';
+      src: url("fonts/LibreFranklin-Regular/LibreFranklin-Regular.eot");
+      src: url('fonts/LibreFranklin-Regular/LibreFranklin-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/LibreFranklin-Regular/LibreFranklin-Regular.otf')  format('opentype'),
+      url('fonts/LibreFranklin-Regular/LibreFranklin-Regular.woff') format('woff'), url('fonts/LibreFranklin-Regular/LibreFranklin-Regular.ttf')  format('truetype'), url('fonts/LibreFranklin-Regular/LibreFranklin-Regular.svg') format('svg');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'LibreFranklin';
+      src: url("fonts/LibreFranklin-Medium/LibreFranklin-Medium.eot");
+      src: url('fonts/LibreFranklin-Medium/LibreFranklin-Medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts/LibreFranklin-Medium/LibreFranklin-Medium.woff') format('woff'), url('fonts/LibreFranklin-Medium/LibreFranklin-Medium.ttf')  format('truetype'), url('fonts/LibreFranklin-Medium/LibreFranklin-Medium.svg') format('svg');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'LibreFranklin';
+      src: url("fonts/LibreFranklin-SemiBold/LibreFranklin-SemiBold.eot");
+      src: url('fonts/LibreFranklin-SemiBold/LibreFranklin-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/LibreFranklin-SemiBold/LibreFranklin-SemiBold.woff') format('woff'), url('fonts/LibreFranklin-SemiBold/LibreFranklin-SemiBold.ttf')  format('truetype'), url('fonts/LibreFranklin-SemiBold/LibreFranklin-SemiBold.svg') format('svg');
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'LibreFranklin';
+      src: url("fonts/LibreFranklin-Italic/LibreFranklin-Italic.eot");
+      src: url('fonts/LibreFranklin-Italic/LibreFranklin-Italic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/LibreFranklin-Italic/LibreFranklin-Italic.woff') format('woff'), url('fonts/LibreFranklin-Italic/LibreFranklin-Italic.ttf')  format('truetype'), url('fonts/LibreFranklin-Italic/LibreFranklin-Italic.svg') format('svg');
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    
+
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: none;
+      -webkit-text-resize: 100%;
+      text-resize: 100%;
+    }
+
+    a {
+      outline: none;
+      color: #0060f3;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      text-decoration: none !important;
+    }
+
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+
+    .active:hover {
+      opacity: 0.8;
+    }
+
+    .active {
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    table td {
+      border-collapse: collapse !important;
+      mso-line-height-rule: exactly;
+    }
+
+    .ExternalClass, .ExternalClass a, .ExternalClass span, .ExternalClass b, .ExternalClass br, .ExternalClass p, .ExternalClass div {
+      line-height: inherit;
+    }
+
+    @media only screen and (max-width: 500px) {
+      /* default style */
+      table[class="flexible"] {
+        width: 100% !important;
+      }
+
+      *[class="hide"] {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        padding: 0 !important;
+        font-size: 0 !important;
+        line-height: 0 !important;
+      }
+
+      td[class="img-flex"] img {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      td[class="aligncenter"] {
+        text-align: center !important;
+      }
+
+      th[class="flex"] {
+        display: block !important;
+        width: 100% !important;
+      }
+
+      tr[class="table-holder"] {
+        display: table !important;
+        width: 100% !important;
+      }
+
+      th[class="thead"] {
+        display: table-header-group !important;
+        width: 100% !important;
+      }
+
+      th[class="tfoot"] {
+        display: table-footer-group !important;
+        width: 100% !important;
+      }
+
+      /* custom style */
+      
+      td[class="holder-01"] {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      td[class="logo"] img{
+        width: 50px !important;
+        height: auto !important;
+      }
+
+
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0;" bgcolor="#ffffff">
+  <table style="min-width:320px;" width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+    <!-- fix for gmail -->
+    <tr>
+      <td style="line-height:0;">
+        <div style="display:none; white-space:nowrap; font:15px/1px courier;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+          <!-- fix for gmail -->
+          <tr>
+            <td class="hide">
+              <table width="600" cellpadding="0" cellspacing="0" style="width:600px !important;">
+                <tr>
+                  <td style="min-width:600px; font-size:0; line-height:0;">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td> 
+    </tr>
+    <tr>
+      <td style="padding:0 0 40px; border-bottom: 4px solid #0077bd;"></td>
+    </tr>
+    <tr>
+      <td>
+        <table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="holder-01" style="padding:25px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding:0 0 20px;">
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td class="logo">
+                          <a target="_blank" href="#">
+                            <img src="img/logo.png" style="vertical-align:top;" width="84" border="0" alt="TPG" />
+                          </a>
+                        </td>
+                        <td align="right" style="font:600 15px/18px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#0077bd;">
+                          <a target="_blank" style="text-decoration:underline; color:#0077bd;" href="#">Subscribe</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font:18px/22px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#0077bd; padding:10px 0; border-top:1px solid #ebebeb; border-bottom:1px solid #ebebeb;">
+                    Technical Partners Digest
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font:600 30px/34px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#000; padding:22px 0;">
+                    TECH NOTE #13
+                  </td>
+                </tr>
+                <tr>
+                  <td class="img-flex" style="padding:0 0 30px;">
+                    <img src="img/img-01.jpg" style="vertical-align:top;" width="520" alt="TECH NOTE #13" />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:0 0 20px;">
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="font:600 20px/24px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#0077bd;">
+                          GEARS
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font:500 16px/20px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#414042;">
+                          New set of&nbsp;Gears from Gear Tech
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font:italic 14px/18px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#414042;">
+                          Gear Tech is&nbsp;set to&nbsp;launch a&nbsp;new revolutionary set of&nbsp;plastic gears.....
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:0 0 20px;">
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="font:600 20px/24px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#0077bd;">
+                          POWER TRANSMISSION
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font:500 16px/20px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#414042;">
+                          Headline
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font:italic 14px/18px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#414042;">
+                          Sentace about topic
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:0 0 45px;">
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="font:600 20px/24px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#0077bd;">
+                          SERVO
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font:500 16px/20px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#414042;">
+                          Headline
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font:italic 14px/18px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#414042;">
+                          Sentace about topic
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding:0 0 40px;">
+                    <table cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td class="active" align="center" style="font:20px/24px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#fff; mso-padding-alt:12px 20px;" bgcolor="#0077bd">
+                          <a target="_blank" style="text-decoration:none; color:#fff; display:block; padding:12px 20px;" href="#">READ NOW</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr style="display:table-row;">
+                  <td style="font:15px/20px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#0077bd; padding:0 0 10px; border-bottom:1px solid #898989;">
+                    Recent Tech Notes
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:25px 0;">
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="padding:0 0 55px;">
+                          <table width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td valign="top" width="36" style="line-height:21px; mso-line-height-rule:at-least; padding:6px 0;">
+                                <img src="img/ico-01.jpg" style="vertical-align:top;" width="21" height="21" alt="" />
+                              </td>
+                              <td>
+                                <table width="100%" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td style="font:600 24px/28px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#58595b; padding:0 0 10px;">
+                                      TECH NOTE #12
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="font:600 18px/20px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#0077bd;">
+                                      <a target="_blank" style="text-decoration:underline; color:#0077bd;" href="#">
+                                        Read Now 
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding:0 0 25px;">
+                          <table width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td valign="top" width="36" style="line-height:21px; mso-line-height-rule:at-least; padding:6px 0;">
+                                <img src="img/ico-01.jpg" style="vertical-align:top;" width="21" height="21" alt="" />
+                              </td>
+                              <td>
+                                <table width="100%" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td style="font:600 24px/28px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#58595b; padding:0 0 10px;">
+                                      TECH NOTE #11
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="font:600 18px/20px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#0077bd;">
+                                      <a target="_blank" style="text-decoration:underline; color:#0077bd;" href="#">
+                                        Read Now 
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                      <td style="font:500 16px/20px LibreFranklin, Arial, Helvetica, sans-serif; mso-ascii-font-family: Arial, Helvetica, sans-serif; color:#414042;">
+                          Thanks for reading Tech Note #13. We&nbsp;at&nbsp;TPG are passionate about industry news and strive to&nbsp;educate about new products.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
