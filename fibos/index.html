@@ -1,0 +1,721 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Fibos</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style type="text/css">
+		* {
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:none;
+			-webkit-text-resize:100%;
+			text-resize:100%;
+		}
+		a{
+			outline:none;
+			color:#3f83c0;
+			text-decoration:none;
+		}
+		a:hover{text-decoration:none !important;}
+		a[x-apple-data-detectors]{
+			color:inherit !important;
+			text-decoration:none !important;
+		}
+		.active:hover{opacity:0.8;}
+		.active{
+			-webkit-transition:all 0.3s ease;
+			-moz-transition:all 0.3s ease;
+			-ms-transition:all 0.3s ease;
+			transition:all 0.3s ease;
+		}
+		table td{border-collapse:collapse !important; mso-line-height-rule:exactly;}
+		.ExternalClass, .ExternalClass a, .ExternalClass span, .ExternalClass b, .ExternalClass br, .ExternalClass p, .ExternalClass div{line-height:inherit;}
+		@media only screen and (max-width:500px) {
+			/* default style */
+			table[class="flexible"]{width:100% !important;}
+			*[class="hide"]{
+				display:none !important;
+				width:0 !important;
+				height:0 !important;
+				padding:0 !important;
+				font-size:0 !important;
+				line-height:0 !important;
+			}
+			td[class="img-flex"] img{width:100% !important; height:auto !important;}
+			td[class="aligncenter"]{text-align:center !important;}
+			th[class="flex"]{display:block !important; width:100% !important;}
+			tr[class="table-holder"]{display:table !important; width:100% !important;}
+			th[class="thead"]{display:table-header-group !important; width:100% !important;}
+			th[class="tfoot"]{display:table-footer-group !important; width:100% !important;}
+			/* custom style */
+			td[class="holder-01"]{padding-left:15px !important; padding-right:15px !important;}
+			td[class="aligncenter1"]{text-align:center !important; font-size:24px !important; line-height:30px !important;}
+			td[class="img-01"] img{max-width:130px !important; width:100% !important; height:auto !important;}
+			td[class="gif-size"]{text-align:center !important;}
+			td[class="gif-size"] img{width:180px !important;}
+		}
+	</style>
+</head>
+<body style="margin:0; padding:0;" bgcolor="#f8f8f8">
+	<table style="min-width:320px;" width="100%" cellspacing="0" cellpadding="0" bgcolor="#f8f8f8">
+		<!-- fix for gmail -->
+		<tr>
+			<td style="line-height:0;"><div style="display:none; white-space:nowrap; font:15px/1px courier;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div></td>
+		</tr>
+		<tr>
+			<td>
+				<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+					<!-- fix for gmail -->
+					<tr>
+						<td class="hide">
+							<table width="600" cellpadding="0" cellspacing="0" style="width:600px !important;">
+								<tr>
+									<td style="min-width:600px; font-size:0; line-height:0;">&nbsp;</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="aligncenter" align="right" style="font:12px/16px Arial, Helvetica, sans-serif; color:#838383; padding:10px 0;">
+							Если письмо некорректно выглядит, <a style="text-decoration:underline; color:#3f83c0;" target="_blank" href="#">кликните&nbsp;сюда</a>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" style="border:1px solid #d7d7d7;">
+							<table width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td align="center" style="padding:30px 0 10px;">
+										<a target="_blank" href="#"><img src="logo.png" style="vertical-align:top; width:88px;" border="0" width="88" alt="FIBOS" /></a>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" style="font:12px/20px Arial, Helvetica, sans-serif; color:#1a1112; text-transform:uppercase; padding:0 15px 30px;">
+										ооо “фибос”. <br />
+										фильтры и системы очистки воды
+									</td>
+								</tr>
+								<tr>
+									<td class="img-flex" align="center">
+										<a target="_blank" href="#"><img src="banner-01.jpg" style="vertical-align:top;" border="0" width="550" alt="Фильтры ФИБОС - Уникальная система очистки воды для вашего дома | Сделано в России" /></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="holder-01" style="padding:30px 25px;">
+										<table width="100%" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center" style="font:bold 22px/30px Arial, Helvetica, sans-serif; color:#0d669a; padding:0 0 20px;">
+													Индивидуальное коммерческое предложение
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:0 0 30px;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<td style="font:15px/20px Arial, Helvetica, sans-serif; color:#1a1112; text-align:justify;">
+																<span style="font-weight:bold; font-style:italic; color:#0d669a;">Здравствуйте [имя клиента]!</span><br /><br />
+																В&nbsp;продолжении нашего разговора высалю информацию по&nbsp;оборудованию, которое мы&nbsp;с&nbsp;вами подобрали. Для того чтобы&nbsp;Вы могли получить чистую питьевую воду выбраны:<br /><br />
+																<span style="font-weight:bold; font-style:italic; color:#0d669a;">Магнитный преобразователь</span>&nbsp;&mdash; предназначенный для обработки воды в&nbsp;потоке постоянным магнитным полем для отделения растворенных в&nbsp;воде элементов и&nbsp;преобразования их&nbsp;во&nbsp;взвесь.<br /><br />
+																<span style="font-weight:bold; font-style:italic; color:#0d669a;">Фильтр Фибос&nbsp;&mdash; [...]</span><br />
+																Данный фильтр предназначен для тонкой очистки воды. Степень очистки фильтра 1&nbsp;микрон. В основе фильтра &laquo;Фибос&raquo; лежит сверхтонкая и&nbsp;прочная проволока, покрытая стеклянной оболочкой. Вода попадает в&nbsp;корпус фильтра и&nbsp;продавливается сквозь намотку из&nbsp;проволоки, а&nbsp;загрязнения остаются в&nbsp;колбе, откуда легко удаляются простым открытием вентиля снизу. Загрязнения задерживаются микропроводным фильтрующим элементом во&nbsp;внешней колбе. Удаление скопившихся загрязнений осуществляется путем прямой промывки при помощи открытия дренажного крана.<br /><br />
+																<span style="font-weight:bold; font-style:italic; color:#0d669a;">Автоматика слива</span><br />
+																В&nbsp;данной системе используется привод автоматической промывки, который производит открытие дренажного крана автоматически в&nbsp;заданный период. Привод автоматической промывки настраивается вручную. Частота промывки в&nbsp;диапазоне от&nbsp;20&nbsp;минут в&nbsp;час до&nbsp;7&nbsp;дней&nbsp;&mdash; в&nbsp;зависимости от&nbsp;степени загрязнения среды и&nbsp;выставленных настроек. Автоматика работает от&nbsp;сети 220В.<br /><br />
+																<span style="font-weight:bold; font-style:italic; color:#0d669a;">Картриджный сорбент в&nbsp;пластиковой колбе</span><br />
+																Сорбент используется для финишной очистки воды.<br /><br />
+																<span style="font-weight:bold; font-style:italic; color:#0d669a;">Угольный сорбент</span><br />
+																Сорбционные картриджи, фильтрующей основой которых является активированный кокосовый уголь, применяются для удаления хлора, органических веществ, пестицидов, неприятного вкуса и&nbsp;запаха. Картридж угольный, как правило, устанавливается в&nbsp;магистральных фильтрах для очистки воды на&nbsp;заключительных стадиях фильтрации и&nbsp;служит для улучшения органолептических свойств воды.<br /><br />
+																<span style="font-weight:bold; font-style:italic; color:#0d669a;">Ионообменная смола</span><br />
+																Содержит засыпку с&nbsp;высокой способностью замены ионов кальция и&nbsp;магния на&nbsp;ионы натрия, способствуя умягчению воды.<br />
+																Смола для фильтра может задерживать ионы различных примесей (начиная от&nbsp;металлов и&nbsp;заканчивая солями жесткости), меняя их&nbsp;на&nbsp;безопасные и&nbsp;безвредные ионы других веществ. То&nbsp;есть, происходит обмен ионами. Картриджи предназначены для фильтрации питьевой воды и&nbsp;воды бытового назначения.<br /><br />
+																<span style="font-weight:bold; font-style:italic; color:#0d669a;">Обезжелезивающий картридж</span><br />
+																Картридж очищает воду от&nbsp;окисленного и&nbsp;растворенного железа, а&nbsp;также от&nbsp;солей жесткости и&nbsp;тяжелых металлов. В&nbsp;результате удаления излишнего железа в&nbsp;воде существенно улучшается вкус воды, удаляются оранжево-коричневые пятна, часто появляющиеся на&nbsp;унитазах, раковинах и&nbsp;кухонных принадлежностях, уменьшается риск повреждения водонагревательных элементов и&nbsp;труб в&nbsp;разном оборудовании.<br /><br />
+																<span style="font-weight:bold; font-style:italic; color:#0d669a;">Стоимость выбранного оборудования составит&nbsp;[…]</span><br /><br />
+																Данная система позволит очистить воду до&nbsp;необходимого качества, имеет максимальный срок службы и&nbsp;полностью соответствует Вашим техническим условиям.
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:0 0 30px;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="50%">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr><td width="50%" height="1" style="font-size:1px; line-height:1px; color:#bbbbbb;" bgcolor="#bbbbbb">.</td></tr>
+																</table>
+															</td>
+															<td align="center" style="font:20px/26px Arial, Helvetica, sans-serif; white-space:nowrap; color:#bbbbbb; padding:0 30px;">
+																<a style="text-decoration:none; color:#bbbbbb;" target="_blank" href="#"><img src="ico-logo.png" style="vertical-align:top; width:22px;" width="22" alt="Ф" /></a>
+															</td>
+															<td width="50%">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr><td width="50%" height="1" style="font-size:1px; line-height:1px; color:#bbbbbb;" bgcolor="#bbbbbb">.</td></tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" style="font:bold 22px/30px Arial, Helvetica, sans-serif; color:#0d669a; padding:0 0 30px;">
+													Преимущества сотрудничества с&nbsp;«Фибос»
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:0 0 15px;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="30"><img src="ico-01.png" style="vertical-align:top; width:25px;" width="25" alt="" /></td>
+															<td width="15" ></td>
+															<td style="font:15px/20px Arial, Helvetica, sans-serif; color:#1a1112;">
+																10&nbsp;лет без смены картриджей
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:0 0 15px;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="30"><img src="ico-02.png" style="vertical-align:top; width:25px;" width="25" alt="" /></td>
+															<td width="15" ></td>
+															<td style="font:15px/20px Arial, Helvetica, sans-serif; color:#1a1112;">
+																Степень очистки 1&nbsp;микрон
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:0 0 15px;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="30"><img src="ico-03.png" style="vertical-align:top; width:25px;" width="25" alt="" /></td>
+															<td width="15" ></td>
+															<td style="font:15px/20px Arial, Helvetica, sans-serif; color:#1a1112;">
+																Полная очистка от&nbsp;бактерий и&nbsp;инфекций 
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:0 0 15px;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="30"><img src="ico-04.png" style="vertical-align:top; width:25px;" width="25" alt="" /></td>
+															<td width="15" ></td>
+															<td style="font:15px/20px Arial, Helvetica, sans-serif; color:#1a1112;">
+																Чистая вода для кухни, ванной и&nbsp;бытовых приборов
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:0 0 15px;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="30"><img src="ico-05.png" style="vertical-align:top; width:25px;" width="25" alt="" /></td>
+															<td width="15" ></td>
+															<td style="font:15px/20px Arial, Helvetica, sans-serif; color:#1a1112;">
+																Установка за&nbsp;25&nbsp;минут
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:0 0 30px;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="30"><img src="ico-06.png" style="vertical-align:top; width:25px;" width="25" alt="" /></td>
+															<td width="15" ></td>
+															<td style="font:15px/20px Arial, Helvetica, sans-serif; color:#1a1112;">
+																Полностью автоматическая система
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="50%">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr><td width="50%" height="1" style="font-size:1px; line-height:1px; color:#bbbbbb;" bgcolor="#bbbbbb">.</td></tr>
+																</table>
+															</td>
+															<td align="center" style="font:20px/26px Arial, Helvetica, sans-serif; white-space:nowrap; color:#bbbbbb; padding:0 30px;">
+																<a style="text-decoration:none; color:#bbbbbb;" target="_blank" href="#"><img src="ico-logo.png" style="vertical-align:top; width:22px;" width="22" alt="Ф" /></a>
+															</td>
+															<td width="50%">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr><td width="50%" height="1" style="font-size:1px; line-height:1px; color:#bbbbbb;" bgcolor="#bbbbbb">.</td></tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="holder-01" style="padding:0 25px;">
+										<table width="100%" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center" style="font:bold 22px/30px Arial, Helvetica, sans-serif; color:#0d669a;">
+													Как работает система
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr class="table-holder">
+															<th class="tfoot" width="274" align="left" style="vertical-align:top; padding:0;">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td style="padding:30px 0;">
+																			<table width="100%" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td style="padding:0 0 15px;">
+																						<table width="100%" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td width="45"><img src="img-01.png" style="vertical-align:top; width:45px;" width="45" alt="" /></td>
+																								<td width="15" ></td>
+																								<td style="font:15px/20px Arial, Helvetica, sans-serif; color:#1a1112;">
+																									Неочищенная вода поступает во&nbsp;внешнюю колбу фильтра
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="padding:0 0 15px;">
+																						<table width="100%" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td width="45"><img src="img-02.png" style="vertical-align:top; width:45px;" width="45" alt="" /></td>
+																								<td width="15" ></td>
+																								<td style="font:15px/20px Arial, Helvetica, sans-serif; color:#1a1112;">
+																									Вода продавливается через намотку из&nbsp;проволоки, покрытой стеклом
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="padding:0 0 15px;">
+																						<table width="100%" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td width="45"><img src="img-03.png" style="vertical-align:top; width:45px;" width="45" alt="" /></td>
+																								<td width="15" ></td>
+																								<td style="font:15px/20px Arial, Helvetica, sans-serif; color:#1a1112;">
+																									Далее вода проходит через стержень фильтра, который покрыт активированным серебром
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="padding:0 0 15px;">
+																						<table width="100%" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td width="45"><img src="img-04.png" style="vertical-align:top; width:45px;" width="45" alt="" /></td>
+																								<td width="15" ></td>
+																								<td style="font:15px/20px Arial, Helvetica, sans-serif; color:#1a1112;">
+																									Вода проходит все ступени очистки
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td>
+																						<table width="100%" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td width="45"><img src="img-05.png" style="vertical-align:top; width:45px;" width="45" alt="" /></td>
+																								<td width="15" ></td>
+																								<td style="font:15px/20px Arial, Helvetica, sans-serif; color:#1a1112;">
+																									Загрязнения удаляются
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</th>
+															<th class="thead" width="274" align="left" style="vertical-align:top; padding:0;">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td class="gif-size" align="right"><img src="gif-01.gif" style="vertical-align:top;" width="250" alt="" /></td>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="50%">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr><td width="50%" height="1" style="font-size:1px; line-height:1px; color:#bbbbbb;" bgcolor="#bbbbbb">.</td></tr>
+																</table>
+															</td>
+															<td align="center" style="font:20px/26px Arial, Helvetica, sans-serif; white-space:nowrap; color:#bbbbbb; padding:0 30px;">
+																<a style="text-decoration:none; color:#bbbbbb;" target="_blank" href="#"><img src="ico-logo.png" style="vertical-align:top; width:22px;" width="22" alt="Ф" /></a>
+															</td>
+															<td width="50%">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr><td width="50%" height="1" style="font-size:1px; line-height:1px; color:#bbbbbb;" bgcolor="#bbbbbb">.</td></tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="holder-01" style="padding:30px 25px;">
+										<table width="100%" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center" style="font:bold 22px/30px Arial, Helvetica, sans-serif; color:#0d669a; padding:0 0 30px;">
+													Нашими клиентами уже стали:
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:0 0 20px;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<th class="flex" width="160" align="left" style="vertical-align:top; padding:0;">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td>
+																			<table width="100%" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" style="padding:0 0 10px;"><img src="img-06.jpg" style="vertical-align:top;" width="130" alt="Алена Апина" /></td>
+																				</tr>
+																				<tr>
+																					<td align="center" style="font:bold 16px/18px Arial, Helvetica, sans-serif; color:#000; padding:0 0 5px;">
+																						Алена Апина
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" style="font:12px/16px Arial, Helvetica, sans-serif; color:#000;">
+																						Певица, заслуженная артистка России
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</th>
+															<th class="flex" width="34" height="20" align="left" style="vertical-align:top; padding:0;"></th>
+															<th class="flex" width="160" align="left" style="vertical-align:top; padding:0;">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td>
+																			<table width="100%" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" style="padding:0 0 10px;"><img src="img-07.jpg" style="vertical-align:top;" width="130" alt="Александр Олешко" /></td>
+																				</tr>
+																				<tr>
+																					<td align="center" style="font:bold 16px/18px Arial, Helvetica, sans-serif; color:#000; padding:0 0 5px;">
+																						Александр Олешко
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" style="font:12px/16px Arial, Helvetica, sans-serif; color:#000;">
+																						Артист, телеведущий, актер
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</th>
+															<th class="flex" width="34" height="20" align="left" style="vertical-align:top; padding:0;"></th>
+															<th class="flex" width="160" align="left" style="vertical-align:top; padding:0;">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td>
+																			<table width="100%" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" style="padding:0 0 10px;"><img src="img-08.jpg" style="vertical-align:top;" width="130" alt="Анфиса Чехова" /></td>
+																				</tr>
+																				<tr>
+																					<td align="center" style="font:bold 16px/18px Arial, Helvetica, sans-serif; color:#000; padding:0 0 5px;">
+																						Анфиса Чехова
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" style="font:12px/16px Arial, Helvetica, sans-serif; color:#000;">
+																						Телеведущая, актриса
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:0 0 20px;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<th class="flex" width="160" align="left" style="vertical-align:top; padding:0;">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td>
+																			<table width="100%" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" style="padding:0 0 10px;"><img src="img-09.jpg" style="vertical-align:top;" width="130" alt="Лера Кондра с отцом" /></td>
+																				</tr>
+																				<tr>
+																					<td align="center" style="font:bold 16px/18px Arial, Helvetica, sans-serif; color:#000; padding:0 0 5px;">
+																						Лера Кондра с&nbsp;отцом
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" style="font:12px/16px Arial, Helvetica, sans-serif; color:#000;">
+																						Олимпийский чемпион Игр XXII Олимпиады в&nbsp;Москве
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</th>
+															<th class="flex" width="34" height="20" align="left" style="vertical-align:top; padding:0;"></th>
+															<th class="flex" width="160" align="left" style="vertical-align:top; padding:0;">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td>
+																			<table width="100%" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" style="padding:0 0 10px;"><img src="img-10.jpg" style="vertical-align:top;" width="130" alt="Дарья Пынзарь" /></td>
+																				</tr>
+																				<tr>
+																					<td align="center" style="font:bold 16px/18px Arial, Helvetica, sans-serif; color:#000; padding:0 0 5px;">
+																						Дарья Пынзарь
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" style="font:12px/16px Arial, Helvetica, sans-serif; color:#000;">
+																						Участница телепроекта &laquo;Дом&nbsp;2&raquo;
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</th>
+															<th class="flex" width="34" height="20" align="left" style="vertical-align:top; padding:0;"></th>
+															<th class="flex" width="160" align="left" style="vertical-align:top; padding:0;">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td>
+																			<table width="100%" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" style="padding:0 0 10px;"><img src="img-11.jpg" style="vertical-align:top;" width="130" alt="Андрей Григорьев-Апполонов" /></td>
+																				</tr>
+																				<tr>
+																					<td align="center" style="font:bold 16px/18px Arial, Helvetica, sans-serif; color:#000; padding:0 0 5px;">
+																						Андрей Григорьев-Апполонов
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="center" style="font:12px/16px Arial, Helvetica, sans-serif; color:#000;">
+																						Певец
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:15px 0 30px;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="50%">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr><td width="50%" height="1" style="font-size:1px; line-height:1px; color:#bbbbbb;" bgcolor="#bbbbbb">.</td></tr>
+																</table>
+															</td>
+															<td align="center" style="font:20px/26px Arial, Helvetica, sans-serif; white-space:nowrap; color:#bbbbbb; padding:0 30px;">
+																<a style="text-decoration:none; color:#bbbbbb;" target="_blank" href="#"><img src="ico-logo.png" style="vertical-align:top; width:22px;" width="22" alt="Ф" /></a>
+															</td>
+															<td width="50%">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr><td width="50%" height="1" style="font-size:1px; line-height:1px; color:#bbbbbb;" bgcolor="#bbbbbb">.</td></tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" style="font:bold 22px/30px Arial, Helvetica, sans-serif; color:#0d669a; padding:0 0 20px;">
+													Оборудование и технические подробности
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<td style="padding:0 0 10px;">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<th class="flex" width="269" align="left" style="vertical-align:top; padding:0;">
+																			<table width="100%" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td bgcolor="#0092d3" style="padding:0 0 3px; border-radius:5px;">
+																						<table width="100%" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="active" align="center" bgcolor="#00b6ff" style="font:bold 15px/20px Arial, Helvetica, sans-serif; color:#fff; mso-padding-alt:10px 5px; border-radius:5px; text-shadow:1px 1px 1px #0092d3;">
+																									<a style="text-decoration:none; color:#fff; display:block; padding:10px 5px;" target="_blank" href="#">Каталог</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</th>
+																		<th class="flex" width="10" height="10" align="left" style="vertical-align:top; padding:0;"></th>
+																		<th class="flex" width="269" align="left" style="vertical-align:top; padding:0;">
+																			<table width="100%" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td bgcolor="#0092d3" style="padding:0 0 3px; border-radius:5px;">
+																						<table width="100%" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="active" align="center" bgcolor="#00b6ff" style="font:bold 15px/20px Arial, Helvetica, sans-serif; color:#fff; mso-padding-alt:10px 5px; border-radius:5px; text-shadow:1px 1px 1px #0092d3;">
+																									<a style="text-decoration:none; color:#fff; display:block; padding:10px 5px;" target="_blank" href="#">Технический  паспорт Фибос</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</th>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<th class="flex" width="269" align="left" style="vertical-align:top; padding:0;">
+																			<table width="100%" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td bgcolor="#0092d3" style="padding:0 0 3px; border-radius:5px;">
+																						<table width="100%" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="active" align="center" bgcolor="#00b6ff" style="font:bold 15px/20px Arial, Helvetica, sans-serif; color:#fff; mso-padding-alt:10px 5px; border-radius:5px; text-shadow:1px 1px 1px #0092d3;">
+																									<a style="text-decoration:none; color:#fff; display:block; padding:10px 5px;" target="_blank" href="#">Условия оплаты и доставки</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</th>
+																		<th class="flex" width="10" height="10" align="left" style="vertical-align:top; padding:0;"></th>
+																		<th class="flex" width="269" align="left" style="vertical-align:top; padding:0;">
+																			<table width="100%" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td bgcolor="#0092d3" style="padding:0 0 3px; border-radius:5px;">
+																						<table width="100%" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="active" align="center" bgcolor="#00b6ff" style="font:bold 15px/20px Arial, Helvetica, sans-serif; color:#fff; mso-padding-alt:10px 5px; border-radius:5px; text-shadow:1px 1px 1px #0092d3;">
+																									<a style="text-decoration:none; color:#fff; display:block; padding:10px 5px;" target="_blank" href="#">Часто задаваемые вопросы</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</th>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#f4f4f4" class="holder-01" style="padding:30px 25px;">
+										<table width="100%" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="padding:0 0 10px;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tr>
+															<th class="flex" width="280" align="left" style="vertical-align:top; padding:0;">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td class="aligncenter" style="font:bold 21px/33px Arial, Helvetica, sans-serif; color:#0d669a;">
+																			Свяжитесь с&nbsp;нами!
+																		</td>
+																	</tr>
+																</table>
+															</th>
+															<th class="flex" width="20" height="20"  align="left" style="vertical-align:top; padding:0;"></th>
+															<th class="flex" width="" align="left" style="vertical-align:top; padding:0;">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td class="aligncenter1" align="right" style="font:27px/33px Arial, Helvetica, sans-serif; color:#0d669a;">
+																			<a style="text-decoration:none; color:#0d669a;" href="tel:+74953746364">+7 (495) 374-63-64</a>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="aligncenter" align="right" style="font:15px/20px Arial, Helvetica, sans-serif; color:#747474;">
+																			Звонок по&nbsp;РФ бесплатный
+																		</td>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td class="aligncenter" style="font:14px/20px Arial, Helvetica, sans-serif; color:#0f0f0f;">
+													ООО «Фибос» <br />
+													123317 Москва, Пресненская наб.,&nbsp;12, <br />
+													Башня Федерация Восток, 14&nbsp;офис.
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr><td height="10" class="hide"></td></tr>
+	</table>
+</body>
+</html>
