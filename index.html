@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <!-- page title -->
-    <title>Levchuk Oleg - Front-End Developer</title>
+    <title>Levchuk Oleg - Frontend Developer</title>
     <!-- include jQuery library -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -16,10 +16,14 @@
     <script>
       window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js" defer><\/script>');
     </script>
+    <link href="/src/images/favicon.png" rel="shortcut icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="preloader-holder">
+      <div class="preloader"></div>
+    </div>
     <div class="wrapper">
       <header class="header headroom">
         <div class="container">
@@ -43,11 +47,11 @@
       </header>
       <div class="page-holder">
         <main class="main" id="main">
-          <section class="intro viewport" style="background-image: url(images/bg-img.jpg)">
+          <section class="intro type-holder viewport" style="background-image: url(images/bg-img.jpg)">
             <div class="container">
-              <div class="move-effect">
+              <div class="move-effect type-block">
                 <h1>Levchuk Oleg</h1>
-                <strong class="h2">Front-End Developer</strong>
+                <span class="typed-text h2">email developer, markup developer, frontend developer </span>
               </div>
             </div>
           </section>
@@ -57,21 +61,23 @@
               <div class="flex-row">
                 <div class="img-block move-effect">
                   <strong class="h3">Photo</strong>
-                  <img src="images/img-01.jpg" alt="image description" />
+                  <div class="photo-block">
+                    <img src="images/img-01.jpg" alt="image description" />
+                  </div>
                 </div>
                 <div class="text-block move-effect">
                   <strong class="h3">Overview</strong>
-                  <!-- <p>In 2015 year I graduated courses in Telesens Academy for position QA Engineer. From this time I have tried to find myself in IT. During my education I understood that creating project more interesting for me than trying to break it and find bugs. That was the start point at looking for a job as HTML/CSS Developer. Every day I try to find something new and develop myself. I know that I am beginner and I don’t have enough experience, but if you want to see stubborn and self confident employee in your team take a look at my CV and send me a message.</p> -->
                   <p>
-                    Hi there. So, if it is my site, I can do and write here whatever I want. First of all, let me introduce myself. My name is Oleg and I'm a frontend developer.
+                    Hi there. So, if it is my site, I can do and write here whatever I want. First of all, let me introduce myself. My name is Oleg and I'm a Frontend Developer.
                     Sorry for that photo that you are looking at now, I don't have another. But I believe I look better in real life. So, I just want to tell you how I became
                     familiar with IT and start my career in it. Back to the past. In 2015 year I graduated course in Telesens Academy for the position QA Engineer. I believed that
                     this position is for me and I will fit it. But during my education, I understood that creating projects was more interesting for me than trying to break them
                     and find bugs. That was the start point at looking for a job as Markup Developer. In 2017 year I received my goal and start to work in P2H, the company of my
                     dreams for that moment. This company gave me a chance to start my career from the very beginning. So I start to grow and develop myself as a specialist in this
                     sphere. A lot of projects, new frameworks and techniques, communication with people and clients all that I've got for more than 7 years of experience here. As
-                    for now, I am looking for new opportunities and challenges that will expand my skills. So if you want to see me on your team take a look at my CV and send me a
-                    message. Have a nice day.
+                    for now, I am looking for new opportunities and challenges that will expand my skills. So if you want to see me on your team
+                    <a href="/src/inc/CV_-_Levchuk_Oleg_-_Frontend_Developer.pdf" download="CV">take a look at my CV</a> and
+                    <a class="anchor-link" href="#message">send me a message</a>. Have a nice day.
                   </p>
                 </div>
                 <div class="contact-block move-effect">
@@ -196,12 +202,21 @@
           </section>
           <section id="works" class="works viewport">
             <div class="container">
-              <h1 class="move-effect">Some of My Works</h1>
-              <p>
-                I think you know, that when you start to work in a big IT company you sign a contract that doesn't give you permission to post information about projects that you
-                do for your company because all of that is the property of the company. That's why I decided to make some test projects that will allow you to see my level and look
-                at my code. If you want to see more just send me a message or give me a call, and I make test project for your company.
-              </p>
+              <div class="text-block move-effect">
+                <h1>Some of My Works</h1>
+                <p>
+                  I think you know, that when you start to work in a big IT company you sign a contract that doesn't give you permission to post information about projects that you
+                  do for it, because all of that is the property of the company. That's why I decided to make some test projects that will allow you to see my level and look at my
+                  code. If you want to see more just <a class="anchor-link" href="#message">send me a message</a> or <a href="tel:+380979509642">give me a call</a>, and I make test
+                  project for your company.
+                </p>
+              </div>
+              <div class="works-holder move-effect">
+                <div class="work-block"></div>
+                <div class="work-block"></div>
+                <div class="work-block"></div>
+                <div class="work-block"></div>
+              </div>
               <div class="works-slider slick-slider move-effect">
                 <div>
                   <div class="work-block"></div>
@@ -251,7 +266,7 @@
         <div class="container">
           <ul class="social-networks">
             <li>
-              <a href="https://www.linkedin.com/in/oleg-levchuk-2098b2b7"><i class="icon-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/oleg-levchuk-2098b2b7" target="_blank"><i class="icon-linkedin"></i></a>
             </li>
           </ul>
           <span class="copyright">&copy; 2023 Levchuk Oleg. All rights reserved.</span>
