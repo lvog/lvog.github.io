@@ -1,413 +1,393 @@
 <!DOCTYPE html>
 <html lang="zxx">
-  <head>
-    <meta charset="utf-8" />
-    <!-- page title -->
-    <title>YOUR LOGO</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- include jQuery library -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-      defer
-    ></script>
-    <!-- include jQuery library local file if cdn link doesn't work -->
-    <script>
-      window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js" defer><\/script>');
-    </script>
-    <!-- include app js file  -->
-    <script src="js/app.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <noscript>
-      <div>Javascript must be enabled for the correct page display</div>
-    </noscript>
-    <div class="wrapper">
-      <header id="header">
-        <div class="container">
-          <div class="flex-row">
-            <strong class="logo">
-              <a href="#">
-                <img src="images/logo.png" alt="Your Logo" />
-              </a>
-            </strong>
-            <a href="#" class="nav-opener"><span>nav-opener</span></a>
-            <div class="drop">
-              <nav id="nav">
-                <ul class="menu">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Courses</a></li>
-                  <li><a href="#">Blog</a></li>
-                </ul>
-              </nav>
-              <a href="#" class="btn">sign in</a>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main class="main" id="main">
-        <div class="visual-slider slick-slider viewport fade-effect">
-          <div>
-            <div class="container">
-              <div class="flex-row">
-                <div class="course-block">
-                  <strong class="title">UI</strong>
-                  <span class="goal-holder">
-                    <span class="subtitle">Beginner<b>'s</b></span>
-                    <span class="goal">become a <br />pro-designer</span>
-                  </span>
-                </div>
-                <div class="img-block decor">
-                  <img src="images/img-01.png" alt="image description" />
-                </div>
-                <div class="info-block">
-                  <span class="edition">edition <span class="year">2022</span></span>
-                  <div class="text-block">
-                    <strong class="h5">Start guide for beginner designers</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore .</p>
-                    <div class="btn-holder">
-                      <a href="#" class="btn">let´s start</a>
-                      <a href="#">read more</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div>
-            <div class="container">
-              <div class="flex-row">
-                <div class="course-block">
-                  <strong class="title h3">Front-end developer</strong>
-                  <span class="goal-holder">
-                    <span class="subtitle">Beginner<b>'s</b></span>
-                    <span class="goal">become a pro</span>
-                  </span>
-                </div>
-                <div class="img-block decor">
-                  <img src="images/img-02.png" alt="image description" />
-                </div>
-                <div class="info-block">
-                  <span class="edition">edition <span class="year">2022</span></span>
-                  <div class="text-block">
-                    <strong class="h5">Start guide for beginner</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore .</p>
-                    <div class="btn-holder">
-                      <a href="#" class="btn">let´s start</a>
-                      <a href="#">read more</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
-        <div class="stats-block viewport move-effect">
-          <div class="container">
-            <ul class="stats-list">
-              <li>
-                <span class="number">150</span>
-                <span class="info">HAPPY <b>students</b></span>
-              </li>
-              <li>
-                <span class="number">50</span>
-                <span class="info">CERTIFIED <b>courses</b></span>
-              </li>
-              <li>
-                <span class="number">1000</span>
-                <span class="info">AWARDS <b>RECEIVED</b></span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <section class="info-section viewport">
-          <div class="container">
-            <div class="flex-row">
-              <div class="words-holder hide move-effect">
-                <ul class="words-list">
-                  <li><span class="goal">discover your skills</span></li>
-                  <li>explore</li>
-                </ul>
-              </div>
-              <div class="decor-circle-holder move-effect">
-                <h1>Accept <span>new</span> challenges</h1>
-                <span class="decor-circle"></span>
-              </div>
-              <div class="words-holder hide move-effect">
-                <ul class="words-list">
-                  <li><span class="goal">discover your skills</span></li>
-                  <li>about</li>
-                </ul>
-              </div>
-              <div class="link-holder fade-effect">
-                <a href="#courses" class="anchor-link">anchor-link<i class="icon-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="courses-section" id="courses">
-          <div class="container">
-            <div class="heading-holder viewport move-effect">
-              <h1>Find<span>Your Course.</span></h1>
-              <span class="goal">edition <span class="year">2022</span></span>
-            </div>
-            <ol class="courses-list viewport">
-              <li class="move-effect">
-                <div class="text-block">
-                  <strong class="title">course <span></span></strong>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                </div>
-                <a href="#" class="btn">Read more</a>
-              </li>
-              <li class="move-effect">
-                <div class="text-block">
-                  <strong class="title">course <span></span></strong>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                </div>
-                <a href="#" class="btn">Read more</a>
-              </li>
-              <li class="move-effect">
-                <div class="text-block">
-                  <strong class="title">course <span></span></strong>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                </div>
-                <a href="#" class="btn">Read more</a>
-              </li>
-              <li class="move-effect">
-                <div class="text-block">
-                  <strong class="title">course <span></span></strong>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                </div>
-                <a href="#" class="btn">Read more</a>
-              </li>
-            </ol>
-            <div class="link-holder viewport move-effect">
-              <a href="#" class="link-more">more courses <i class="icon-arrow-right"></i></a>
-            </div>
-          </div>
-        </section>
-        <section class="about-section viewport">
-          <div class="container decor-two-dots">
-            <span class="decor-circle fade-effect"></span>
-            <div class="flex-row">
-              <div class="img-block decor fade-effect">
-                <img src="images/img-02.png" alt="image description" />
-              </div>
-              <div class="text-block move-effect">
-                <h1 class="h3 decor-heading">About<span>us.</span></h1>
-                <div class="text-holder">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse.</p>
-                </div>
-                <ul>
-                  <li>Lorem ipsum dolor.</li>
-                  <li>Lorem ipsum dolor.</li>
-                  <li>Lorem ipsum dolor.</li>
-                  <li>Lorem ipsum dolor.</li>
-                </ul>
-                <a href="#" class="btn">read more</a>
-              </div>
-            </div>
-            <span class="decor-circle fade-effect"></span>
-          </div>
-        </section>
-        <section class="about-section viewport">
-          <div class="container decor-dot">
-            <span class="word hide fade-effect">explore</span>
-            <div class="flex-row">
-              <div class="img-block decor fade-effect">
-                <img src="images/img-03.png" alt="image description" />
-                <span class="decor-circle"></span>
-              </div>
-              <div class="text-block move-effect">
-                <h1 class="h3 decor-heading">Why<span>us.</span></h1>
-                <div class="text-holder">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse.
-                  </p>
-                </div>
-                <a href="#" class="btn">read more</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="video-block viewport">
-          <div class="container">
-            <a href="#" class="start-link hide fade-effect"
-              >ready to <br />
-              get started <i class="icon-arrow-left"></i
-            ></a>
-            <div class="fade-effect" data-video='{"type": "vimeo", "video": "24456787", "autoplay": false, "fluidWidth": true}'>
-              <img src="images/img-04.jpg" alt="image description" />
-              <a href="#" class="btn-play">
-                btn-play
-                <i class="icon-play"></i>
-                <i class="icon-pause"></i>
-              </a>
-            </div>
-            <a href="#" class="start-link hide fade-effect"
-              >ready to <br />
-              get started <i class="icon-arrow-right"></i
-            ></a>
-          </div>
-        </div>
-        <section class="comments-section">
-          <div class="container">
-            <h1 class="h2 decor-heading viewport move-effect">what <span>users think.</span></h1>
-            <div class="comments-slider slick-slider viewport move-effect">
-              <div class="comment-block">
-                <div class="img-block">
-                  <img src="images/comment-img-01.jpg" alt="image description" />
-                </div>
-                <strong class="title">Laura smith</strong>
-                <ul class="rating-list four-stars">
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                </ul>
-                <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua .</p>
-                </blockquote>
-              </div>
-              <div class="comment-block">
-                <div class="img-block">
-                  <img src="images/comment-img-02.jpg" alt="image description" />
-                </div>
-                <strong class="title">Jhon smith</strong>
-                <ul class="rating-list four-stars">
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                </ul>
-                <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua .</p>
-                </blockquote>
-              </div>
-              <div class="comment-block">
-                <div class="img-block">
-                  <img src="images/comment-img-03.jpg" alt="image description" />
-                </div>
-                <strong class="title">Sara smith</strong>
-                <ul class="rating-list four-stars">
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                </ul>
-                <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua .</p>
-                </blockquote>
-              </div>
-              <div class="comment-block">
-                <div class="img-block">
-                  <img src="images/img-03.png" alt="image description" />
-                </div>
-                <strong class="title">Reynold smith</strong>
-                <ul class="rating-list five-stars">
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                  <li><i class="icon-star"></i></li>
-                </ul>
-                <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua .</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="subscribe-section viewport">
-          <div class="container">
-            <div class="flex-row">
-              <div class="img-block fade-effect">
-                <img src="images/img-04.png" alt="image description" />
-              </div>
-              <div class="text-block move-effect">
-                <div class="text-holder">
-                  <h1 class="h4 decor-heading">Subscribe <span>to our newsletter</span></h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt .</p>
-                </div>
-                <form class="newsletter-form form-validation" action="#">
-                  <div class="form-group">
-                    <input type="text" name="name" placeholder="name" data-type="text" data-min="4" data-required="true" />
-                    <span class="error-message">This field is required. It should be a minimum 4 symbols</span>
-                  </div>
-                  <div class="form-group">
-                    <input type="email" name="mail" placeholder="mail" data-type="email" data-required="true" />
-                    <span class="error-message">This field is required. Use valid email address</span>
-                  </div>
-                  <div class="form-group">
-                    <textarea name="message" placeholder="message" data-type="text" data-min="20" data-required="true"></textarea>
-                    <span class="error-message">This field is required. It should be a minimum 20 symbols</span>
-                  </div>
-                  <input class="btn" type="submit" value="send message" />
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer id="footer" class="viewport">
-        <div class="container">
-          <div class="flex-row">
-            <div class="menu-block move-effect">
-              <strong class="title">About</strong>
-              <ul class="second-menu">
-                <li><a href="#">History</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Mission Statement</a></li>
-                <li><a href="#">Terms &amp; Condition</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </div>
-            <div class="menu-block move-effect">
-              <strong class="title">What we do</strong>
-              <ul class="second-menu">
-                <li><a href="#">News and stories</a></li>
-                <li><a href="#">Publications</a></li>
-                <li><a href="#">Take action</a></li>
-                <li><a href="#">Recomendations</a></li>
-                <li><a href="#">Help</a></li>
-              </ul>
-            </div>
-            <div class="form-block move-effect">
-              <strong class="title">Sign Up To Receive <span>Our Newsletter</span></strong>
-              <form class="subscribe-form form-validation" action="#">
-                <div class="form-group">
-                  <input type="email" name="email" aria-label="email" data-interactive="true" data-type="email" data-required="true" />
-                </div>
-                <input class="btn" type="submit" value="send" />
-              </form>
-              <div class="social-block">
-                <strong class="subtitle">Follow us!</strong>
-                <ul class="social-network">
-                  <li>
-                    <a href="#">facebook<i class="icon-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#">instagram<i class="icon-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#">youtube<i class="icon-youtube"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<!-- page title -->
+	<title>YOUR LOGO</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- include jQuery library -->
+	<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+	integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+	defer></script>
+	<!-- include jQuery library local file if cdn link doesn't work -->
+	<script>window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js" defer><\/script>')</script>
+	<!-- include app js file  -->
+	<script src="js/app.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="css/style.css" rel="stylesheet"></head>
+<body>
+	<noscript>
+		<div>Javascript must be enabled for the correct page display</div>
+	</noscript>
+	<div class="wrapper">
+		<header id="header">
+			<div class="container">
+				<div class="flex-row">
+					<strong class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="Your Logo">
+						</a>
+					</strong>
+					<a href="#" class="nav-opener"><span>nav-opener</span></a>
+					<div class="drop">
+						<nav id="nav">
+							<ul class="menu">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Courses</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
+						</nav>
+						<a href="#" class="btn">sign in</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main" id="main">
+			<div class="visual-slider slick-slider viewport fade-effect">
+				<div>
+					<div class="container">
+						<div class="flex-row">
+							<div class="course-block">
+								<strong class="title">UI</strong>
+								<span class="goal-holder">
+									<span class="subtitle">Beginner<b>'s</b></span>
+									<span class="goal">become a <br>pro-designer</span>
+								</span>
+							</div>
+							<div class="img-block decor">
+								<img src="images/img-01.png" alt="image description">
+							</div>
+							<div class="info-block">
+								<span class="edition">edition <span class="year">2022</span></span>
+								<div class="text-block">
+									<strong class="h5">Start guide for beginner designers</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore .</p>
+									<div class="btn-holder">
+										<a href="#" class="btn">let´s start</a>
+										<a href="#">read more</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="container">
+						<div class="flex-row">
+							<div class="course-block">
+								<strong class="title h3">Front-end developer</strong>
+								<span class="goal-holder">
+									<span class="subtitle">Beginner<b>'s</b></span>
+									<span class="goal">become a pro</span>
+								</span>
+							</div>
+							<div class="img-block decor">
+								<img src="images/img-02.png" alt="image description">
+							</div>
+							<div class="info-block">
+								<span class="edition">edition <span class="year">2022</span></span>
+								<div class="text-block">
+									<strong class="h5">Start guide for beginner</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore .</p>
+									<div class="btn-holder">
+										<a href="#" class="btn">let´s start</a>
+										<a href="#">read more</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stats-block viewport move-effect">
+				<div class="container">
+					<ul class="stats-list">
+						<li>
+							<span class="number">150</span>
+							<span class="info">HAPPY <b>students</b></span>
+						</li>
+						<li>
+							<span class="number">50</span>
+							<span class="info">CERTIFIED <b>courses</b></span>
+						</li>
+						<li>
+							<span class="number">1000</span>
+							<span class="info">AWARDS <b>RECEIVED</b></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="info-section viewport">
+				<div class="container">
+					<div class="flex-row">
+						<div class="words-holder hide move-effect">
+							<ul class="words-list">
+								<li><span class="goal">discover your skills</span></li>
+								<li>explore</li>
+							</ul>
+						</div>
+						<div class="decor-circle-holder move-effect">
+							<h1>Accept <span>new</span> challenges</h1>
+							<span class="decor-circle"></span>
+						</div>
+						<div class="words-holder hide move-effect">
+							<ul class="words-list">
+								<li><span class="goal">discover your skills</span></li>
+								<li>about</li>
+							</ul>
+						</div>
+						<div class="link-holder fade-effect">
+							<a href="#courses" class="anchor-link">anchor-link<i class="icon-arrow-down"></i></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="courses-section" id="courses">
+				<div class="container">
+					<div class="heading-holder viewport move-effect">
+						<h1>Find<span>Your Course.</span></h1>
+						<span class="goal">edition <span class="year">2022</span></span>
+					</div>
+					<ol class="courses-list viewport">
+						<li class="move-effect">
+							<div class="text-block">
+								<strong class="title">course <span></span></strong>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+							</div>
+							<a href="#" class="btn">Read more</a>
+						</li>
+						<li class="move-effect">
+							<div class="text-block">
+								<strong class="title">course <span></span></strong>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+							</div>
+							<a href="#" class="btn">Read more</a>
+						</li>
+						<li class="move-effect">
+							<div class="text-block">
+								<strong class="title">course <span></span></strong>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+							</div>
+							<a href="#" class="btn">Read more</a>
+						</li>
+						<li class="move-effect">
+							<div class="text-block">
+								<strong class="title">course <span></span></strong>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+							</div>
+							<a href="#" class="btn">Read more</a>
+						</li>
+					</ol>
+					<div class="link-holder viewport move-effect">
+						<a href="#" class="link-more">more courses <i class="icon-arrow-right"></i></a>
+					</div>
+				</div>
+			</section>
+			<section class="about-section viewport">
+				<div class="container decor-two-dots">
+					<span class="decor-circle fade-effect"></span>
+					<div class="flex-row">
+						<div class="img-block decor fade-effect">
+							<img src="images/img-02.png" alt="image description">
+						</div>
+						<div class="text-block move-effect">
+							<h1 class="h3 decor-heading">About<span>us.</span></h1>
+							<div class="text-holder">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse.</p>
+							</div>
+							<ul>
+								<li>Lorem ipsum dolor.</li>
+								<li>Lorem ipsum dolor.</li>
+								<li>Lorem ipsum dolor.</li>
+								<li>Lorem ipsum dolor.</li>
+							</ul>
+							<a href="#" class="btn">read more</a>
+						</div>
+					</div>
+					<span class="decor-circle fade-effect"></span>
+				</div>
+			</section>
+			<section class="about-section viewport">
+				<div class="container decor-dot">
+					<span class="word hide fade-effect">explore</span>
+					<div class="flex-row">
+						<div class="img-block decor fade-effect">
+							<img src="images/img-03.png" alt="image description">
+							<span class="decor-circle"></span>
+						</div>
+						<div class="text-block move-effect">
+							<h1 class="h3 decor-heading">Why<span>us.</span></h1>
+							<div class="text-holder">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse.</p>
+							</div>
+							<a href="#" class="btn">read more</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="video-block viewport">
+				<div class="container">
+					<a href="#" class="start-link hide fade-effect">ready to <br> get started <i class="icon-arrow-left"></i></a>
+					<div class="fade-effect" data-video='{"type": "vimeo", "video": "24456787", "autoplay": false, "fluidWidth": true}'>
+						<img src="images/img-04.jpg" alt="image description">
+						<a href="#" class="btn-play">
+							btn-play
+							<i class="icon-play"></i>
+							<i class="icon-pause"></i>
+						</a>
+					</div>
+					<a href="#" class="start-link hide fade-effect">ready to <br> get started <i class="icon-arrow-right"></i></a>
+				</div>
+			</div>
+			<section class="comments-section">
+				<div class="container">
+					<h1 class="h2 decor-heading viewport move-effect">what <span>users think.</span></h1>
+					<div class="comments-slider slick-slider viewport move-effect">
+						<div class="comment-block">
+							<div class="img-block">
+								<img src="images/comment-img-01.jpg" alt="image description">
+							</div>
+							<strong class="title">Laura smith</strong>
+							<ul class="rating-list four-stars">
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+							</ul>
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua .</p>
+							</blockquote>
+						</div>
+						<div class="comment-block">
+							<div class="img-block">
+								<img src="images/comment-img-02.jpg" alt="image description">
+							</div>
+							<strong class="title">Jhon  smith</strong>
+							<ul class="rating-list four-stars">
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+							</ul>
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua .</p>
+							</blockquote>
+						</div>
+						<div class="comment-block">
+							<div class="img-block">
+								<img src="images/comment-img-03.jpg" alt="image description">
+							</div>
+							<strong class="title">Sara  smith</strong>
+							<ul class="rating-list four-stars">
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+							</ul>
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua .</p>
+							</blockquote>
+						</div>
+						<div class="comment-block">
+							<div class="img-block">
+								<img src="images/img-03.png" alt="image description">
+							</div>
+							<strong class="title">Reynold  smith</strong>
+							<ul class="rating-list five-stars">
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+							</ul>
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua .</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="subscribe-section viewport">
+				<div class="container">
+					<div class="flex-row">
+						<div class="img-block fade-effect">
+							<img src="images/img-04.png" alt="image description">
+						</div>
+						<div class="text-block move-effect">
+							<div class="text-holder">
+								<h1 class="h4 decor-heading">Subscribe <span>to our newsletter</span></h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt .</p>
+							</div>
+							<form class="newsletter-form form-validation" action="#">
+								<div class="form-group">
+									<input type="text" name="name" placeholder="name" data-type="text" data-min="4" data-required="true">
+									<span class="error-message">This field is required. It should be a minimum 4 symbols</span>			
+								</div>
+								<div class="form-group">
+									<input type="email" name="mail" placeholder="mail" data-type="email" data-required="true">
+									<span class="error-message">This field is required. Use valid email address</span>
+								</div>
+								<div class="form-group">
+									<textarea name="message" placeholder="message" data-type="text" data-min="20" data-required="true" ></textarea>
+									<span class="error-message">This field is required. It should be a minimum 20 symbols</span>
+								</div>
+								<input class="btn" type="submit" value="send message">
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer" class="viewport">
+			<div class="container">
+				<div class="flex-row">
+					<div class="menu-block move-effect">
+						<strong class="title">About</strong>
+						<ul class="second-menu">
+							<li><a href="#">History</a></li>
+							<li><a href="#">Our Team</a></li>
+							<li><a href="#">Mission Statement</a></li>
+							<li><a href="#">Terms &amp; Condition</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="menu-block move-effect">
+						<strong class="title">What we do</strong>
+						<ul class="second-menu">
+							<li><a href="#">News and stories</a></li>
+							<li><a href="#">Publications</a></li>
+							<li><a href="#">Take action</a></li>
+							<li><a href="#">Recomendations</a></li>
+							<li><a href="#">Help</a></li>
+						</ul>
+					</div>
+					<div class="form-block move-effect">
+						<strong class="title">Sign Up To Receive <span>Our Newsletter</span></strong>
+						<form class="subscribe-form form-validation" action="#">
+							<div class="form-group">
+								<input type="email" name="email" aria-label="email" data-interactive="true" data-type="email" data-required="true">
+							</div>
+							<input class="btn" type="submit" value="send">
+						</form>
+						<div class="social-block">
+							<strong class="subtitle">Follow us!</strong>
+							<ul class="social-network">
+								<li><a href="#">facebook<i class="icon-facebook"></i></a></li>
+								<li><a href="#">instagram<i class="icon-instagram"></i></a></li>
+								<li><a href="#">youtube<i class="icon-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
 </html>
