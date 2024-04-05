@@ -36,7 +36,6 @@
               <ul class="menu">
                 <li><a class="anchor-link" href="#about">About Me</a></li>
                 <li><a class="anchor-link" href="#experience">Work Experience</a></li>
-                <!-- <li><a class="anchor-link" href="#education">Education</a></li> -->
                 <li><a class="anchor-link" href="#skills">My Skills</a></li>
                 <li><a class="anchor-link" href="#works">Some of My Works</a></li>
                 <li><a class="anchor-link" href="#message">Leave a Message</a></li>
@@ -51,7 +50,7 @@
             <div class="container">
               <div class="move-effect type-block">
                 <h1>Levchuk Oleg</h1>
-                <span class="typed-text h2">email developer, markup developer, frontend developer </span>
+                <span class="typed-text h2">frontend developer, email developer, markup developer, frontend developer </span>
               </div>
             </div>
           </section>
@@ -76,8 +75,8 @@
                     dreams for that moment. This company gave me a chance to start my career from the very beginning. So I start to grow and develop myself as a specialist in this
                     sphere. A lot of projects, new frameworks and techniques, communication with people and clients all that I've got for more than 7 years of experience here. As
                     for now, I am looking for new opportunities and challenges that will expand my skills. So if you want to see me on your team
-                    <a href="/src/inc/CV_-_Levchuk_Oleg_-_Frontend_Developer.pdf" download="CV">take a look at my CV</a> and
-                    <a class="anchor-link" href="#message">send me a message</a>. Have a nice day.
+                    <a href="/inc/CV_-_Levchuk_Oleg_-_Frontend_Developer.pdf">take a look at my CV</a> and <a class="anchor-link" href="#message">send me a message</a>. Have a nice
+                    day.
                   </p>
                 </div>
                 <div class="contact-block move-effect">
@@ -107,7 +106,7 @@
                   <div class="info-block">
                     <strong class="h4">P2H</strong>
                     <span class="date">Mar 2017 – present</span>
-                    <span class="position">Front-End Developer</span>
+                    <span class="position">Frontend Developer</span>
                   </div>
                 </li>
                 <li>
@@ -180,15 +179,15 @@
                   </span>
                 </li>
                 <li class="move-effect">
-                  <strong class="h4">Javascript</strong>
+                  <strong class="h4">Javascript and jQuery</strong>
                   <span class="progress">
                     <span class="progress-bar" data-progress="70">70%</span>
                   </span>
                 </li>
                 <li class="move-effect">
-                  <strong class="h4">Adobe Photoshop</strong>
+                  <strong class="h4">Zeplin, Figma, Adobe Photoshop</strong>
                   <span class="progress">
-                    <span class="progress-bar" data-progress="80">80%</span>
+                    <span class="progress-bar" data-progress="70">70%</span>
                   </span>
                 </li>
                 <li class="move-effect">
@@ -211,27 +210,46 @@
                   project for your company.
                 </p>
               </div>
-              <div class="works-holder move-effect">
-                <div class="work-block"></div>
-                <div class="work-block"></div>
-                <div class="work-block"></div>
-                <div class="work-block"></div>
-              </div>
               <div class="works-slider slick-slider move-effect">
                 <div>
-                  <div class="work-block"></div>
+                  <div class="work-block">
+                    <img src="images/odea.jpg" alt="image description" />
+                    <div class="info-block">
+                      <strong class="h3">Odea</strong>
+                      <strong class="subtitle">Email</strong>
+                      <a href="#" class="btn btn-outline-light" target="_blank">Take a look</a>
+                    </div>
+                  </div>
                 </div>
                 <div>
-                  <div class="work-block"></div>
+                  <div class="work-block">
+                    <img src="images/focus.jpg" alt="image description" />
+                    <div class="info-block">
+                      <strong class="h3">Focus</strong>
+                      <strong class="subtitle">Email</strong>
+                      <a href="#" class="btn btn-outline-light" target="_blank">Take a look</a>
+                    </div>
+                  </div>
                 </div>
                 <div>
-                  <div class="work-block"></div>
+                  <div class="work-block">
+                    <img src="images/courses.jpg" alt="image description" />
+                    <div class="info-block">
+                      <strong class="h3">Cources</strong>
+                      <strong class="subtitle">Landing page</strong>
+                      <a href="#" class="btn btn-outline-light" target="_blank">Take a look</a>
+                    </div>
+                  </div>
                 </div>
                 <div>
-                  <div class="work-block"></div>
-                </div>
-                <div>
-                  <div class="work-block"></div>
+                  <div class="work-block">
+                    <img src="images/coffee-shop.jpg" alt="image description" />
+                    <div class="info-block">
+                      <strong class="h3">Cources</strong>
+                      <strong class="subtitle">React project</strong>
+                      <a href="#" class="btn btn-outline-light" target="_blank">Take a look</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -239,20 +257,22 @@
           <section id="message" class="message viewport">
             <div class="container">
               <h1 class="move-effect">Leave a Message</h1>
-              <form class="message-form form-validation" action="#">
+              <form class="message-form form-validation" action="#" method="POST">
                 <div class="form-group move-effect">
-                  <input type="text" placeholder="Name" name="name" data-required="true" />
-                  <span class="error-message">Please enter valid data</span>
+                  <input type="text" placeholder="Name*" name="name" data-required="true" data-interactive="true" data-min="4" />
+                  <span class="error-message">This field is required. Please enter valid data - minimum 4 symbols</span>
                 </div>
                 <div class="form-group move-effect">
-                  <input type="email" placeholder="Email" name="email" />
+                  <input type="email" placeholder="Email*" name="email" data-type="email" data-interactive="true" data-required="true" />
+                  <span class="error-message">This field is required. Please enter email address</span>
                 </div>
                 <div class="form-group move-effect">
-                  <input type="tel" placeholder="Phone" name="phone" />
+                  <input type="text" placeholder="Phone*" name="phone" data-regexp="\d{10}" data-interactive="true" />
+                  <span class="error-message">This field is required. Please enter valid number (10 digits)</span>
                 </div>
                 <div class="form-group move-effect">
-                  <textarea placeholder="Message" name="message" data-required="true"></textarea>
-                  <span class="error-message">Please enter valid data</span>
+                  <textarea placeholder="Message*" name="message" data-required="true" data-min="20" data-interactive="true"></textarea>
+                  <span class="error-message">This field is required. Please enter valid data - minimum 20 symbols</span>
                 </div>
                 <div class="btn-holder move-effect">
                   <input class="btn" type="submit" value="Submit" />
