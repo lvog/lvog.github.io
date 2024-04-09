@@ -1,6 +1,6 @@
 <?php
 
-$recepient = "levchuk.oleg21@gmail.com";
+$recepient = "https://formspree.io/f/mgegpkjl";
 $sitename = "Levchuk Oleg - Frontend Developer";
 
 $name = trim($_POST["name"]);
