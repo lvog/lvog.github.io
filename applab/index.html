@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- page title -->
+    <title>AppLab</title>
+    <!-- include jQuery library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <!-- include jQuery library local file if cdn link doesn't work -->
+    <script>
+      window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js" defer><\/script>');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="min-w-[360px] text-base leading-relaxed font-normal text-gray-dark bg-white">
+    <noscript>
+      <div>Javascript must be enabled for the correct page display</div>
+    </noscript>
+    <div class="wrapper w-full relative overflow-hidden" id="home">
+      <header class="header absolute top-0 left-0 right-0 z-[999] py-7.5 transition-background-padding md:py-12.5 lg:py-[94px]">
+        <div class="container flex flex-wrap items-center justify-between">
+          <strong class="block w-[117px]">
+            <a href="#">
+              <img src="images/logo.png" alt="AppLab" />
+            </a>
+          </strong>
+          <a href="#" class="nav-opener block w-10 h-7.5 relative overflow-hidden after:content-[''] before:content-[''] md:hidden"><span></span></a>
+          <div
+            class="drop max-md:max-h-[calc(100vh-82px)] max-md:absolute max-md:top-[100%] max-md:left-0 max-md:right-0 max-md:py-12.5 max-md:px-3.75 max-md:text-center max-md:bg-white max-md:overflow-y-auto max-md:opacity-0 max-md:invisible max-md:z-[2] max-md:transition-opacity md:max-w-[calc(100%-140px)] md:flex md:items-center md:justify-between"
+          >
+            <nav>
+              <ul class="menu list-none ml-0 p-0 mb-12.5 md:flex md:flex-wrap md:items-center md:mb-0 md:mr-3.75 lg:mr-10">
+                <li class="py-2.5 md:py-1.75 md:px-1.75 lg:px-4.25"><a class="anchor-link text-sky-dark hover:text-blue" href="#home">Home</a></li>
+                <li class="py-2.5 md:py-1.75 md:px-1.75 lg:px-4.25"><a class="anchor-link text-sky-dark hover:text-blue" href="#features">Key Features</a></li>
+                <li class="py-2.5 md:py-1.75 md:px-1.75 lg:px-4.25"><a class="anchor-link text-sky-dark hover:text-blue" href="#pricing">Pricing</a></li>
+                <li class="py-2.5 md:py-1.75 md:px-1.75 lg:px-4.25"><a class="anchor-link text-sky-dark hover:text-blue" href="#testimonials">Testimonial</a></li>
+                <li class="py-2.5 md:py-1.75 md:px-1.75 lg:px-4.25"><a class="anchor-link text-sky-dark hover:text-blue" href="#faq">FAQ</a></li>
+              </ul>
+            </nav>
+            <a href="#" class="btn">Try for free</a>
+          </div>
+        </div>
+      </header>
+      <main class="main" id="main">
+        <section class="pt-28 pb-22.5 bg-cover bg-center md:pt-[180px] md:pb-15 lg:pt-[204px] lg:pb-[65px]" style="background-image: url(images/bg-img-01.png)">
+          <div class="container md:flex md:flex-wrap md:flex-row-reverse md:items-center">
+            <div class="mb-12.5 md:w-[44%] md:mb-0 xl:pr-5 xl:pl-7">
+              <img class="max-w-[360px] w-[50%] m-auto drop-shadow-md xl:w-auto" src="images/phone-img-01.png" alt="image description" />
+            </div>
+            <div class="text-[18px] md:w-[56%] md:pr-3.75 xl:pt-20 xl:pr-12.5 xl:pb-12.5 xl:pl-[70px]">
+              <strong class="max-w-[362px] w-full inline-block align-middle font-normal text-sky-dark bg-[#e2eaed] pt-1 pr-2.5 pb-0.5 pl-11.75 mb-3.75 relative rounded-2xl"
+                ><i class="icon-badge-check w-[39px] h-[35px] flex items-center justify-center text-white bg-[#feaa25] absolute top-0 left-0 rounded-full overflow-hidden"></i>#1
+                Editiors Choice App of 2020</strong
+              >
+              <h1 class="mb-3.75">Best app for your modern lifestyle</h1>
+              <p class="mb-7.5">Increase productivity with a simple to-do app. app for managing your personal budgets.</p>
+              <div class="flex flex-wrap items-center text-base -mx-[13px]">
+                <a href="#" class="btn my-1.75 mx-[13px]">Try for free</a>
+                <a class="my-1.75 mx-[13px]" data-fancybox href="https://www.youtube.com/watch?v=z2X2HaTvkl8">Watch demo video</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="pt-12.5 xl:pt-[108px] xl:pb-[44px]">
+          <div class="container">
+            <strong class="block font-normal text-center text-sky-dark mb-8.75">Trusted by companies like</strong>
+            <ul class="list-none p-0 -mx-3.75 flex flex-wrap items-center justify-center lg:-mx-6.25 xl:-mx-8">
+              <li class="px-3.75 pb-7.5 lg:px-6.25 lg:pb-12.5 xl:px-8 xl:pb-16"><img src="images/logo-southwest.png" alt="Southwest company" /></li>
+              <li class="px-3.75 pb-7.5 lg:px-6.25 lg:pb-12.5 xl:px-8 xl:pb-16"><img src="images/logo-anubis.png" alt="Anubis Entertainment" /></li>
+              <li class="px-3.75 pb-7.5 lg:px-6.25 lg:pb-12.5 xl:px-8 xl:pb-16"><img src="images/logo-alonzo.png" alt="Alonzo Casseta" /></li>
+              <li class="px-3.75 pb-7.5 lg:px-6.25 lg:pb-12.5 xl:px-8 xl:pb-16"><img src="images/logo-express.png" alt="Premium Express" /></li>
+              <li class="px-3.75 pb-7.5 lg:px-6.25 lg:pb-12.5 xl:px-8 xl:pb-16"><img src="images/logo-maniac.png" alt="Maniac" /></li>
+            </ul>
+          </div>
+        </div>
+        <section id="features">
+          <div class="py-7.5 xl:pt-[100px] xl:pb-12.5">
+            <div class="container md:flex md:flex-wrap md:items-start">
+              <div class="max-w-[446px] mx-auto mb-12.5 relative md:max-w-full md:w-[44%] md:pr-3.75 md:m-0 2xl:w-[calc(44%+45px)] 2xl:pt-2 2xl:pr-10.5 2xl:-ml-[45px]">
+                <img class="max-w-[354px] w-[70%] mx-auto drop-shadow-md -rotate-[14deg] relative z-10 2xl:w-auto" src="images/phone-img-02.png" alt="image description" />
+                <img
+                  class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 xl:max-w-[665px] top-[63%] left-[46%]"
+                  src="images/decor-img-01.png"
+                  alt="image description"
+                />
+              </div>
+              <div class="md:w-[56%] md:pl-3.75 xl:pr-[170px] xl:pl-[53px]">
+                <div class="mb-12.5 lg:mb-[82px]">
+                  <h2 class="mb-3">Awesome apps features</h2>
+                  <p>Increase productivity with a simple to-do app. app for managing your personal budgets.</p>
+                </div>
+                <ul class="list-none pl-0 pr-5 m-0">
+                  <li class="mb-3.75 sm:flex sm:flex-wrap sm:items-start lg:mb-7.5">
+                    <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-pink mb-3.75 sm:m-0 2xl:mt-5.75">
+                      <img src="images/icon-fast-performance.png" alt="image description" />
+                    </div>
+                    <div class="sm:w-[calc(100%-88px)] sm:pl-3.75 2xl:pl-7.5">
+                      <h3 class="text-red mb-1.5">Fast Performance</h3>
+                      <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                  </li>
+                  <li class="mb-3.75 sm:flex sm:flex-wrap sm:items-start lg:mb-7.5">
+                    <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-violet-light mb-3.75 sm:m-0 2xl:mt-5.75">
+                      <img src="images/icon-prototyping.png" alt="image description" />
+                    </div>
+                    <div class="sm:w-[calc(100%-88px)] sm:pl-3.75 2xl:pl-7.5">
+                      <h3 class="text-blue mb-1.5">Prototyping</h3>
+                      <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                  </li>
+                  <li class="mb-3.75 sm:flex sm:flex-wrap sm:items-start lg:mb-7.5">
+                    <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-green-light mb-3.75 sm:m-0 2xl:mt-5.75">
+                      <img src="images/icon-vector-editing.png" alt="image description" />
+                    </div>
+                    <div class="sm:w-[calc(100%-88px)] sm:pl-3.75 2xl:pl-7.5">
+                      <h3 class="text-green mb-1.5">Vector Editing</h3>
+                      <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="py-7.5 2xl:pt-[103px]">
+            <div class="container">
+              <div class="md:flex md:flex-wrap md:max-w-[1060px] md:mx-auto md:mb-12.5 2xl:mb-[103px]">
+                <h2 class="mb-5 md:w-[46.5%] md:pr-3.75 md:m-0 lg:text-5xl">Smart jackpots that you may love this anytime & anywhere</h2>
+                <div class="py-5 border-t border-gray border-solid md:w-[53.5%] md:pt-10 md:pl-3.75 md:border-t-0 md:border-l 2xl:pt-10 2xl:pr-[55px] 2xl:pl-12.5">
+                  <p>The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
+                </div>
+              </div>
+              <ul class="list-none p-0 m-0 md:flex md:flex-wrap md:-mx-3.75 2xl:m-0">
+                <li class="mb-3.75 md:w-2/6 md:px-3.75 lg:mb-7.5 2xl:px-[52px]">
+                  <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-pink mb-3.75 xl:mb-7.5">
+                    <img src="images/icon-automatic-payouts.png" alt="image description" />
+                  </div>
+                  <h3 class="text-red mb-1.5">Automatic Payouts</h3>
+                  <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                </li>
+                <li class="mb-3.75 md:w-2/6 md:px-3.75 lg:mb-7.5 2xl:pr-[52px] 2xl:pl-10.5">
+                  <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-violet-light mb-3.75 xl:mb-7.5">
+                    <img src="images/icon-network-effect.png" alt="image description" />
+                  </div>
+                  <h3 class="text-blue mb-1.5">Network Effect</h3>
+                  <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                </li>
+                <li class="mb-3.75 md:w-2/6 md:px-3.75 lg:mb-7.5 2xl:pr-[52px] 2xl:pl-10.5">
+                  <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-green-light mb-3.75 xl:mb-7.5">
+                    <img src="images/icon-rewards-method.png" alt="image description" />
+                  </div>
+                  <h3 class="text-green mb-1.5">Bigger Rewards Method</h3>
+                  <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="py-12.5 border-b-2 border-solid border-zink-light 2xl:pt-7.5 2xl:pb-[70px]">
+            <div class="container md:flex md:flex-wrap md:items-center">
+              <div class="text-center mb-7.5 relative md:w-[49%] md:mb-0 2xl:w-[calc(49%+60px)] 2xl:-ml-15 2xl:pr-8.75">
+                <img src="images/decor-img-02.svg" alt="image description" />
+                <img
+                  class="animate-float absolute top-[23%] left-[6.2%] w-[11vw] md:top-[22.4%] md:left-[5.8%] md:w-[6vw] xl:top-[22.5%] xl:w-[71px]"
+                  src="images/logo-java.png"
+                  alt="image description"
+                />
+                <img
+                  class="animate-float absolute top-[7%] left-[22.2%] w-[9vw] md:top-[6.5%] md:left-[21.8%] md:w-[5vw] xl:left-[21.75%] xl:w-[62px] 2xl:left-[20.75%]"
+                  src="images/logo-slack.png"
+                  alt="image description"
+                />
+                <img
+                  class="animate-float absolute top-[15%] left-[41%] w-[8vw] md:top-[16%] md:left-[41.2%] md:w-[4vw] xl:left-[40.5%] xl:w-[55px] 2xl:top-[15.5%] 2xl:left-[38.5%]"
+                  src="images/logo-github.png"
+                  alt="image description"
+                />
+                <img
+                  class="animate-float absolute top-[5.7%] left-[57.5%] w-[8vw] md:left-[57.7%] md:w-[4vw] xl:top-[5%] xl:left-[56.9%] xl:w-[57px] 2xl:top-[5.3%] 2xl:left-[54.1%]"
+                  src="images/logo-bower.png"
+                  alt="image description"
+                />
+                <img
+                  class="animate-float absolute top-[39%] left-[60%] w-[8vw] md:top-[39.3%] md:w-[4vw] xl:top-[38.4%] xl:left-[59.5%] xl:w-[56px] 2xl:top-[38.5%] 2xl:left-[56.5%]"
+                  src="images/logo-swift.png"
+                  alt="image description"
+                />
+                <img
+                  class="animate-float absolute top-[32.5%] left-[78.3%] w-[9vw] md:top-[32.8%] md:left-[78.6%] md:w-[4.5vw] xl:top-[32%] xl:left-[77.8%] xl:w-[61px] 2xl:top-[32.5%] 2xl:left-[73.8%]"
+                  src="images/logo-buddy.png"
+                  alt="image description"
+                />
+              </div>
+              <div class="md:w-[51%] md:pl-7.5 2xl:pt-15 2xl:pr-[94px] 2xl:pl-[75px]">
+                <h2 class="mb-3.75 lg:mb-5 2xl:pr-5">Designed & built by the latest code integration</h2>
+                <p class="lg:mb-[34px]">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
+                <a href="#" class="btn">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="py-12.5 text-center xl:pt-[135px] xl:pb-12.5">
+            <div class="container">
+              <div class="max-w-640px mx-auto mb-12.5 xl:mb-22">
+                <h2 class="mb-3 md:w-[75%] md:mx-auto md:mb-3 lg:mb-7.5">Why you should choose our app</h2>
+                <p>The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
+              </div>
+              <ul class="list-none p-0 m-0 md:flex md:flex-wrap md:-mx-3.75 xl:px-[55px] xl:m-0">
+                <li class="mb-3.75 md:w-2/6 md:px-3.75 md:mb-7.5 xl:px-10 xl:mb-11.75">
+                  <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-pink mx-auto mb-3.75 xl:mb-6.5">
+                    <img src="images/icon-app-development.png" alt="image description" />
+                  </div>
+                  <h3 class="mb-1.5">App Development</h3>
+                  <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                </li>
+                <li class="mb-3.75 md:w-2/6 md:px-3.75 md:mb-7.5 xl:px-10 xl:mb-11.75">
+                  <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-blue-light mx-auto mb-3.75 xl:mb-6.5">
+                    <img src="images/icon-award.png" alt="image description" />
+                  </div>
+                  <h3 class="mb-1.5">10 Times Award</h3>
+                  <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                </li>
+                <li class="mb-3.75 md:w-2/6 md:px-3.75 md:mb-7.5 xl:px-10 xl:mb-11.75">
+                  <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-yellow-light mx-auto mb-3.75 xl:mb-6.5">
+                    <img src="images/icon-cloud-storage.png" alt="image description" />
+                  </div>
+                  <h3 class="mb-1.5">Cloud Storage</h3>
+                  <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                </li>
+                <li class="mb-3.75 md:w-2/6 md:px-3.75 md:mb-7.5 xl:px-10 xl:mb-11.75">
+                  <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-green-light mx-auto mb-3.75 xl:mb-6.5">
+                    <img src="images/icon-customization.png" alt="image description" />
+                  </div>
+                  <h3 class="mb-1.5">Customization</h3>
+                  <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                </li>
+                <li class="mb-3.75 md:w-2/6 md:px-3.75 md:mb-7.5 xl:px-10 xl:mb-11.75">
+                  <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-violet-light mx-auto mb-3.75 xl:mb-6.5">
+                    <img src="images/icon-ux-planning.png" alt="image description" />
+                  </div>
+                  <h3 class="mb-1.5">UX Planning</h3>
+                  <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                </li>
+                <li class="mb-3.75 md:w-2/6 md:px-3.75 md:mb-7.5 xl:px-10 xl:mb-11.75">
+                  <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-orange-light mx-auto mb-3.75 xl:mb-6.5">
+                    <img src="images/icon-customer-support.png" alt="image description" />
+                  </div>
+                  <h3 class="mb-1.5">Customer Support</h3>
+                  <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-7.5 pb-12.5 xl:pt-14.5 xl:pb-[122px]">
+            <div class="container md:flex md:flex-row-reverse md:flex-wrap md:items-start">
+              <div class="text-right px-3.75 mb-7.5 relative md:w-[45%] md:mb-0 xl:mt-15 2xl:w-[calc(40%+135px)] 2xl:mt-[130px] 2xl:-mr-[135px]">
+                <img
+                  class="inline-block align-middle max-w-[380px] w-3/5 mr-3.75 drop-shadow-[0_5px_20px_rgba(0,0,0,0.15)] rotate-[10deg] relative z-30 sm:w-1/2 sm:mr-[10%] 2xl:w-auto 2xl:rotate-[11deg] 2xl:mr-[34px]"
+                  src="images/phone-img-04.png"
+                  alt="image description"
+                />
+                <img
+                  class="absolute max-w-[272px] w-[45%] top-[10%] left-6.25 bottom-0 drop-shadow-md -rotate-[10deg] z-20 sm:w-2/5 sm:left-[10%] xl:-rotate-[16deg] xl:top-[9px] xl:left-[51px] 2xl:top-[51px] 2xl:w-auto"
+                  src="images/phone-img-03.png"
+                  alt="image description"
+                />
+                <img
+                  class="absolute w-full h-full top-0 -right-7.5 z-10 xl:right-[calc((100vw-1170px)/-2)] 2xl:right-[calc((100vw-1440px)/-2)] 3xl:-right-20"
+                  src="images/decor-img-03.png"
+                  alt="image description"
+                />
+              </div>
+              <div class="md:w-[55%] md:pr-3.75 2xl:w-3/5 2xl:pr-3.75 2xl:pl-10.5">
+                <div class="md:mb-12.5 xl:w-[61%] xl:mb-15">
+                  <h2 class="mb-3">Ultimate features that we built</h2>
+                  <p>The rise of mobile devices transforms the way we consume information entirely.</p>
+                </div>
+                <div class="xl:pl-1.75">
+                  <ul class="list-none p-0 m-0 md:flex md:flex-wrap md:-mx-3.75 xl:-mx-11.5">
+                    <li class="md:w-1/2 md:px-3.75 md:mb-7.5 xl:px-11.5 xl:mb-8.75">
+                      <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-pink mb-3.75 xl:mb-6.5">
+                        <img src="images/icon-app-development.png" alt="image description" />
+                      </div>
+                      <h3 class="mb-1.5">App Development</h3>
+                      <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </li>
+                    <li class="md:w-1/2 md:px-3.75 md:mb-7.5 xl:px-11.5 xl:mb-8.75">
+                      <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-green-light mb-3.75 xl:mb-6.5">
+                        <img src="images/icon-ux-planning.png" alt="image description" />
+                      </div>
+                      <h3 class="mb-1.5">UX Planing</h3>
+                      <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </li>
+                    <li class="md:w-1/2 md:px-3.75 md:mb-7.5 xl:px-11.5 xl:mb-6.25">
+                      <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-yellow-light mb-3.75 xl:mb-6.5">
+                        <img src="images/icon-cloud-storage.png" alt="image description" />
+                      </div>
+                      <h3 class="mb-1.5">Cloud Storage</h3>
+                      <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </li>
+                    <li class="md:w-1/2 md:px-3.75 md:mb-7.5 xl:px-11.5 xl:mb-6.25">
+                      <div class="w-22 h-22 flex items-center justify-center p-0.5 rounded-full overflow-hidden bg-violet-light mb-3.75 xl:mb-6.5">
+                        <img src="images/icon-customer-support.png" alt="image description" />
+                      </div>
+                      <h3 class="mb-1.5">Customer support</h3>
+                      <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </li>
+                  </ul>
+                  <a href="#" class="btn">See all</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="pricing" class="text-center py-12.5 border-b-2 border-solid border-zink-light">
+          <div class="container">
+            <div class="max-w-640px m-auto mb-12.5 xl:mb-[77px]">
+              <h2 class="mb-3 lg:mb-6.25">Get awesome features, without extra charges</h2>
+              <p>The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
+            </div>
+            <ul class="tabset inline-flex flex-wrap items-center min-w-[283px] list-none p-0.5 mx-auto mb-10 border-2 border-solid border-color-[#ebebeb] rounded-3xl">
+              <li class="flex-1">
+                <a
+                  class="inline-block align-middle w-full font-medium text-center py-[11px] px-7.5 relative overflow-hidden before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-full before:-z-10 before:w-full before:bg-blue-dark before:rounded-3xl before:transition-left-right"
+                  href="#monthly"
+                  >Monthly</a
+                >
+              </li>
+              <li class="flex-1">
+                <a
+                  class="inline-block align-middle w-full font-medium text-center py-[11px] px-7.5 relative overflow-hidden before:content-[''] before:absolute before:top-0 before:bottom-0 before:right-full before:-z-10 before:w-full before:bg-blue-dark before:rounded-3xl before:transition-left-right"
+                  href="#annually"
+                  >Annually</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content 3xl:pl-10">
+              <div class="tab-block opacity-0 invisible transition-opacity" id="monthly">
+                <div class="md:flex md:flex-wrap md:items-start md:justify-center md:-mx-3.75 lg:-mx-5">
+                  <div class="max-w-79 w-full text-state mx-auto mb-7.5 rounded-xl shadow-3xl overflow-hidden md:mx-3.75 md:mb-7.5 lg:mx-5 lg:mb-10">
+                    <div class="min-h-58 pt-11.75 px-3.75 pb-2.5 bg-gradient-to-b from-[rgba(255,255,255,1)] to-[rgba(144,163,177,0.18)] xl:pt-[68px]">
+                      <strong class="block text-6xl leading-none font-semibold text-sky-dark mb-5"
+                        >$0 <span class="inline-block align-baseline text-lg leading-none font-normal text-state -ml-3.75">/ month</span></strong
+                      >
+                      <h3 class="leading-small-tight mb-0">Business Class</h3>
+                      <p>For small teams or office</p>
+                    </div>
+                    <div class="pt-8 px-3.75 pb-5.5">
+                      <ul class="list-none p-0 mx-0 mb-8.75">
+                        <li class="mb-5.75">Drag & Drop Builder</li>
+                        <li class="mb-5.75">1,000's of Templates</li>
+                        <li class="mb-5.75">Blog Support Tools</li>
+                        <li class="mb-5.75">eCommerce Store</li>
+                      </ul>
+                      <a href="#" class="btn">Start free trail</a>
+                    </div>
+                  </div>
+                  <div
+                    class="max-w-79 w-full text-state mx-auto mb-7.5 rounded-xl overflow-hidden border-2 border-solid border-color-[#ebebeb] md:mx-3.75 md:mb-7.5 lg:mx-5 lg:mb-10"
+                  >
+                    <div class="min-h-58 pt-11.75 px-3.75 pb-2.5 bg-gradient-to-b from-[rgba(255,255,255,1)] to-[rgba(144,163,177,0.18)] xl:pt-[68px]">
+                      <strong class="block text-6xl leading-none font-semibold text-sky-dark mb-5"
+                        >$99 <span class="inline-block align-baseline text-lg leading-none font-normal text-state -ml-3.75">/ month</span></strong
+                      >
+                      <h3 class="leading-small-tight mb-0">Pro Master</h3>
+                      <p>For Best opportunities</p>
+                    </div>
+                    <div class="pt-8 px-3.75 pb-5.5">
+                      <ul class="list-none p-0 mx-0 mb-8.75">
+                        <li class="mb-5.75">Drag & Drop Builder</li>
+                        <li class="mb-5.75">1,000's of Templates</li>
+                        <li class="mb-5.75">Blog Support Tools</li>
+                        <li class="mb-5.75">eCommerce Store</li>
+                      </ul>
+                      <a href="#" class="btn">Subscribe Now</a>
+                      <div class="pt-6">
+                        <a href="#">Or Start 14 days trail</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-block opacity-0 invisible transition-opacity" id="annually">
+                <div class="md:flex md:flex-wrap md:items-start md:justify-center md:-mx-3.75 lg:-mx-5">
+                  <div class="max-w-79 w-full text-state mx-auto mb-7.5 rounded-xl shadow-3xl overflow-hidden md:mx-3.75 md:mb-7.5 lg:mx-5 lg:mb-10">
+                    <div class="min-h-58 pt-11.75 px-3.75 pb-2.5 bg-gradient-to-b from-[rgba(255,255,255,1)] to-[rgba(144,163,177,0.18)] xl:pt-[68px]">
+                      <strong class="block text-6xl leading-none font-semibold text-sky-dark mb-5"
+                        >$200 <span class="inline-block align-baseline text-lg leading-none font-normal text-state -ml-3.75">/ year</span></strong
+                      >
+                      <h3 class="leading-small-tight mb-0">Business Class</h3>
+                      <p>For small teams or office</p>
+                    </div>
+                    <div class="pt-8 px-3.75 pb-5.5">
+                      <ul class="list-none p-0 mx-0 mb-8.75">
+                        <li class="mb-5.75">Drag & Drop Builder</li>
+                        <li class="mb-5.75">1,000's of Templates</li>
+                        <li class="mb-5.75">Blog Support Tools</li>
+                        <li class="mb-5.75">eCommerce Store</li>
+                      </ul>
+                      <a href="#" class="btn">Start free trail</a>
+                    </div>
+                  </div>
+                  <div
+                    class="max-w-79 w-full text-state mx-auto mb-7.5 rounded-xl overflow-hidden border-2 border-solid border-color-[#ebebeb] md:mx-3.75 md:mb-7.5 lg:mx-5 lg:mb-10"
+                  >
+                    <div class="min-h-58 pt-11.75 px-3.75 pb-2.5 bg-gradient-to-b from-[rgba(255,255,255,1)] to-[rgba(144,163,177,0.18)] xl:pt-[68px]">
+                      <strong class="block text-6xl leading-none font-semibold text-sky-dark mb-5"
+                        >$1000 <span class="inline-block align-baseline text-lg leading-none font-normal text-state -ml-3.75">/ year</span></strong
+                      >
+                      <h3 class="leading-small-tight mb-0">Pro Master</h3>
+                      <p>For Best opportunities</p>
+                    </div>
+                    <div class="pt-8 px-3.75 pb-5.5">
+                      <ul class="list-none p-0 mx-0 mb-8.75">
+                        <li class="mb-5.75">Drag & Drop Builder</li>
+                        <li class="mb-5.75">1,000's of Templates</li>
+                        <li class="mb-5.75">Blog Support Tools</li>
+                        <li class="mb-5.75">eCommerce Store</li>
+                      </ul>
+                      <a href="#" class="btn">Subscribe Now</a>
+                      <div class="pt-6">
+                        <a href="#">Or Start 14 days trail</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="testimonials" class="py-12.5 xl:pt-[147px] xl:pb-20">
+          <div class="container md:flex md:flex-wrap md:flex-row-reverse md:items-start">
+            <div class="md:w-[45%] md:pl-3.75 xl:w-[51%] xl:pr-12.5">
+              <div class="mb-7.5 lg:mb-9">
+                <h2 class="mb-3 lg:text-5xl lg:mb-5">Meet Client Satisfaction by using product</h2>
+                <p>The rise of mobile devices transforms the way we consume. elevant channels such as Facebook.</p>
+              </div>
+              <div class="mb-12.5 md:mb-0 xl:relative">
+                <div class="testimonials-slider -mx-3.75 mb-7.5">
+                  <div class="px-3.75">
+                    <div class="mb-7.5">
+                      <ul class="list-none p-0 flex items-center leading-none -mx-0.5 mb-5 lg:text-xl lg:leading-none lg:-mx-1.25 lg:mb-5">
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                      </ul>
+                      <h3 class="mb-5">User friendly & Customizable</h3>
+                      <p>
+                        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from
+                        generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for
+                        offshoring.
+                      </p>
+                    </div>
+                    <div class="flex items-center xl:pr-140px">
+                      <div class="w-22.5 h-22.5 rounded-full overflow-hidden relative">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-01.jpg" alt="image description" />
+                      </div>
+                      <div class="w-[calc(100%-90px)] text-lg pl-3.75 lg:pt-2.5 lg:pl-8">
+                        <strong class="block font-semibold text-sky-dark mb-2">Zoltan Nemeth</strong>
+                        <span class="block">CEO of Pixler Lab</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-3.75">
+                    <div class="mb-7.5">
+                      <ul class="list-none p-0 flex items-center leading-none -mx-0.5 mb-5 lg:text-xl lg:leading-none lg:-mx-1.25 lg:mb-5">
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star"></i></li>
+                      </ul>
+                      <h3 class="mb-5">Lorem, ipsum dolor sit amet</h3>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis aspernatur illum laboriosam ullam vero sed nulla! Delectus, eligendi deserunt?
+                        Pariatur esse ullam praesentium distinctio repudiandae quos totam dolorum corporis!
+                      </p>
+                    </div>
+                    <div class="flex items-center xl:pr-35">
+                      <div class="w-22.5 h-22.5 rounded-full overflow-hidden relative">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-02.jpg" alt="image description" />
+                      </div>
+                      <div class="w-[calc(100%-90px)] text-lg pl-3.75 lg:pl-8">
+                        <strong class="block font-semibold text-sky-dark mb-2">Aurora Blevins</strong>
+                        <span class="block">Chief Web Architect</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-3.75">
+                    <div class="mb-7.5">
+                      <ul class="list-none p-0 flex items-center leading-none -mx-0.5 mb-5 lg:text-xl lg:leading-none lg:-mx-1.25 lg:mb-5">
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                      </ul>
+                      <h3 class="mb-5">Lorem, ipsum dolor sit amet</h3>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis aspernatur illum laboriosam ullam vero sed nulla! Delectus, eligendi deserunt?
+                        Pariatur esse ullam praesentium distinctio repudiandae quos totam dolorum corporis!
+                      </p>
+                    </div>
+                    <div class="flex items-center xl:pr-35">
+                      <div class="w-22.5 h-22.5 rounded-full overflow-hidden relative">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-03.jpg" alt="image description" />
+                      </div>
+                      <div class="w-[calc(100%-90px)] text-lg pl-3.75 lg:pt-2.5 lg:pl-8">
+                        <strong class="block font-semibold text-sky-dark mb-2">Blake Rollins</strong>
+                        <span class="block">Regional Quality Consultant</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-3.75">
+                    <div class="mb-7.5">
+                      <ul class="list-none p-0 flex items-center leading-none -mx-0.5 mb-5 lg:text-xl lg:leading-none lg:-mx-1.25 lg:mb-5">
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                      </ul>
+                      <h3 class="mb-5">Lorem, ipsum dolor sit amet</h3>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis aspernatur illum laboriosam ullam vero sed nulla! Delectus, eligendi deserunt?
+                        Pariatur esse ullam praesentium distinctio repudiandae quos totam dolorum corporis!
+                      </p>
+                    </div>
+                    <div class="flex items-center xl:pr-35">
+                      <div class="w-22.5 h-22.5 rounded-full overflow-hidden relative">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-04.jpg" alt="image description" />
+                      </div>
+                      <div class="w-[calc(100%-90px)] text-lg pl-3.75 lg:pt-2.5 lg:pl-8">
+                        <strong class="block font-semibold text-sky-dark mb-2">Janet Lam</strong>
+                        <span class="block">Corporate Branding Supervisor</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-3.75">
+                    <div class="mb-7.5">
+                      <ul class="list-none p-0 flex items-center leading-none -mx-0.5 mb-5 lg:text-xl lg:leading-none lg:-mx-1.25 lg:mb-5">
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star"></i></li>
+                      </ul>
+                      <h3 class="mb-5">Lorem, ipsum dolor sit amet</h3>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis aspernatur illum laboriosam ullam vero sed nulla! Delectus, eligendi deserunt?
+                        Pariatur esse ullam praesentium distinctio repudiandae quos totam dolorum corporis!
+                      </p>
+                    </div>
+                    <div class="flex items-center xl:pr-35">
+                      <div class="w-22.5 h-22.5 rounded-full overflow-hidden relative">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-05.jpg" alt="image description" />
+                      </div>
+                      <div class="w-[calc(100%-90px)] text-lg pl-3.75 lg:pt-2.5 lg:pl-8">
+                        <strong class="block font-semibold text-sky-dark mb-2">Steffan Tyler</strong>
+                        <span class="block">Corporate Mobility Director</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-3.75">
+                    <div class="mb-7.5">
+                      <ul class="list-none p-0 flex items-center leading-none -mx-0.5 mb-5 lg:text-xl lg:leading-none lg:-mx-1.25 lg:mb-5">
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star"></i></li>
+                      </ul>
+                      <h3 class="mb-5">Lorem, ipsum dolor sit amet</h3>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis aspernatur illum laboriosam ullam vero sed nulla! Delectus, eligendi deserunt?
+                        Pariatur esse ullam praesentium distinctio repudiandae quos totam dolorum corporis!
+                      </p>
+                    </div>
+                    <div class="flex items-center xl:pr-35">
+                      <div class="w-22.5 h-22.5 rounded-full overflow-hidden relative">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-06.jpg" alt="image description" />
+                      </div>
+                      <div class="w-[calc(100%-90px)] text-lg pl-3.75 lg:pt-2.5 lg:pl-8">
+                        <strong class="block font-semibold text-sky-dark mb-2">Arman Becker</strong>
+                        <span class="block">Relational Brand Director</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-3.75">
+                    <div class="mb-7.5">
+                      <ul class="list-none p-0 flex items-center leading-none -mx-0.5 mb-5 lg:text-xl lg:leading-none lg:-mx-1.25 lg:mb-5">
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                        <li class="px-0.5 lg:px-1.25"><i class="icon-star text-yellow"></i></li>
+                      </ul>
+                      <h3 class="mb-5">Lorem, ipsum dolor sit amet</h3>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis aspernatur illum laboriosam ullam vero sed nulla! Delectus, eligendi deserunt?
+                        Pariatur esse ullam praesentium distinctio repudiandae quos totam dolorum corporis!
+                      </p>
+                    </div>
+                    <div class="flex items-center xl:pr-35">
+                      <div class="w-22.5 h-22.5 rounded-full overflow-hidden relative">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-07.jpg" alt="image description" />
+                      </div>
+                      <div class="w-[calc(100%-90px)] text-lg pl-3.75 lg:pt-2.5 lg:pl-8">
+                        <strong class="block font-semibold text-sky-dark mb-2">Aston Harrison</strong>
+                        <span class="block">International Factors Director</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="testimonials-btn-holder max-w-[120px] w-full flex items-center justify-between text-xs leading-none mx-auto relative md:mx-0 xl:absolute xl:right-0 xl:bottom-[13px] 3xl:-right-14.5 before:content-[''] before:w-px before:h-6.25 before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:bg-[#e7e7e7]"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="w-[calc(100%+15px)] -ml-3.75 py-7.5 relative md:w-[calc(55%+15px)] xl:mt-[72px] xl:w-[calc(49%+(100vw-1170px)/2)] xl:ml-[calc((100vw-1170px)/-2)] 3xl:w-[calc(49%+253px)] 3xl:-ml-[215px] 3xl:-mr-[38px]"
+            >
+              <img class="w-full opacity-30 xl:opacity-[0.16] 3xl:-mr-5" src="images/world-map-img.png" alt="image description" />
+              <div class="testimonials-slider-nav top-0 left-0 right-0 bottom-0">
+                <div
+                  class="absolute rounded-full overflow-hidden cursor-pointer transition-shadow w-[7vw] h-[7vw] top-[21.8%] left-[5%] md:w-[5vw] md:h-[5vw] 3xl:w-15 3xl:h-15 3xl:top-[21.5%] 3xl:left-[5.2%]"
+                >
+                  <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-01.jpg" alt="image description" />
+                </div>
+                <div
+                  class="absolute rounded-full overflow-hidden cursor-pointer transition-shadow w-[8vw] h-[8vw] top-[4%] left-[31.7%] md:w-[6vw] md:h-[6vw] 3xl:w-[71px] 3xl:h-[71px] 3xl:top-[3%]"
+                >
+                  <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-02.jpg" alt="image description" />
+                </div>
+                <div
+                  class="absolute rounded-full overflow-hidden cursor-pointer transition-shadow w-[6.5vw] h-[6.5vw] top-[12%] right-[19.5%] md:w-[4.5vw] md:h-[4.5vw] 3xl:w-14.5 3xl:h-14.5 3xl:top-[11%] 3xl:right-[18.8%]"
+                >
+                  <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-03.jpg" alt="image description" />
+                </div>
+                <div
+                  class="absolute rounded-full overflow-hidden cursor-pointer transition-shadow w-[12vw] h-[12vw] top-[46%] left-[8%] md:w-[7vw] md:h-[7vw] 3xl:w-25 3xl:h-25 3xl:top-45%"
+                >
+                  <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-04.jpg" alt="image description" />
+                </div>
+                <div
+                  class="absolute rounded-full overflow-hidden cursor-pointer transition-shadow w-[12vw] h-[12vw] top-[37%] left-[35%] md:w-[7vw] md:h-[7vw] 3xl:w-25 3xl:h-25 3xl:top-[36%]"
+                >
+                  <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-05.jpg" alt="image description" />
+                </div>
+                <div
+                  class="absolute rounded-full overflow-hidden cursor-pointer transition-shadow w-[9.5vw] h-[9.5vw] top-[52%] right-[31.8%] md:w-[4.5vw] md:h-[4.5vw] 3xl:w-[85px] 3xl:h-[85px] 3xl:top-[51.3%] 3xl:right-[31%]"
+                >
+                  <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-06.jpg" alt="image description" />
+                </div>
+                <div
+                  class="absolute rounded-full overflow-hidden cursor-pointer transition-shadow w-[15vw] h-[15vw] bottom-[6%] left-[28.5%] md:w-[9vw] md:h-[9vw] 3xl:w-[132px] 3xl:h-[132px] 3xl:bottom-[5.5%]"
+                >
+                  <img class="absolute top-0 left-0 w-full h-full object-cover" src="images/client-img-07.jpg" alt="image description" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="faq" class="faq py-12.5 border-b-2 border-solid border-gray-light xl:pt-[74px] xl:pb-25">
+          <div class="container">
+            <div class="max-w-640px mx-auto mb-12.5 text-center lg:mx-auto mb-14.5">
+              <h2 class="mb-3 lg:text-5xl lg:mb-6">Frequently asked questions</h2>
+              <p>The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
+            </div>
+            <ul class="accordion list-none mx-0 p-0">
+              <li class="py-4.5 px-3.75 bg-state-light mb-2.5 lg:pt-4.5 lg:pr-8.75 lg:pb-4.5 lg:pl-12.5 transition-padding active">
+                <a class="opener block text-xl leading-snug font-medium pr-10 text-sky-dark relative hover:text-blue-dark" href="#"
+                  >How to contact with riders emergency? <span class="icon-plus w-4.5 h-4.5 absolute top-1/2 right-0 -translate-y-1/2 before:content-[''] after:content-['']"></span
+                ></a>
+                <div class="slide pt-5 pr-3.75 pb-3.75 lg:pt-8 md:pr-10 md:pb-8">
+                  <p>
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to
+                    further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+                  </p>
+                </div>
+              </li>
+              <li class="py-4.5 px-3.75 bg-state-light mb-2.5 lg:pt-4.5 lg:pr-8.75 lg:pb-4.5 lg:pl-12.5 transition-padding">
+                <a class="opener block text-xl leading-snug font-medium pr-10 text-sky-dark relative hover:text-blue-dark" href="#"
+                  >App installation failed, how to update system information?
+                  <span class="icon-plus w-4.5 h-4.5 absolute top-1/2 right-0 -translate-y-1/2 before:content-[''] after:content-['']"></span
+                ></a>
+                <div class="slide pt-5 pr-3.75 pb-3.75 lg:pt-8 md:pr-10 md:pb-8">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit, esse ab ea illo delectus. Veniam libero dolore aut placeat quos velit consectetur
+                    reprehenderit error accusantium sed, ipsa sint unde!
+                  </p>
+                </div>
+              </li>
+              <li class="py-4.5 px-3.75 bg-state-light mb-2.5 lg:pt-4.5 lg:pr-8.75 lg:pb-4.5 lg:pl-12.5 transition-padding">
+                <a class="opener block text-xl leading-snug font-medium pr-10 text-sky-dark relative hover:text-blue-dark" href="#"
+                  >Website reponse taking time, how to improve?
+                  <span class="icon-plus w-4.5 h-4.5 absolute top-1/2 right-0 -translate-y-1/2 before:content-[''] after:content-['']"></span
+                ></a>
+                <div class="slide pt-5 pr-3.75 pb-3.75 lg:pt-8 md:pr-10 md:pb-8">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </li>
+              <li class="py-4.5 px-3.75 bg-state-light mb-2.5 lg:pt-4.5 lg:pr-8.75 lg:pb-4.5 lg:pl-12.5 transition-padding">
+                <a class="opener block text-xl leading-snug font-medium pr-10 text-sky-dark relative hover:text-blue-dark" href="#"
+                  >New update fixed all bug and issues <span class="icon-plus w-4.5 h-4.5 absolute top-1/2 right-0 -translate-y-1/2 before:content-[''] after:content-['']"></span
+                ></a>
+                <div class="slide pt-5 pr-3.75 pb-3.75 lg:pt-8 md:pr-10 md:pb-8">
+                  <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+                </div>
+              </li>
+              <li class="py-4.5 px-3.75 bg-state-light mb-2.5 lg:pt-4.5 lg:pr-8.75 lg:pb-4.5 lg:pl-12.5 transition-padding">
+                <a class="opener block text-xl leading-snug font-medium pr-10 text-sky-dark relative hover:text-blue-dark" href="#"
+                  >How to contact with riders emergency? <span class="icon-plus w-4.5 h-4.5 absolute top-1/2 right-0 -translate-y-1/2 before:content-[''] after:content-['']"></span
+                ></a>
+                <div class="slide pt-5 pr-3.75 pb-3.75 lg:pt-8 md:pr-10 md:pb-8">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta velit a vero cumque nostrum id quis cupiditate optio! Fugit hic ea quaerat suscipit labore
+                    molestiae itaque facere nesciunt est ducimus.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="py-12.5 md:pb-0 lg:pt-3.5">
+          <div class="container md:flex md:flex-wrap md:flex-row-reverse md:items-end">
+            <div class="mb-7.5 md:w-[calc(45%+15px)] md:mb-0 md:-mr-3.75 xl:w-[calc(45%+(100vw-1170px)/2)] xl:mr-[calc(100vw-1170px)/-2] 3xl:w-[calc(45%+224px)] 3xl:-mr-[224px]">
+              <img class="md:-mb-[8%]" src="images/decor-img-04.svg" alt="image description" />
+            </div>
+            <div class="md:w-[55%] md:py-3.75 md:pr-3.75 lg:py-7.5 xl:pt-12.5 xl:pr-0 xl:pb-[75px] xl:pl-2.5">
+              <h2 class="mb-3 lg:text-[48px] lg:mb-5">Download our App now!</h2>
+              <p class="xl:mb-11.5">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
+              <div class="flex flex-wrap -mx-1.75 lg:-mx-3.75">
+                <a href="#" class="inline-block align-middle h-[55px] mx-1.75 mb-2.5 transition-opacity lg:mx-3.75 lg:mb-7.5 hover:opacity-80">
+                  <img class="max-h-full" src="images/google-play-btn.png" alt="Google play button" />
+                </a>
+                <a href="#" class="inline-block align-middle h-[55px] mx-1.75 mb-2.5 transition-opacity lg:mx-3.75 lg:mb-7.5 hover:opacity-80">
+                  <img class="max-h-full" src="images/app-store-btn.png" alt="App store button" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer text-center py-12.5 text-[rgba(255, 255, 255, 0.21)] bg-[#09142e] lg:pt-[115px] lg:pb-[124px]">
+        <div class="container">
+          <strong class="block w-[117px] mx-auto mb-[48px]">
+            <a href="#">
+              <img src="images/logo-white.png" alt="AppLab" />
+            </a>
+          </strong>
+          <nav>
+            <ul class="menu mb-5 sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:-mx-4.5 sm:mb-5">
+              <li class="sm:px-4.5 sm:mb-4.5"><a class="anchor-link text-white hover:text-orange" href="#home">Home</a></li>
+              <li class="sm:px-4.5 sm:mb-4.5"><a class="anchor-link text-white hover:text-orange" href="#features">Key Features</a></li>
+              <li class="sm:px-4.5 sm:mb-4.5"><a class="anchor-link text-white hover:text-orange" href="#pricing">Pricing</a></li>
+              <li class="sm:px-4.5 sm:mb-4.5"><a class="anchor-link text-white hover:text-orange" href="#testimonials">Testimonial</a></li>
+              <li class="sm:px-4.5 sm:mb-4.5"><a class="anchor-link text-white hover:text-orange" href="#faq">FAQ</a></li>
+            </ul>
+          </nav>
+          <ul class="list-none p-0 -mx-2.5 mb-7.5 flex flex-wrap justify-center items-center text-[30px] leading-none lg:-mx-2.5 lg:mb-[75px]">
+            <li class="p-2.5">
+              <a class="text-current hover:text-white" href="#"><i class="icon-facebook"></i></a>
+            </li>
+            <li class="p-2.5">
+              <a class="text-current hover:text-white" href="#"><i class="icon-twitter text-[24px]"></i></a>
+            </li>
+            <li class="p-2.5">
+              <a class="text-current hover:text-white" href="#"><i class="icon-slack text-[27px]"></i></a>
+            </li>
+            <li class="p-2.5">
+              <a class="text-current hover:text-white" href="#"><i class="icon-github"></i></a>
+            </li>
+          </ul>
+          <span class="block text-[14px] leading-[1.285714]"
+            >Copyright© <a class="text-current hover:text-white" href="https://dribbble.com/ArifurRahman" target="_blank">Arifur Rahman Tushar</a> 2019. All rights reserved</span
+          >
+        </div>
+      </footer>
+    </div>
+    <script defer src="js/app.js"></script>
+  </body>
+</html>
