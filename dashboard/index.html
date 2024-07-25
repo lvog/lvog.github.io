@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <script>
+      window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js" defer><\/script>');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="page">
+    <noscript>
+      <div>Javascript must be enabled for the correct page display</div>
+    </noscript>
+    <div class="wrapper page__holder">
+      <header class="header page__head fade-effect">
+        <div class="header__layout">
+          <div class="header__logo-holder">
+            <strong class="logo header__logo">
+              <a class="link logo__link" href="#">
+                <img class="image logo__img" src="images/logo.png" alt="Dashboard" />
+              </a>
+            </strong>
+            <span class="version header__info">v.01</span>
+          </div>
+          <a href="#" class="link nav-opener"><span></span></a>
+          <div class="header__drop">
+            <div class="user-block header__user-block">
+              <div class="user-block__photo">
+                <img class="image user-block__img" src="images/photo.png" alt="Evano" />
+              </div>
+              <div class="user-block__info">
+                <strong class="user-block__info-name">Evano</strong>
+                <span class="user-block__info-position">Project Manager</span>
+              </div>
+            </div>
+            <nav class="page__menu">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a class="link menu__link" href="#"><i class="icon-key menu__link-icon"></i>Dashboard</a>
+                </li>
+                <li class="menu__item">
+                  <a class="link menu__link" href="#"><i class="icon-product menu__link-icon"></i>Product<i class="icon-arrow-right menu__link-arrow"></i></a>
+                </li>
+                <li class="menu__item menu__item_active">
+                  <a class="link menu__link" href="#"><i class="icon-user menu__link-icon"></i>Customers<i class="icon-arrow-right menu__link-arrow"></i></a>
+                </li>
+                <li class="menu__item">
+                  <a class="link menu__link" href="#"><i class="icon-money menu__link-icon"></i>Income<i class="icon-arrow-right menu__link-arrow"></i></a>
+                </li>
+                <li class="menu__item">
+                  <a class="link menu__link" href="#"><i class="icon-discount menu__link-icon"></i>Promote<i class="icon-arrow-right menu__link-arrow"></i></a>
+                </li>
+                <li class="menu__item">
+                  <a class="link menu__link" href="#"><i class="icon-help menu__link-icon"></i>Help<i class="icon-arrow-right menu__link-arrow"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main page__main">
+        <div class="page__content">
+          <h1 class="page__heading heading heading_level_1 move-effect">Hello Evano 👋🏼,</h1>
+          <div class="card move-effect">
+            <div class="card__header">
+              <div class="card__heading-block">
+                <h2 class="heading heading_level_2 card__heading">All Customers</h2>
+                <span class="card__heading-info">Active Members</span>
+              </div>
+              <form class="search-form card__search-form" action="#">
+                <i class="icon-search search-form__icon"></i>
+                <input class="input search-form__input" type="search" name="search" placeholder="Search" />
+                <input class="button search-form__button" type="submit" value="Search" />
+              </form>
+            </div>
+            <div class="card__body">
+              <table class="table">
+                <thead class="table__head table__head_sm_display_none table__head_md_border">
+                  <tr class="table__row">
+                    <th class="table__head_cell table__cell_lg_width_19 table__cell_md_border_none">Customer Name</th>
+                    <th class="table__head_cell table__cell_lg_width_15 table__cell_md_border_none">Company</th>
+                    <th class="table__head_cell table__cell_lg_width_17 table__cell_md_border_none">Phone Number</th>
+                    <th class="table__head_cell table__cell_lg_width_23 table__cell_md_border_none">Email</th>
+                    <th class="table__head_cell table__cell_lg_width_16 table__cell_md_border_none">Country</th>
+                    <th class="table__head_cell table__cell_lg_width_10 table__cell_md_center table__cell_md_border_none">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="table__body">
+                  <tr class="table__row table__row_sm_border">
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_19" data-title="Customer Name">Jane Cooper</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_15" data-title="Company">Microsoft</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_17" data-title="Phone Number">
+                      <a class="link table__link" href="tel:2255550118">(225) 555-0118</a>
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_23" data-title="Email">
+                      <a class="link table__link" href="mailto:&#106;&#097;&#110;&#101;&#064;&#109;&#105;&#099;&#114;&#111;&#115;&#111;&#102;&#116;&#046;&#099;&#111;&#109;"
+                        >&#106;&#097;&#110;&#101;&#064;&#109;&#105;&#099;&#114;&#111;&#115;&#111;&#102;&#116;&#046;&#099;&#111;&#109;</a
+                      >
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_16" data-title="Country">United States</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_10 table__cell_md_center table__cell_sm_border_none" data-title="Status">
+                      <span class="tag">Active</span>
+                    </td>
+                  </tr>
+                  <tr class="table__row table__row_sm_border">
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_19" data-title="Customer Name">Floyd Miles</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_15" data-title="Company">Yahoo</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_17" data-title="Phone Number">
+                      <a class="link table__link" href="tel:2055550100">(205) 555-0100</a>
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_23" data-title="Email">
+                      <a class="link table__link" href="mailto:&#102;&#108;&#111;&#121;&#100;&#064;&#121;&#097;&#104;&#111;&#111;&#046;&#099;&#111;&#109;"
+                        >&#102;&#108;&#111;&#121;&#100;&#064;&#121;&#097;&#104;&#111;&#111;&#046;&#099;&#111;&#109;</a
+                      >
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_16" data-title="Country">Kiribati</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_10 table__cell_md_center table__cell_sm_border_none" data-title="Status">
+                      <span class="tag tag__inactive">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr class="table__row table__row_sm_border">
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_19" data-title="Customer Name">Ronald Richards</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_15" data-title="Company">Adobe</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_17" data-title="Phone Number">
+                      <a class="link table__link" href="tel:3025550107">(302) 555-0107</a>
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_23" data-title="Email">
+                      <a class="link table__link" href="mailto:&#114;&#111;&#110;&#097;&#108;&#100;&#064;&#097;&#100;&#111;&#098;&#101;&#046;&#099;&#111;&#109;"
+                        >&#114;&#111;&#110;&#097;&#108;&#100;&#064;&#097;&#100;&#111;&#098;&#101;&#046;&#099;&#111;&#109;</a
+                      >
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_16" data-title="Country">Israel</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_10 table__cell_md_center table__cell_sm_border_none" data-title="Status">
+                      <span class="tag tag__inactive">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr class="table__row table__row_sm_border">
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_19" data-title="Customer Name">Marvin McKinney</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_15" data-title="Company">Tesla</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_17" data-title="Phone Number">
+                      <a class="link table__link" href="tel:2525550126">(252) 555-0126</a>
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_23" data-title="Email">
+                      <a class="link table__link" href="mailto:&#109;&#097;&#114;&#118;&#105;&#110;&#064;&#116;&#101;&#115;&#108;&#097;&#046;&#099;&#111;&#109;"
+                        >&#109;&#097;&#114;&#118;&#105;&#110;&#064;&#116;&#101;&#115;&#108;&#097;&#046;&#099;&#111;&#109;</a
+                      >
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_16" data-title="Country">Iran</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_10 table__cell_md_center table__cell_sm_border_none" data-title="Status">
+                      <span class="tag">Active</span>
+                    </td>
+                  </tr>
+                  <tr class="table__row table__row_sm_border">
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_19" data-title="Customer Name">Jerome Bell</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_15" data-title="Company">Google</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_17" data-title="Phone Number">
+                      <a class="link table__link" href="tel:6295550129">(629) 555-0129</a>
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_23" data-title="Email">
+                      <a class="link table__link" href="mailto:&#106;&#101;&#114;&#111;&#109;&#101;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#046;&#099;&#111;&#109;"
+                        >&#106;&#101;&#114;&#111;&#109;&#101;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#046;&#099;&#111;&#109;</a
+                      >
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_16" data-title="Country">Réunion</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_10 table__cell_md_center table__cell_sm_border_none" data-title="Status">
+                      <span class="tag">Active</span>
+                    </td>
+                  </tr>
+                  <tr class="table__row table__row_sm_border">
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_19" data-title="Customer Name">Kathryn Murphy</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_15" data-title="Company">Microsoft</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_17" data-title="Phone Number">
+                      <a class="link table__link" href="tel:4065550120">(406) 555-0120</a>
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_23" data-title="Email">
+                      <a
+                        class="link table__link"
+                        href="mailto:&#107;&#097;&#116;&#104;&#114;&#121;&#110;&#064;&#109;&#105;&#099;&#114;&#111;&#115;&#111;&#102;&#116;&#046;&#099;&#111;&#109;"
+                        >&#107;&#097;&#116;&#104;&#114;&#121;&#110;&#064;&#109;&#105;&#099;&#114;&#111;&#115;&#111;&#102;&#116;&#046;&#099;&#111;&#109;</a
+                      >
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_16" data-title="Country">Curaçao</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_10 table__cell_md_center table__cell_sm_border_none" data-title="Status">
+                      <span class="tag">Active</span>
+                    </td>
+                  </tr>
+                  <tr class="table__row table__row_sm_border">
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_19" data-title="Customer Name">Jacob Jones</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_15" data-title="Company">Yahoo</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_17" data-title="Phone Number">
+                      <a class="link table__link" href="tel:2085550112">(208) 555-0112</a>
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_23" data-title="Email">
+                      <a class="link table__link" href="mailto:&#106;&#097;&#099;&#111;&#098;&#064;&#121;&#097;&#104;&#111;&#111;&#046;&#099;&#111;&#109;"
+                        >&#106;&#097;&#099;&#111;&#098;&#064;&#121;&#097;&#104;&#111;&#111;&#046;&#099;&#111;&#109;</a
+                      >
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_16" data-title="Country">Brazil</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_10 table__cell_md_center table__cell_sm_border_none" data-title="Status">
+                      <span class="tag">Active</span>
+                    </td>
+                  </tr>
+                  <tr class="table__row table__row_sm_border">
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_19" data-title="Customer Name">Kristin Watson</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_15" data-title="Company">Facebook</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_17" data-title="Phone Number">
+                      <a class="link link table__link" href="tel:7045550127">(704) 555-0127</a>
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_23" data-title="Email">
+                      <a
+                        class="link table__link"
+                        href="mailto:&#107;&#114;&#105;&#115;&#116;&#105;&#110;&#064;&#102;&#097;&#099;&#101;&#098;&#111;&#111;&#107;&#046;&#099;&#111;&#109;"
+                        >&#107;&#114;&#105;&#115;&#116;&#105;&#110;&#064;&#102;&#097;&#099;&#101;&#098;&#111;&#111;&#107;&#046;&#099;&#111;&#109;</a
+                      >
+                    </td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_16" data-title="Country">Åland Islands</td>
+                    <td class="table__cell table__cell_sm_create_before table__cell_lg_width_10 table__cell_md_center table__cell_sm_border_none" data-title="Status">
+                      <span class="tag tag__inactive">Inactive</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card__footer">
+              <span class="card__footer-info">Showing data 1 to 8 of <span class="num card_num">256K entries</span></span>
+              <ul class="pagination card__pagination">
+                <li class="pagination__item"><a class="link pagination__link" href="#">&lt;</a></li>
+                <li class="pagination__item active"><a class="link pagination__link" href="#">1</a></li>
+                <li class="pagination__item"><a class="link pagination__link" href="#">2</a></li>
+                <li class="pagination__item"><a class="link pagination__link" href="#">3</a></li>
+                <li class="pagination__item"><a class="link pagination__link" href="#">4</a></li>
+                <li class="pagination__item">...</li>
+                <li class="pagination__item"><a class="link pagination__link" href="#">40</a></li>
+                <li class="pagination__item"><a class="link pagination__link" href="#">&gt;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script defer src="js/app.js"></script>
+  </body>
+</html>
