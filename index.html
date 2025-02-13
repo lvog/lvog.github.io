@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <!-- page title -->
+    <meta charset="utf-8" />
     <title>Levchuk Oleg - Front-end Developer</title>
-    <!-- include jQuery library -->
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Lvog" />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <meta name="description" content="I'm a front-end developer specializing in creating responsive websites with HTML, CSS, and JavaScript. Check out my website to see more." />
+    <meta
+      name="keywords"
+      content="front-end development, markup developer, HTML/CSS developer, website development, responsive design, HTML5, CSS3, JavaScript, custom WordPress themes, Webflow, portfolio, Levchuk Oleg"
+    />
+    <meta name="author" content="Levchuk Oleg" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://lvog.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Levchuk Oleg - Front-end Developer" />
+    <meta property="og:url" content="https://lvog.github.io" />
+    <meta property="og:image" content="https://lvog.github.io/images/website.jpg" />
+    <meta
+      property="og:description"
+      content="I'm a front-end developer specializing in creating responsive websites with HTML, CSS, and JavaScript. Check out my website to see more."
+    />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -12,348 +32,290 @@
       referrerpolicy="no-referrer"
       defer
     ></script>
-    <!-- include jQuery library local file if cdn link doesn't work -->
     <script>
       window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js" defer><\/script>');
     </script>
-    <link href="images/favicon.png" rel="shortcut icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="I'm a front-end developer/markup developer, who specializes in creating beautiful and responsive websites. Check out my portfolio to see my work.">
-    <meta name="keywords" content="front-end developer, markup developer, html/css developer, HTML5, CSS3, JavaScript, WordPress, Webflow, portfolio">
-    <meta name="author" content="Levchuk Oleg">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://lvog.github.io">
     <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body class="popup-holder">
-    <div class="preloader-holder">
-      <div class="preloader"></div>
+  <body>
+    <noscript>
+      <div>Javascript must be enabled for the correct page display</div>
+    </noscript>
+    <div class="preloader">
+      <span class="preloader-info"
+        ><svg width="723" height="93" viewBox="0 0 723 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0.295898 0.712006V93H92.4559V75.976H17.1919V0.712006H0.295898ZM130.254 93C127.011 93 124.025 92.1893 121.294 90.568C118.649 88.9467 116.515 86.8133 114.894 84.168C113.273 81.4373 112.462 78.4507 112.462 75.208V18.632C112.462 15.3893 113.273 12.4453 114.894 9.8C116.515 7.06933 118.649 4.89333 121.294 3.272C124.025 1.65066 127.011 0.839996 130.254 0.839996H186.83C190.073 0.839996 193.017 1.65066 195.662 3.272C198.393 4.89333 200.569 7.06933 202.19 9.8C203.811 12.4453 204.622 15.3893 204.622 18.632V75.208C204.622 78.4507 203.811 81.4373 202.19 84.168C200.569 86.8133 198.393 88.9467 195.662 90.568C193.017 92.1893 190.073 93 186.83 93H130.254ZM130.894 75.976H185.934C186.361 75.976 186.745 75.848 187.086 75.592C187.427 75.2507 187.598 74.8667 187.598 74.44V19.4C187.598 18.9733 187.427 18.632 187.086 18.376C186.745 18.0347 186.361 17.864 185.934 17.864H130.894C130.467 17.864 130.083 18.0347 129.742 18.376C129.486 18.632 129.358 18.9733 129.358 19.4V74.44C129.358 74.8667 129.486 75.2507 129.742 75.592C130.083 75.848 130.467 75.976 130.894 75.976ZM231.774 18.632V93H248.67V62.024H306.91V93H323.934V18.632C323.934 15.3893 323.123 12.4453 321.502 9.8C319.881 7.06933 317.705 4.89333 314.974 3.272C312.243 1.65066 309.257 0.839996 306.014 0.839996H249.566C246.323 0.839996 243.337 1.65066 240.606 3.272C237.961 4.89333 235.827 7.06933 234.206 9.8C232.585 12.4453 231.774 15.3893 231.774 18.632ZM306.91 45.128H248.67V19.4C248.67 18.9733 248.798 18.632 249.054 18.376C249.395 18.0347 249.779 17.864 250.206 17.864H305.246C305.673 17.864 306.057 18.0347 306.398 18.376C306.739 18.632 306.91 18.9733 306.91 19.4V45.128ZM351.574 93V0.839996H425.814C429.057 0.839996 432.043 1.65066 434.774 3.272C437.505 4.89333 439.681 7.06933 441.302 9.8C442.923 12.4453 443.734 15.3893 443.734 18.632V75.208C443.734 78.4507 442.923 81.4373 441.302 84.168C439.681 86.8133 437.505 88.9467 434.774 90.568C432.043 92.1893 429.057 93 425.814 93H351.574ZM369.878 75.976H425.046C425.473 75.976 425.857 75.848 426.198 75.592C426.539 75.2507 426.71 74.8667 426.71 74.44V19.4C426.71 18.9733 426.539 18.632 426.198 18.376C425.857 18.0347 425.473 17.864 425.046 17.864H369.878C369.451 17.864 369.067 18.0347 368.726 18.376C368.47 18.632 368.342 18.9733 368.342 19.4V74.44C368.342 74.8667 368.47 75.2507 368.726 75.592C369.067 75.848 369.451 75.976 369.878 75.976ZM469.076 0.839996V93H485.844V0.839996H469.076ZM511.043 93V0.839996H529.603L586.179 68.168V0.839996H603.203V93H584.643L527.939 25.544V93H511.043ZM648.135 93C644.892 93 641.906 92.1893 639.175 90.568C636.53 88.9467 634.396 86.8133 632.775 84.168C631.154 81.4373 630.343 78.4507 630.343 75.208V18.632C630.343 15.3893 631.154 12.4453 632.775 9.8C634.396 7.06933 636.53 4.89333 639.175 3.272C641.906 1.65066 644.892 0.839996 648.135 0.839996H704.583C707.826 0.839996 710.812 1.65066 713.543 3.272C716.274 4.89333 718.45 7.06933 720.071 9.8C721.692 12.4453 722.503 15.3893 722.503 18.632V25.8H705.479V19.4C705.479 18.9733 705.308 18.632 704.967 18.376C704.626 18.0347 704.242 17.864 703.815 17.864H648.775C648.348 17.864 647.964 18.0347 647.623 18.376C647.367 18.632 647.239 18.9733 647.239 19.4V74.44C647.239 74.8667 647.367 75.2507 647.623 75.592C647.964 75.848 648.348 75.976 648.775 75.976H703.815C704.242 75.976 704.626 75.848 704.967 75.592C705.308 75.2507 705.479 74.8667 705.479 74.44V57.8H684.615V40.776H722.503V75.208C722.503 78.4507 721.692 81.4373 720.071 84.168C718.45 86.8133 716.274 88.9467 713.543 90.568C710.812 92.1893 707.826 93 704.583 93H648.135Z"
+            fill="black"
+          />
+        </svg>
+        <span class="dots-block"><span class="dot"></span></span
+      ></span>
     </div>
     <div class="wrapper">
-      <header class="header headroom">
-        <div class="container">
-          <strong class="logo">
-            <a href="#">&lt; lvog &gt;</a>
-          </strong>
-          <a href="#" class="nav-opener"><span></span></a>
-          <div class="drop">
-            <nav id="nav">
-              <ul class="menu">
-                <li><a class="anchor-link" href="#about">About Me</a></li>
-                <li><a class="anchor-link" href="#experience">Work Experience</a></li>
-                <li><a class="anchor-link" href="#skills">My Skills</a></li>
-                <li><a class="anchor-link" href="#works">Some of My Works</a></li>
-                <li><a class="anchor-link" href="#message">Leave a Message</a></li>
-              </ul>
-            </nav>
+      <header class="header">
+        <div class="container" data-aos="fade-in">
+          <div class="row">
+            <strong class="logo">
+              <a href="#">
+                <img src="images/logo.svg" alt="Lvog" />
+              </a>
+            </strong>
+            <a href="#" class="nav-opener"><span></span></a>
+            <div class="drop">
+              <nav id="nav">
+                <ul class="menu">
+                  <li><a class="anchor-link" href="#about">About</a></li>
+                  <li><a class="anchor-link" href="#skills">Skills</a></li>
+                  <li><a class="anchor-link" href="#projects">Projects</a></li>
+                  <li><a class="anchor-link" href="#experience">Experience</a></li>
+                  <li><a class="anchor-link" href="#contacts">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </header>
-      <div class="page-holder">
-        <main class="main" id="main">
-          <section class="intro type-holder viewport" style="background-image: url(images/bg-img.jpg)">
-            <div class="container">
-              <div class="move-effect type-block">
-                <h1>Levchuk Oleg</h1>
-                <span class="typed-text h2">front-end developer, email developer, markup developer, front-end developer </span>
+      <main class="main" id="main">
+        <section class="intro">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h1 data-aos="fade-up" data-aos-delay="600">Levchuk Oleg</h1>
+                <strong class="position" data-aos="fade-up" data-aos-delay="1200"></strong>
+              </div>
+              <div class="action-link-holder" data-aos="fade" data-aos-delay="1200" data-aos-offset="0">
+                <a href="#about" class="action-link anchor-link"><i class="icon-arrow-down"></i></a>
               </div>
             </div>
-          </section>
-          <section id="about" class="about viewport">
-            <div class="container">
-              <h1 class="move-effect">About Me</h1>
-              <div class="flex-row">
-                <div class="img-block move-effect">
-                  <strong class="h3">Photo</strong>
-                  <div class="photo-block">
-                    <img src="images/img-01.jpg" alt="image description" />
+          </div>
+        </section>
+        <section id="about" class="counter-section about">
+          <div class="container">
+            <h2 data-aos="fade-up">About</h2>
+            <div class="row">
+              <div class="img-block">
+                <div class="img-holder">
+                  <svg class="draw draw-img" width="300px" height="190px" viewBox="0 0 667.7 401">
+                    <path fill="transparent" stroke="#000000" stroke-width="10" d="M600.5,33.8v366.7H67.1V33.8c0-18.4,14.9-33.3,33.3-33.3h466.7C585.6,0.5,600.5,15.4,600.5,33.8z" />
+                    <path fill="transparent" stroke="#000000" stroke-width="10" d="M0.5,400.5h666.7 M67.1,367.2h533.3" />
+                  </svg>
+                  <div class="gif-holder" data-aos="fade-in" data-aos-delay="2600">
+                    <img src="images/code.gif" alt="Well, here we are" />
                   </div>
-                </div>
-                <div class="text-block move-effect">
-                  <strong class="h3">Overview</strong>
-                  <p>
-                    Hi there. Let's get acquainted. My name is Oleg and I'm a Front-end Developer. A couple of words about me and my experience in IT. In 2015 year I graduated from
-                    Telesens Academy for the position of QA Engineer. I believed that this position is for me and I will fit it. However, during my education, I understood that
-                    creating projects was more interesting for me than trying to break them and find bugs. That was the starting point for looking for a job as Markup Developer. In
-                    2017, I received my goal and started working in P2H, the company of my dreams for that moment. This company gave me a chance to start my career from the very
-                    beginning. So I start to grow and develop myself as a specialist in this sphere. A lot of projects, new frameworks and techniques, communication with people and
-                    clients all that I've got for more than 7 years of experience here. As for now, I am looking for new opportunities and challenges that will expand my skills. So
-                    if you want to see me on your team <a href="/inc/CV - Levchuk Oleg - Front-end Developer.pdf">take a look at my CV</a> and
-                    <a class="anchor-link" href="#message">send me a message</a> or give a <a href="tel:+380979509642">call</a>. Have a nice day.
-                  </p>
-                </div>
-                <div class="contact-block move-effect">
-                  <strong class="h3">Contact Info</strong>
-                  <ul class="contact-list">
-                    <li><i class="icon-name"></i> Levchuk Oleg</li>
-                    <li><i class="icon-phone"></i> <a href="tel:+380979509642">097 950 96 42</a></li>
-                    <li>
-                      <i class="icon-envelope"></i>
-                      <a
-                        href="mailto:&#108;&#101;&#118;&#099;&#104;&#117;&#107;&#046;&#111;&#108;&#101;&#103;&#050;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
-                        >&#108;&#101;&#118;&#099;&#104;&#117;&#107;&#046;&#111;&#108;&#101;&#103;&#050;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a
-                      >
-                    </li>
-                    <li><i class="icon-map"></i> Ukraine</li>
-                  </ul>
                 </div>
               </div>
+              <div class="text-block">
+                <p class="anim-text anim-multi-line">
+                  I’m Oleg, a front-end developer with over 7 years of experience. I specialize in writing clean and efficient code using technologies such as HTML, CSS, and
+                  JavaScript. I also have some knowledge of React, WordPress, and Webflow. I’m passionate about what I do and always aim to improve my skills. I am open to new
+                  opportunities to grow and take on exciting challenges. For more details, please take a look at my website.
+                </p>
+              </div>
             </div>
-          </section>
-          <section id="experience" class="experience viewport">
-            <div class="container">
-              <h1 class="move-effect">Work Experience</h1>
-              <ul class="experience-list">
-                <li>
-                  <span class="dot"></span>
-                  <div class="info-block">
-                    <strong class="h4">P2H</strong>
-                    <strong class="h4">Contract-Freelancer</strong>
-                    <span class="date">Sep 2023 – Aug 2024</span>
-                    <span class="position">Front-end Developer</span>
-                  </div>
-                </li>
-                <li>
-                  <span class="dot"></span>
-                  <div class="info-block">
-                    <strong class="h4">P2H</strong>
-                    <strong class="h4">Contract</strong>
-                    <span class="date">Mar 2017 – Aug 2023</span>
-                    <span class="position">Markup Developer</span>
-                  </div>
-                </li>
-                <li>
-									<span class="dot"></span>
-									<div class="info-block">
-										<strong class="h4">Freelancer</strong>
-										<span class="date">Nov 2014 – Feb 2017</span>
-										<span class="position">Registration of trademarks</span>
-									</div>
-								</li>
-                <li>
-                  <span class="dot"></span>
-                  <div class="info-block">
-                    <strong class="h4">Publishing house "Ranok"</strong>
-                    <span class="date">July 2014 – Oct 2014</span>
-                    <span class="position">Sales manager</span>
-                  </div>
-                </li>
-                <li>
-                  <span class="dot"></span>
-                  <div class="info-block">
-                    <strong class="h4">LLC "Ukrkriogen"</strong>
-                    <span class="date">Nov 2013 – May 2014</span>
-                    <span class="position">Account manager</span>
-                  </div>
-                </li>
-                <li>
-                  <span class="dot"></span>
-                  <div class="info-block">
-                    <strong class="h4">Company "DIAKOM"</strong>
-                    <span class="date">Aug 2008 – Oct 2013</span>
-                    <span class="position">Expert of intellectual property</span>
-                  </div>
-                </li>
-              </ul>
+          </div>
+        </section>
+        <section id="skills" class="counter-section skills">
+          <div class="container">
+            <h2 data-aos="fade-up">Skills</h2>
+            <div class="skills-block" data-aos="fade">
+              <span class="corner-decor"></span>
+              <span class="corner-decor"></span>
+              <div class="skills-box">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">SASS/SCSS</span>
+                <span class="skill">Email template</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">Tailwind</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">jQuery</span>
+                <span class="skill">React</span>
+                <span class="skill">WordPress</span>
+                <span class="skill">Git</span>
+                <span class="skill">GitHub</span>
+                <span class="skill">Adobe Photoshop</span>
+                <span class="skill">Figma</span>
+              </div>
             </div>
-          </section>
-          <section id="skills" class="skills viewport">
-            <div class="container">
-              <h1 class="move-effect">My Skills</h1>
-              <ul class="skills-list">
-                <li class="move-effect">
-                  <strong class="h4">HTML5/CSS3</strong>
-                  <span class="progress">
-                    <span class="progress-bar" data-progress="100">100%</span>
-                  </span>
-                </li>
-                <li class="move-effect">
-                  <strong class="h4">SASS/SCSS</strong>
-                  <span class="progress">
-                    <span class="progress-bar" data-progress="100">100%</span>
-                  </span>
-                </li>
-                <li class="move-effect">
-                  <strong class="h4">HTML Emails</strong>
-                  <span class="progress">
-                    <span class="progress-bar" data-progress="80">80%</span>
-                  </span>
-                </li>
-                <li class="move-effect">
-                  <strong class="h4">Bootstrap/Tailwind</strong>
-                  <span class="progress">
-                    <span class="progress-bar" data-progress="100">100%</span>
-                  </span>
-                </li>
-                <li class="move-effect">
-                  <strong class="h4">Cross-browser and responsive layout</strong>
-                  <span class="progress">
-                    <span class="progress-bar" data-progress="100">100%</span>
-                  </span>
-                </li>
-                <li class="move-effect">
-                  <strong class="h4">Javascript and jQuery</strong>
-                  <span class="progress">
-                    <span class="progress-bar" data-progress="70">70%</span>
-                  </span>
-                </li>
-                <li class="move-effect">
-                  <strong class="h4">Zeplin, Figma, Adobe Photoshop</strong>
-                  <span class="progress">
-                    <span class="progress-bar" data-progress="70">70%</span>
-                  </span>
-                </li>
-                <li class="move-effect">
-                  <strong class="h4">React</strong>
-                  <span class="progress">
-                    <span class="progress-bar" data-progress="50">50%</span>
-                  </span>
-                </li>
-                <li class="move-effect">
-                  <strong class="h4">Wordpress</strong>
-                  <span class="progress">
-                    <span class="progress-bar" data-progress="50">50%</span>
-                  </span>
-                </li>
-                <li class="move-effect">
-                  <strong class="h4">Webflow</strong>
-                  <span class="progress">
-                    <span class="progress-bar" data-progress="50">50%</span>
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section id="works" class="works viewport">
-            <div class="container">
-              <h1 class="move-effect">Some of My Works</h1>
-              <div class="works-slider slick-slider move-effect">
-                <div>
-                  <div class="work-block">
-                    <img src="images/odea.jpg" alt="Odea" />
-                    <div class="info-block">
-                      <strong class="h3">Odea</strong>
-                      <strong class="subtitle">Email</strong>
-                      <a href="https://lvog.github.io/odea" class="btn btn-outline-light" target="_blank">Take a look</a>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="work-block">
-                    <img src="images/focus.jpg" alt="Focus" />
-                    <div class="info-block">
-                      <strong class="h3">Focus</strong>
-                      <strong class="subtitle">Email</strong>
-                      <a href="https://lvog.github.io/focus" class="btn btn-outline-light" target="_blank">Take a look</a>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="work-block">
+          </div>
+        </section>
+        <section id="projects" class="counter-section projects">
+          <div class="container">
+            <h2 data-aos="fade-up">Projects</h2>
+            <ul class="projects-list">
+              <li data-aos="zoom-in">
+                <a class="card" href="https://lvog.github.io/courses" target="_blank">
+                  <div class="bg-img">
                     <img src="images/courses.jpg" alt="Courses" />
-                    <div class="info-block">
-                      <strong class="h3">Courses</strong>
-                      <strong class="subtitle">Markup</strong>
-                      <a href="https://lvog.github.io/courses" class="btn btn-outline-light" target="_blank">Take a look</a>
-                    </div>
                   </div>
-                </div>
-                <div>
-                  <div class="work-block">
+                  <div class="text-block">
+                    <strong class="h3">Courses</strong>
+                    <ul class="info-list">
+                      <li><b>TECHNOLOGIES:</b> HTML5, CSS3, jQuery + JavaScript</li>
+                      <li><b>PLUGINS:</b> smooth scroll, slick carousel, bg video, form validation, counter up, and animation on viewport</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="100">
+                <a class="card" href="https://lvog.github.io/applab" target="_blank">
+                  <div class="bg-img">
                     <img src="images/applab.jpg" alt="AppLab" />
-                    <div class="info-block">
-                      <strong class="h3">AppLab</strong>
-                      <strong class="subtitle">Tailwind</strong>
-                      <a href="https://lvog.github.io/applab" class="btn btn-outline-light" target="_blank">Take a look</a>
-                    </div>
                   </div>
-                </div>
-                <div>
-                  <div class="work-block">
+                  <div class="text-block">
+                    <strong class="h3">AppLab</strong>
+                    <ul class="info-list">
+                      <li><b>TECHNOLOGIES:</b> Tailwind CSS, HTML5, CSS3, jQuery + JavaScript</li>
+                      <li><b>PLUGINS:</b> sticky scroll block, smooth scroll, slick carousel, tabs, accordion, and fancybox.</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="200">
+                <a class="card parallax" data-speed="0.1" href="https://cookcraft-recipe.netlify.app" target="_blank">
+                  <div class="bg-img">
                     <img src="images/cookcraft.jpg" alt="CookCraft" />
-                    <div class="info-block">
-                      <strong class="h3">CookCraft</strong>
-                      <strong class="subtitle">JavaScript</strong>
-                      <a href="https://cookcraft-recipe.netlify.app" class="btn btn-outline-light" target="_blank">Take a look</a>
-                    </div>
                   </div>
-                </div>
-                <div>
-                  <div class="work-block">
-                    <img src="images/coffee-shop.jpg" alt="Coffee Shop" />
-                    <div class="info-block">
-                      <strong class="h3">Coffee Shop</strong>
-                      <strong class="subtitle">React</strong>
-                      <a href="https://coffee-shop-react-website.netlify.app" class="btn btn-outline-light" target="_blank">Take a look</a>
-                    </div>
+                  <div class="text-block">
+                    <strong class="h3">CookCraft</strong>
+                    <ul class="info-list">
+                      <li><b>TECHNOLOGIES:</b> Vanilla JavaScript (including ES6 features like modules, arrow functions, and async/await), Spoonacular API, HTML5, SCSS, Vite</li>
+                      <li><b>PLUGINS:</b> headroom, AOS</li>
+                    </ul>
                   </div>
-                </div>
-                <div>
-                  <div class="work-block">
-                    <img src="images/mogo.jpg" alt="Mogo" />
-                    <div class="info-block">
-                      <strong class="h3">Mogo</strong>
-                      <strong class="subtitle">Wordpress</strong>
-                      <a href="https://mogo.lvog.website" class="btn btn-outline-light" target="_blank">Take a look</a>
-                    </div>
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="300">
+                <a class="card parallax" data-speed="0.1" href="https://coffee-shop-react-website.netlify.app" target="_blank">
+                  <div class="bg-img">
+                    <img src="images/coffee-shop.jpg" alt="Coffee shop" />
                   </div>
-                </div>
-                <div>
-                  <div class="work-block">
+                  <div class="text-block">
+                    <strong class="h3">Coffee shop</strong>
+                    <ul class="info-list">
+                      <li>
+                        <b>TECHNOLOGIES:</b> React Hooks (useState, useEffect, useCallback), React Router, React Helmet, Formik and Yup, Fake Coffee API, JavaScript, HTML5, SCSS.
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="400">
+                <a class="card" href="https://mogo.lvog.website" target="_blank">
+                  <div class="bg-img">
+                    <img src="images/mogo.jpg" alt="MoGo" />
+                  </div>
+                  <div class="text-block">
+                    <strong class="h3">MoGo</strong>
+                    <ul class="info-list">
+                      <li><b>TECHNOLOGIES:</b> WordPress, PHP, HTML5, CSS3, jQuery + Javascript.</li>
+                      <li><b>JS PLUGINS:</b> sticky scroll block, smoth scroll, counter up, accordion, simple bar, and fancybox.</li>
+                      <li><b>WP PLUGINS:</b> Advanced Custom Fields, Contact Form 7, Regenerate Thumbnails, Post Views Counter and Smash Balloon Instagram Feed</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="500">
+                <a class="card parallax" data-speed="0.2" href="https://lvog.webflow.io" target="_blank">
+                  <div class="bg-img">
                     <img src="images/furniture.jpg" alt="Furniture" />
-                    <div class="info-block">
-                      <strong class="h3">Furniture</strong>
-                      <strong class="subtitle">Webflow</strong>
-                      <a href="https://lvog.webflow.io" class="btn btn-outline-light" target="_blank">Take a look</a>
-                    </div>
                   </div>
-                </div>
-              </div>
+                  <div class="text-block">
+                    <strong class="h3">Furniture</strong>
+                    <ul class="info-list">
+                      <li><b>TECHNOLOGIES:</b> Webflow - visual website builder.</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="experience" class="counter-section experience">
+          <div class="container">
+            <h2 data-aos="fade-up">Experince</h2>
+            <div class="experience-block">
+              <svg class="draw draw-line" viewBox="0 0 733 1260" fill="none">
+                <path
+                  stroke="black"
+                  stroke-width="4"
+                  d="M367 0V39C367 50.0457 358.046 59 347 59H48C36.9543 59 28 67.9543 28 79V237.5C28 248.546 36.9543 257.5 48 257.5H321C332.046 257.5 341 266.454 341 277.5V374C341 385.046 349.954 394 361 394H710C721.046 394 730 402.954 730 414V509.5C730 520.546 721.046 529.5 710 529.5H193C181.954 529.5 173 538.454 173 549.5V709.5C173 720.546 181.954 729.5 193 729.5H432.5C443.546 729.5 452.5 738.454 452.5 749.5V843C452.5 854.046 443.546 863 432.5 863H320.5C309.454 863 300.5 871.954 300.5 883V1081.5C300.5 1092.55 291.546 1101.5 280.5 1101.5H23C11.9543 1101.5 3 1110.45 3 1121.5V1197C3 1208.05 11.9543 1217 23 1217H348C359.046 1217 368 1225.95 368 1237V1260"
+                />
+              </svg>
+              <ul class="experience-list">
+                <li data-aos="zoom-in">
+                  <strong class="h3">Your future, your path.</strong>
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="100">
+                  <h3>P2H</h3>
+                  <span class="conditions">Contract-Freelancer</span>
+                  <span class="date">Sep 2023 – Aug 2024</span>
+                  <span class="position">Front-end Developer</span>
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="100">
+                  <h3>P2H</h3>
+                  <span class="conditions">Contractor</span>
+                  <span class="date">Mar 2017 – Aug 2023</span>
+                  <span class="position">Markup Developer</span>
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="100">
+                  <h3>Freelancer</h3>
+                  <span class="date">Nov 2014 – Feb 2017</span>
+                  <span class="position">Registration of trademarks</span>
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="100">
+                  <h3>Publishing house "Ranok"</h3>
+                  <span class="date">July 2014 – Oct 2014</span>
+                  <span class="position">Sales manager</span>
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="100">
+                  <h3>LLC "Ukrkriogen"</h3>
+                  <span class="date">Nov 2013 – May 2014</span>
+                  <span class="position">Account manager</span>
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="100">
+                  <h3>Company "DIAKOM"</h3>
+                  <span class="date">Aug 2008 – Oct 2013</span>
+                  <span class="position">Expert of intellectual property</span>
+                </li>
+              </ul>
             </div>
-          </section>
-          <section id="message" class="message viewport">
-            <div class="container">
-              <h1 class="move-effect">Leave a Message</h1>
-              <form class="message-form form-validation" action="#" method="POST">
-                <div class="form-group move-effect">
-                  <input type="text" placeholder="Name*" name="Name" data-required="true" data-interactive="true" data-min="4" />
-                  <span class="error-message">This field is required. Please enter valid data - minimum 4 symbols</span>
-                </div>
-                <div class="form-group move-effect">
-                  <input type="email" placeholder="Email*" name="Email" data-type="email" data-interactive="true" data-required="true" />
-                  <span class="error-message">This field is required. Please enter email address</span>
-                </div>
-                <div class="form-group move-effect">
-                  <input type="text" placeholder="Phone*" name="Phone" data-regexp="\d{10}" data-interactive="true" />
-                  <span class="error-message">This field is required. Please enter valid number (10 digits)</span>
-                </div>
-                <div class="form-group move-effect">
-                  <textarea placeholder="Message*" name="Message" data-required="true" data-min="20" data-interactive="true"></textarea>
-                  <span class="error-message">This field is required. Please enter valid data - minimum 20 symbols</span>
-                </div>
-                <div class="btn-holder move-effect">
-                  <input class="btn" type="submit" value="Submit" />
-                </div>
-              </form>
-              <div class="popup">
-                <a href="#" class="close"></a>
-                <h2 class="status">The message has been successfully sent</h2>
-              </div>
+          </div>
+        </section>
+        <section id="contacts" class="counter-section contacts">
+          <div class="container">
+            <div class="text-block">
+              <h2 data-aos="fade-up">Contacts</h2>
+              <p class="anim-text anim-one-line">If you want to see me on your team or just have a proposal to cooperate feel free to contact me. Have a nice day.</p>
             </div>
-          </section>
-        </main>
-      </div>
-      <footer class="footer viewport move-effect">
-        <div class="container">
-          <ul class="social-networks">
-            <li>
-              <a href="https://www.linkedin.com/in/oleg-levchuk-2098b2b7" target="_blank"><i class="icon-linkedin"></i></a>
-            </li>
-          </ul>
-          <span class="copyright">&copy; 2024 Levchuk Oleg. All rights reserved.</span>
-        </div>
-      </footer>
+            <ul class="contacts-list">
+              <li data-aos="fade-up" data-aos-delay="100" data-aos-offset="0"><i class="icon-mobile"></i><a href="tel:+380979509642">+380979509642</a></li>
+              <li data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
+                <i class="icon-mail"></i
+                ><a href="mailto:&#108;&#101;&#118;&#099;&#104;&#117;&#107;&#046;&#111;&#108;&#101;&#103;&#050;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+                  >&#108;&#101;&#118;&#099;&#104;&#117;&#107;&#046;&#111;&#108;&#101;&#103;&#050;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a
+                >
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300" data-aos-offset="0"><i class="icon-telegram"></i><a href="tg://resolve?domain=@lvog_21">@lvog_21</a></li>
+            </ul>
+          </div>
+        </section>
+      </main>
     </div>
+    <footer class="footer" data-aos="fade-in" data-aos-delay="400" data-aos-offset="0">
+      <div class="container">
+        <ul class="social-networks">
+          <li>
+            <a href="https://www.linkedin.com/in/oleg-levchuk-2098b2b7" target="_blank"><i class="icon-linkedin"></i></a>
+          </li>
+        </ul>
+        <span class="copyright">© <span class="year"></span> Levchuk Oleg. All rights reserved.</span>
+      </div>
+    </footer>
     <script defer src="js/app.js"></script>
   </body>
 </html>
